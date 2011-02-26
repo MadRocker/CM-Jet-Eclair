@@ -1,0 +1,1648 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+pid: 1962, tid: 1968  >>> system_server <<<
+signal 11 (SIGSEGV), fault addr 00001f00
+ r0 00001f00  r1 ffffffff  r2 80808080  r3 00000000
+ r4 ffffffff  r5 00000002  r6 4597f6bc  r7 00000000
+ r8 00100000  r9 a9d1b8e5  10 45880000  fp 0012df78
+ ip afbc30e8  sp 4597f628  lr afe15ee7  pc afe0e7c8  cpsr 60000010
+         #00  pc 0000e7c8  /system/lib/libc.so
+         #01  pc 00015ee4  /system/lib/libc.so
+         #02  pc 00017466  /system/lib/libc.so
+         #03  pc 000011dc  /system/lib/liblog.so
+         #04  pc 000168e0  /system/lib/libsurfaceflinger.so
+         #05  pc 00016a86  /system/lib/libsurfaceflinger.so
+         #06  pc 00020ec4  /system/lib/libsurfaceflinger.so
+         #07  pc 0001b504  /system/lib/libutils.so
+         #08  pc 0001b94a  /system/lib/libutils.so
+         #09  pc 00010000  /system/lib/libc.so
+         #10  pc 0000fad4  /system/lib/libc.so
+
+code around pc:
+afe0e7b8 e31c0003 1afffff6 e1a00002 e59f20d8 
+afe0e7c8 e490c004 e0433000 f5d0f040 e04c13a2 
+afe0e7d8 e0011002 e1d1100c 0490c004 1a000022 
+
+code around lr:
+afe15ed4 900b1ac0 dd054288 e003910b f7f89809 
+afe15ee4 900bec42 3320466b 33ff2100 70199c12 
+afe15ef4 91129105 2210e17b 930a9610 9e099105 
+
+stack:
+    4597f5e8  0012df78  [heap]
+    4597f5ec  4597f944  
+    4597f5f0  4597f8cc  
+    4597f5f4  afe14159  /system/lib/libc.so
+    4597f5f8  00000014  
+    4597f5fc  000003ff  
+    4597f600  4597f6bc  
+    4597f604  00000014  
+    4597f608  00004200  
+    4597f60c  00000200  
+    4597f610  00000000  
+    4597f614  4597f714  
+    4597f618  00000014  
+    4597f61c  4597f6bc  
+    4597f620  df002777  
+    4597f624  e3a070ad  
+#00 4597f628  4597fd64  
+    4597f62c  00001f00  
+#01 4597f630  00000000  
+    4597f634  00000000  
+    4597f638  afe307c8  /system/lib/libc.so
+    4597f63c  ac705be5  /system/lib/libEGL.so
+    4597f640  4597f65c  
+    4597f644  ffffffff  
+    4597f648  00000001  
+    4597f64c  ac705b12  /system/lib/libEGL.so
+    4597f650  0000000f  
+    4597f654  00001f00  
+    4597f658  00000073  
+    4597f65c  00000006  
+    4597f660  4597f8cc  
+    4597f664  afe38e08  /system/lib/libc.so
+    4597f668  4597f6b4  
+    4597f66c  00000002  
+    4597f670  acd23335  /system/lib/libsurfaceflinger.so
+    4597f674  4597f714  
+    4597f678  4597fd68  
+    4597f67c  0000000c  
+    4597f680  00000000  
+    4597f684  00000006  
+    4597f688  00000000  
+    4597f68c  00000000  
+    4597f690  00000230  
+    4597f694  acd23327  /system/lib/libsurfaceflinger.so
+    4597f698  4597f6b4  
+    4597f69c  00000000  
+    4597f6a0  00000000  
+    4597f6a4  4597f644  
+    4597f6a8  afe307c8  /system/lib/libc.so
+    4597f6ac  00000000  
+    4597f6b0  afe3906c  /system/lib/libc.so
+    4597f6b4  acd23327  /system/lib/libsurfaceflinger.so
+    4597f6b8  0000000c  
+    4597f6bc  afe39048  /system/lib/libc.so
+    4597f6c0  00000002  
+    4597f6c4  4597f8a6  
+    4597f6c8  4597fcf4  
+    4597f6cc  00000001  
+    4597f6d0  00000000  
+    4597f6d4  00000008  
+    4597f6d8  4597f6fc  
+    4597f6dc  0097f67c  
+    4597f6e0  4597fd0c  
+    4597f6e4  00000000  
+    4597f6e8  00000000  
+    4597f6ec  00000004  
+    4597f6f0  81b02798  /system/lib/hw/gralloc.GT-I5700.so
+    4597f6f4  00bc11e9  
+    4597f6f8  4597fb1c  
+    4597f6fc  74646977  
+    4597f700  4597fd2c  
+    4597f704  20202020  
+    4597f708  00000000  
+    4597f70c  6d6d2030  
+    4597f710  30332820  
+    4597f714  4597f6b4  
+    4597f718  00000001  
+    4597f71c  0000000c  
+    4597f720  65680a29  
+    4597f724  74686769  
+    4597f728  20202020  
+    4597f72c  3d202020  
+    4597f730  20373620  
+    4597f734  28206d6d  
+    4597f738  4597fd64  
+    4597f73c  35333832  
+    4597f740  00000000  
+    4597f744  0a296970  
+    4597f748  72666572  
+    4597f74c  00687830  
+    4597f750  65746172  
+    4597f754  36203d20  
+    4597f758  30302e30  
+    4597f75c  0a7a4820  
+    4597f760  65727900  
+    4597f764  69765f73  
+    4597f768  61757472  
+    4597f76c  203d206c  
+    4597f770  30303631  
+    4597f774  0a787020  
+    4597f778  20707062  
+    4597f77c  20202020  
+    4597f780  20202020  
+    4597f784  31203d20  
+    4597f788  20720a36  
+    4597f78c  20202020  
+    4597f790  20202020  
+    4597f794  3d202020  
+    4597f798  3a313120  
+    4597f79c  20670a35  
+    4597f7a0  20202020  
+    4597f7a4  20202020  
+    4597f7a8  3d202020  
+    4597f7ac  3a352020  
+    4597f7b0  20620a36  
+    4597f7b4  20202020  
+    4597f7b8  20202020  
+    4597f7bc  3d202020  
+    4597f7c0  3a302020  
+    4597f7c4  70750a35  
+    4597f7c8  5f726570  
+    4597f7cc  6772616d  
+    4597f7d0  3d206e69  
+    4597f7d4  6c0a3820  
+    4597f7d8  7265776f  
+    4597f7dc  72616d5f  
+    4597f7e0  206e6967  
+    4597f7e4  0a36203d  
+    4597f7e8  7466656c  
+    4597f7ec  72616d5f  
+    4597f7f0  206e6967  
+    4597f7f4  36203d20  
+    4597f7f8  69720a34  
+    4597f7fc  5f746867  
+    4597f800  6772616d  
+    4597f804  3d206e69  
+    4597f808  0a323620  
+    4597f80c  63786970  
+    4597f810  6b636f6c  
+    4597f814  20202020  
+    4597f818  32203d20  
+    4597f81c  37363739  
+    4597f820  0a303836  
+    4597f824  00000000  
+    4597f828  00000000  
+    4597f82c  00000000  
+    4597f830  00000000  
+    4597f834  ffffffff  
+    4597f838  38303033  
+    4597f83c  9ad51ad5  
+    4597f840  4597faa8  
+    4597f844  4597f85c  
+    4597f848  00000208  
+    4597f84c  00000006  
+    4597f850  ac705b97  /system/lib/libEGL.so
+    4597f854  afe1746b  /system/lib/libc.so
+    4597f858  00000000  
+    4597f85c  4597f90c  
+    4597f860  00000208  
+    4597f864  000003c7  
+    4597f868  ffff0208  
+    4597f86c  4597f8d4  
+    4597f870  000003ff  
+    4597f874  4597f91d  
+    4597f878  00000009  
+    4597f87c  00000003  
+    4597f880  00000038  
+    4597f884  afbc30b8  /system/lib/liblog.so
+    4597f888  000000b4  
+    4597f88c  4597f8a0  
+    4597f890  afbc1031  /system/lib/liblog.so
+    4597f894  afbc112d  /system/lib/liblog.so
+    4597f898  00000000  
+    4597f89c  00000006  
+    4597f8a0  4597f89c  
+    4597f8a4  00000001  
+    4597f8a8  ac705b97  /system/lib/libEGL.so
+    4597f8ac  9ad51ad5  
+    4597f8b0  4597f8d4  
+    4597f8b4  4597f8cc  
+    4597f8b8  00000208  
+    4597f8bc  00000004  
+    4597f8c0  acd23250  /system/lib/libsurfaceflinger.so
+    4597f8c4  afe1746b  /system/lib/libc.so
+#02 4597f8c8  ac705b97  /system/lib/libEGL.so
+    4597f8cc  4597f944  
+    4597f8d0  4597fcf4  
+    4597f8d4  000003ff  
+    4597f8d8  ffff0208  
+    4597f8dc  4597f944  
+    4597f8e0  000003ff  
+    4597f8e4  6e6f635f  
+    4597f8e8  00000009  
+    4597f8ec  00000003  
+    4597f8f0  00000014  
+    4597f8f4  afbc30b8  /system/lib/liblog.so
+    4597f8f8  000000b4  
+    4597f8fc  4597f920  
+    4597f900  afbc1031  /system/lib/liblog.so
+    4597f904  afbc112d  /system/lib/liblog.so
+    4597f908  00000000  
+    4597f90c  00000004  
+    4597f910  4597f90c  
+    4597f914  00000001  
+    4597f918  acd23250  /system/lib/libsurfaceflinger.so
+    4597f91c  0000000f  
+    4597f920  00000000  
+    4597f924  00000000  
+    4597f928  47452820  
+    4597f92c  4597f944  
+    4597f930  afe42c20  
+    4597f934  4597f944  
+    4597f938  afe42c20  
+    4597f93c  afbc11df  /system/lib/liblog.so
+#03 4597f940  4597fd64  
+    4597f944  6e65704f  
+    4597f948  69204c47  
+    4597f94c  726f666e  
+    4597f950  6974616d  
+    4597f954  3a736e6f  
+    4597f958  65642000  
+    4597f95c  656e6966  
+    4597f960  75202c64  
+    4597f964  676e6973  
+    4597f968  30363120  
+    4597f96c  69706420  
+    4597f970  20796220  
+    4597f974  61666564  
+    4597f978  2e746c75  
+    4597f97c  705f6500  
+    4597f980  616d7869  
+    4597f984  47452070  
+    4597f988  4e415f4c  
+    4597f98c  494f5244  
+    4597f990  6d695f44  
+    4597f994  5f656761  
+    4597f998  6974616e  
+    4597f99c  625f6576  
+    4597f9a0  65666675  
+    4597f9a4  47452072  
+    4597f9a8  4e415f4c  
+    4597f9ac  494f5244  
+    4597f9b0  77735f44  
+    4597f9b4  725f7061  
+    4597f9b8  61746365  
+    4597f9bc  656c676e  
+    4597f9c0  4c474520  
+    4597f9c4  444e415f  
+    4597f9c8  44494f52  
+    4597f9cc  7465675f  
+    4597f9d0  6e65725f  
+    4597f9d4  5f726564  
+    4597f9d8  66667562  
+    4597f9dc  00207265  [heap]
+    4597f9e0  00145318  [heap]
+    4597f9e4  c0000000  
+    4597f9e8  afe1371d  /system/lib/libc.so
+    4597f9ec  afe0bca5  /system/lib/libc.so
+    4597f9f0  00000000  
+    4597f9f4  afe0f2c0  /system/lib/libc.so
+    4597f9f8  afe3bb74  
+    4597f9fc  afe0f3b0  /system/lib/libc.so
+    4597fa00  00000000  
+    4597fa04  afe0f2c0  /system/lib/libc.so
+    4597fa08  0014531c  [heap]
+    4597fa0c  afe3c3e4  
+    4597fa10  afe38e08  /system/lib/libc.so
+    4597fa14  afe3c3e4  
+    4597fa18  00145318  [heap]
+    4597fa1c  afe0f3b0  /system/lib/libc.so
+    4597fa20  00000000  
+    4597fa24  afe0f2c0  /system/lib/libc.so
+    4597fa28  00000000  
+    4597fa2c  afe3bdfc  
+    4597fa30  00138bf8  [heap]
+    4597fa34  afe3bdfc  
+    4597fa38  00100000  [heap]
+    4597fa3c  afe13757  /system/lib/libc.so
+    4597fa40  00000000  
+    4597fa44  afe13785  /system/lib/libc.so
+    4597fa48  afe3bdfc  
+    4597fa4c  00000000  
+    4597fa50  00138bf8  [heap]
+    4597fa54  afe13269  /system/lib/libc.so
+    4597fa58  4597fa8c  
+    4597fa5c  ac7087f8  /system/lib/libEGL.so
+    4597fa60  00138bf8  [heap]
+    4597fa64  ac7055b9  /system/lib/libEGL.so
+    4597fa68  4597faa4  
+    4597fa6c  572f4820  
+    4597fa70  4597faa4  
+    4597fa74  4597fa84  
+    4597fa78  4597fba4  
+    4597fa7c  ac7077e9  /system/lib/libEGL.so
+    4597fa80  0000001e  
+    4597fa84  00000000  
+    4597fa88  00000001  
+    4597fa8c  001452c0  [heap]
+    4597fa90  4597faa8  
+    4597fa94  00000001  
+    4597fa98  0000001e  
+    4597fa9c  00000001  
+    4597faa0  00000000  
+    4597faa4  676d6966  
+    4597faa8  5a800000  
+    4597faac  00800000  
+    4597fab0  81c05214  /system/lib/libs3c2drender.so
+    4597fab4  4597fae0  
+    4597fab8  0000001e  
+    4597fabc  4597fadc  
+    4597fac0  4597fae0  
+    4597fac4  81c02b7d  /system/lib/libs3c2drender.so
+    4597fac8  4597fae0  
+    4597facc  00000000  
+    4597fad0  00000000  
+    4597fad4  81c044f6  /system/lib/libs3c2drender.so
+    4597fad8  00138b20  [heap]
+    4597fadc  460f7000  
+    4597fae0  00800000  
+    4597fae4  0000001e  
+    4597fae8  00138b20  [heap]
+    4597faec  000000ac  
+    4597faf0  00000000  
+    4597faf4  81c050d0  /system/lib/libs3c2drender.so
+    4597faf8  81c051a8  /system/lib/libs3c2drender.so
+    4597fafc  81c02c8f  /system/lib/libs3c2drender.so
+    4597fb00  81c04058  /system/lib/libs3c2drender.so
+    4597fb04  81c04559  /system/lib/libs3c2drender.so
+    4597fb08  45b80000  /dev/graphics/fb0
+    4597fb0c  00000000  
+    4597fb10  00138ac8  [heap]
+    4597fb14  81b030e4  /system/lib/hw/gralloc.GT-I5700.so
+    4597fb18  00000014  
+    4597fb1c  81b021cb  /system/lib/hw/gralloc.GT-I5700.so
+    4597fb20  00000014  
+    4597fb24  00000000  
+    4597fb28  00000043  
+    4597fb2c  000001e0  
+    4597fb30  80000000  /system/lib/libssl.so
+    4597fb34  4072f489  
+    4597fb38  00000000  
+    4597fb3c  404e0000  
+    4597fb40  00000005  
+    4597fb44  00000006  
+    4597fb48  00000000  
+    4597fb4c  00000005  
+    4597fb50  00000008  
+    4597fb54  00000006  
+    4597fb58  00000040  
+    4597fb5c  0000003e  
+    4597fb60  01c63800  
+    4597fb64  00000000  
+    4597fb68  00000000  
+    4597fb6c  00000014  
+    4597fb70  81b02798  /system/lib/hw/gralloc.GT-I5700.so
+    4597fb74  81b03250  /system/lib/hw/gralloc.GT-I5700.so
+    4597fb78  00177000  [heap]
+    4597fb7c  43986666  
+    4597fb80  4397a44c  
+    4597fb84  42700000  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    4597fb88  00000000  
+    4597fb8c  000001e0  
+    4597fb90  00000320  
+    4597fb94  000001e0  
+    4597fb98  00000640  
+    4597fb9c  00000000  
+    4597fba0  00000000  
+    4597fba4  20312030  
+    4597fba8  676d6966  
+    4597fbac  00000000  
+    4597fbb0  00000005  
+    4597fbb4  00000000  
+    4597fbb8  00000005  
+    4597fbbc  00000006  
+    4597fbc0  00000000  
+    4597fbc4  00000000  
+    4597fbc8  00000005  
+    4597fbcc  00000000  
+    4597fbd0  00000000  
+    4597fbd4  00000000  
+    4597fbd8  00000000  
+    4597fbdc  00000000  
+    4597fbe0  00000000  
+    4597fbe4  00000043  
+    4597fbe8  00000028  
+    4597fbec  00000000  
+    4597fbf0  01c63800  
+    4597fbf4  00000040  
+    4597fbf8  0000003e  
+    4597fbfc  00000008  
+    4597fc00  00000006  
+    4597fc04  00000002  
+    4597fc08  00000002  
+    4597fc0c  00000000  
+    4597fc10  00000000  
+    4597fc14  00000000  
+    4597fc18  00000000  
+    4597fc1c  00000000  
+    4597fc20  00000000  
+    4597fc24  00000000  
+    4597fc28  00000000  
+    4597fc2c  81b029cc  /system/lib/hw/gralloc.GT-I5700.so
+    4597fc30  81b029df  /system/lib/hw/gralloc.GT-I5700.so
+    4597fc34  00000000  
+    4597fc38  66633373  
+    4597fc3c  00000062  
+    4597fc40  00000000  
+    4597fc44  00000000  
+    4597fc48  5a200000  
+    4597fc4c  00177000  [heap]
+    4597fc50  00000000  
+    4597fc54  00000000  
+    4597fc58  00000002  
+    4597fc5c  00010000  [heap]
+    4597fc60  afe3bb74  
+    4597fc64  afe0f3b0  /system/lib/libc.so
+    4597fc68  00000000  
+    4597fc6c  afe0f2c0  /system/lib/libc.so
+    4597fc70  00000003  
+    4597fc74  afe3b9bc  
+    4597fc78  00138bf8  [heap]
+    4597fc7c  00000007  
+    4597fc80  ac708938  /system/lib/libEGL.so
+    4597fc84  ac7087f8  /system/lib/libEGL.so
+    4597fc88  00003008  
+    4597fc8c  ac702f65  /system/lib/libEGL.so
+    4597fc90  afe38e08  /system/lib/libc.so
+    4597fc94  000000d4  
+    4597fc98  4597fcd4  
+    4597fc9c  00000000  
+    4597fca0  ac705874  /system/lib/libEGL.so
+    4597fca4  00000000  
+    4597fca8  00000001  
+    4597fcac  ac705800  /system/lib/libEGL.so
+    4597fcb0  00000000  
+    4597fcb4  4597fd90  
+    4597fcb8  00000020  
+    4597fcbc  ac703271  /system/lib/libEGL.so
+    4597fcc0  afe3bb74  
+    4597fcc4  afe0f3b0  /system/lib/libc.so
+    4597fcc8  00000000  
+    4597fccc  4597fd00  
+    4597fcd0  ac708938  /system/lib/libEGL.so
+    4597fcd4  ac7087f8  /system/lib/libEGL.so
+    4597fcd8  00003008  
+    4597fcdc  ac702f65  /system/lib/libEGL.so
+    4597fce0  ac7087f8  /system/lib/libEGL.so
+    4597fce4  00003008  
+    4597fce8  000001e2  
+    4597fcec  ac703479  /system/lib/libEGL.so
+    4597fcf0  ac7059e8  /system/lib/libEGL.so
+    4597fcf4  00000000  
+    4597fcf8  000001e2  
+    4597fcfc  00000000  
+    4597fd00  acd29118  /system/lib/libsurfaceflinger.so
+    4597fd04  00000000  
+    4597fd08  00000000  
+    4597fd0c  ac704219  /system/lib/libEGL.so
+    4597fd10  000003f0  
+    4597fd14  ac705880  /system/lib/libEGL.so
+    4597fd18  00000000  
+    4597fd1c  00000000  
+    4597fd20  00000000  
+    4597fd24  00000000  
+    4597fd28  00000000  
+    4597fd2c  ac7044c7  /system/lib/libEGL.so
+    4597fd30  4597fd44  
+    4597fd34  00000000  
+    4597fd38  00000000  
+    4597fd3c  00000000  
+    4597fd40  00000000  
+    4597fd44  9ad51ad5  
+    4597fd48  00000000  
+    4597fd4c  00153de8  [heap]
+    4597fd50  acd29118  /system/lib/libsurfaceflinger.so
+    4597fd54  00000000  
+    4597fd58  00000000  
+    4597fd5c  acd168e3  /system/lib/libsurfaceflinger.so
+    4597fd60  acd23327  /system/lib/libsurfaceflinger.so
+    4597fd64  00001f00  
+#04 4597fd68  00000008  
+    4597fd6c  00000200  
+    4597fd70  00100000  [heap]
+    4597fd74  afe0f2c0  /system/lib/libc.so
+    4597fd78  acd23250  /system/lib/libsurfaceflinger.so
+    4597fd7c  00001f03  
+    4597fd80  ac705c16  /system/lib/libEGL.so
+    4597fd84  00001f01  
+    4597fd88  00000000  
+    4597fd8c  00138a08  [heap]
+    4597fd90  00003033  
+    4597fd94  00000004  
+    4597fd98  00003038  
+    4597fd9c  00000000  
+    4597fda0  00003038  
+    4597fda4  00100000  [heap]
+    4597fda8  00001000  
+    4597fdac  00000000  
+    4597fdb0  00000000  
+    4597fdb4  afe0f2c0  /system/lib/libc.so
+    4597fdb8  00000000  
+    4597fdbc  a9d29ad8  /system/lib/libutils.so
+    4597fdc0  00000001  
+    4597fdc4  00303631  
+    4597fdc8  00100000  [heap]
+    4597fdcc  a9d1b8d5  /system/lib/libutils.so
+    4597fdd0  00000000  
+    4597fdd4  0013d180  [heap]
+    4597fdd8  00000000  
+    4597fddc  0013d184  [heap]
+    4597fde0  0013d194  [heap]
+    4597fde4  fffffff8  
+    4597fde8  00130083  [heap]
+    4597fdec  a9d1b829  /system/lib/libutils.so
+    4597fdf0  00153d90  [heap]
+    4597fdf4  a9d13ead  /system/lib/libutils.so
+    4597fdf8  00153e68  [heap]
+    4597fdfc  00153d90  [heap]
+    4597fe00  00000002  
+    4597fe04  a9d13fc5  /system/lib/libutils.so
+    4597fe08  00153e30  [heap]
+    4597fe0c  0013d178  [heap]
+    4597fe10  00153de8  [heap]
+    4597fe14  4597fe84  
+    4597fe18  00153de8  [heap]
+    4597fe1c  acd16c25  /system/lib/libsurfaceflinger.so
+    4597fe20  00153de8  [heap]
+    4597fe24  9ad51ad5  
+    4597fe28  4597fe84  
+    4597fe2c  00153de8  [heap]
+    4597fe30  00000000  
+    4597fe34  acd29118  /system/lib/libsurfaceflinger.so
+    4597fe38  00153de8  [heap]
+    4597fe3c  acd16a8b  /system/lib/libsurfaceflinger.so
+#05 4597fe40  4597fe84  
+    4597fe44  0012f168  [heap]
+    4597fe48  acd29118  /system/lib/libsurfaceflinger.so
+    4597fe4c  acd20ec9  /system/lib/libsurfaceflinger.so
+#06 4597fe50  00000000  
+    4597fe54  00000000  
+    4597fe58  00000000  
+    4597fe5c  00000000  
+    4597fe60  00000000  
+    4597fe64  00000000  
+    4597fe68  afe3bb74  
+    4597fe6c  0012f264  [heap]
+    4597fe70  0014e0e8  [heap]
+    4597fe74  a9d13ead  /system/lib/libutils.so
+    4597fe78  0012f470  [heap]
+    4597fe7c  0014e0e8  [heap]
+    4597fe80  00000003  
+    4597fe84  0012f168  [heap]
+    4597fe88  0012f178  [heap]
+    4597fe8c  0012f178  [heap]
+    4597fe90  4597feb4  
+    4597fe94  4597feb0  
+    4597fe98  4597fea8  
+    4597fe9c  a9d1b507  /system/lib/libutils.so
+#07 4597fea0  00000000  
+    4597fea4  00000000  
+    4597fea8  0012f178  [heap]
+    4597feac  0014e0e8  [heap]
+    4597feb0  00000002  
+    4597feb4  0012f178  [heap]
+    4597feb8  fffffff8  
+    4597febc  00153d90  [heap]
+    4597fec0  fffffff8  
+    4597fec4  0012f178  [heap]
+    4597fec8  a9d1b49d  /system/lib/libutils.so
+    4597fecc  a9d1b94d  /system/lib/libutils.so
+#08 4597fed0  00000000  
+    4597fed4  a9d1b8e5  /system/lib/libutils.so
+    4597fed8  0012df78  [heap]
+    4597fedc  4597ff00  
+    4597fee0  a9d1b8e5  /system/lib/libutils.so
+    4597fee4  0012df78  [heap]
+    4597fee8  00000078  
+    4597feec  afe10004  /system/lib/libc.so
+#09 4597fef0  afe38e08  /system/lib/libc.so
+    4597fef4  4597ff00  
+    4597fef8  00153da8  [heap]
+    4597fefc  afe0fad8  /system/lib/libc.so
+#10 4597ff00  4597ff00  
+    4597ff04  00153da8  [heap]
+    4597ff08  00000002  
+    4597ff0c  00000000  
+    4597ff10  00000000  
+    4597ff14  00000000  
+    4597ff18  00000000  
+    4597ff1c  0014e328  [heap]
+    4597ff20  00000000  
+    4597ff24  00000000  
+    4597ff28  00000000  
+    4597ff2c  00000000  
+    4597ff30  00000000  
+    4597ff34  00000000  
+    4597ff38  00000000  
+    4597ff3c  00000000  
+    4597ff40  00000000  
+    4597ff44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1962, tid: 1962
+ r0 fffffe00  r1 00000000  r2 00000000  r3 00000000
+ r4 0012f45c  r5 0012f460  r6 00000000  r7 000000f0
+ r8 be90e910  r9 41253e9c  10 41253e88  fp 00000000
+ ip acd295f0  sp be90e7d8  lr afe0f690  pc afe0da04  cpsr 60000010
+         #00  pc 0000da04  /system/lib/libc.so
+         #01  pc 0000f68c  /system/lib/libc.so
+         #02  pc 0000f714  /system/lib/libc.so
+         #03  pc 00016f66  /system/lib/libsurfaceflinger.so
+         #04  pc 0001fd88  /system/lib/libsurfaceflinger.so
+         #05  pc 000228b2  /system/lib/libsurfaceflinger.so
+         #06  pc 00013e9a  /system/lib/libutils.so
+         #07  pc 0002279e  /system/lib/libsurfaceflinger.so
+         #08  pc 00001256  /system/lib/libsystem_server.so
+         #09  pc 00003324  /system/lib/libandroid_servers.so
+         #10  pc 0000f174  /system/lib/libdvm.so
+         #11  pc 00038aa8  /system/lib/libdvm.so
+         #12  pc 00013e88  /system/lib/libdvm.so
+         #13  pc 00019ab8  /system/lib/libdvm.so
+         #14  pc 00018ef0  /system/lib/libdvm.so
+         #15  pc 0004e422  /system/lib/libdvm.so
+         #16  pc 00056122  /system/lib/libdvm.so
+         #17  pc 00013e88  /system/lib/libdvm.so
+         #18  pc 00019ab8  /system/lib/libdvm.so
+         #19  pc 00018ef0  /system/lib/libdvm.so
+         #20  pc 0004e732  /system/lib/libdvm.so
+         #21  pc 0003b210  /system/lib/libdvm.so
+         #22  pc 0002adbc  /system/lib/libandroid_runtime.so
+         #23  pc 0002c310  /system/lib/libandroid_runtime.so
+         #24  pc 00008cae  /system/bin/app_process
+         #25  pc 0000c2c6  /system/lib/libc.so
+         #26  pc b00018aa  /system/bin/linker
+
+code around pc:
+afe0d9f4 e1a02001 e3a01000 e3a070f0 ef000000 
+afe0da04 e8bd0090 e12fff1e e92d0090 e1a02001 
+afe0da14 e3a01001 e3a070f0 ef000000 e8bd0090 
+
+code around lr:
+afe0f680 e1a01007 e1a02006 e1a00005 ebfff8d6 
+afe0f690 e1a05000 e1a00004 ebffff38 e375006e 
+afe0f6a0 03a0006e 13a00000 e8bd81f0 eaffffec 
+
+stack:
+    be90e798  00000000  
+    be90e79c  a9d1b7df  /system/lib/libutils.so
+    be90e7a0  afe3bb74  
+    be90e7a4  afe3b9f8  
+    be90e7a8  00000000  
+    be90e7ac  40000004  /dev/ashmem/system_properties (deleted)
+    be90e7b0  00000003  
+    be90e7b4  fffffff8  
+    be90e7b8  00000001  
+    be90e7bc  acd23250  /system/lib/libsurfaceflinger.so
+    be90e7c0  00000000  
+    be90e7c4  afe0f2c0  /system/lib/libc.so
+    be90e7c8  0012f45c  [heap]
+    be90e7cc  0012f460  [heap]
+    be90e7d0  00000000  
+    be90e7d4  00000000  
+#00 be90e7d8  0012f45c  [heap]
+    be90e7dc  00000000  
+#01 be90e7e0  00000000  
+    be90e7e4  0012f45c  [heap]
+    be90e7e8  0012f460  [heap]
+    be90e7ec  be90e88c  [stack]
+    be90e7f0  be90e910  [stack]
+    be90e7f4  afe0f718  /system/lib/libc.so
+#02 be90e7f8  0012f45c  [heap]
+    be90e7fc  0012f460  [heap]
+    be90e800  a9d99c7d  /system/lib/libbinder.so
+    be90e804  0012f45c  [heap]
+    be90e808  0012f460  [heap]
+    be90e80c  a9d99c7d  /system/lib/libbinder.so
+    be90e810  be90e88c  [stack]
+    be90e814  acd16f69  /system/lib/libsurfaceflinger.so
+#03 be90e818  a9d1b829  /system/lib/libutils.so
+    be90e81c  0012f168  [heap]
+    be90e820  a9d99c7d  /system/lib/libbinder.so
+    be90e824  acd1fd8d  /system/lib/libsurfaceflinger.so
+#04 be90e828  0012f470  [heap]
+    be90e82c  0014e0e8  [heap]
+    be90e830  a9d99c7d  /system/lib/libbinder.so
+    be90e834  acd228b7  /system/lib/libsurfaceflinger.so
+#05 be90e838  0012f470  [heap]
+    be90e83c  a9d13e9d  /system/lib/libutils.so
+#06 be90e840  0012f168  [heap]
+    be90e844  00134e10  [heap]
+    be90e848  a9d99c7d  /system/lib/libbinder.so
+    be90e84c  acd227a1  /system/lib/libsurfaceflinger.so
+#07 be90e850  be90e88c  [stack]
+    be90e854  0012f16c  [heap]
+    be90e858  0014d458  [heap]
+    be90e85c  00134e10  [heap]
+    be90e860  a9a013f7  /system/lib/libsystem_server.so
+    be90e864  a9a02220  /system/lib/libsystem_server.so
+    be90e868  00000034  
+    be90e86c  a9a01259  /system/lib/libsystem_server.so
+#08 be90e870  ad00f300  /system/lib/libdvm.so
+    be90e874  ad05903f  /system/lib/libdvm.so
+    be90e878  0012d740  [heap]
+    be90e87c  00152fb0  [heap]
+    be90e880  0012d740  [heap]
+    be90e884  00134e10  [heap]
+    be90e888  00128d18  [heap]
+    be90e88c  00000031  
+    be90e890  0000bcf0  [heap]
+    be90e894  00000000  
+    be90e898  0000bcf0  [heap]
+    be90e89c  ad080f50  /system/lib/libdvm.so
+    be90e8a0  00000000  
+    be90e8a4  ad0596b5  /system/lib/libdvm.so
+    be90e8a8  00000000  
+    be90e8ac  00000001  
+    be90e8b0  445634a8  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90e8b4  00000000  
+    be90e8b8  429d82a7  /data/dalvik-cache/system@framework@services.jar@classes.dex
+    be90e8bc  00000000  
+    be90e8c0  429b17f8  /data/dalvik-cache/system@framework@services.jar@classes.dex
+    be90e8c4  00000001  
+    be90e8c8  429b17f8  /data/dalvik-cache/system@framework@services.jar@classes.dex
+    be90e8cc  00000000  
+    be90e8d0  000d527e  [heap]
+    be90e8d4  414cf69c  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90e8d8  be90e948  [stack]
+    be90e8dc  00000001  
+    be90e8e0  414cf69c  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90e8e4  ad060dbb  /system/lib/libdvm.so
+    be90e8e8  414cf69c  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90e8ec  9ad51ad5  
+    be90e8f0  00000000  
+    be90e8f4  be90e930  [stack]
+    be90e8f8  00000000  
+    be90e8fc  0000bcf0  [heap]
+    be90e900  41253ea4  
+    be90e904  ad903327  /system/lib/libandroid_servers.so
+#09 be90e908  be90e930  [stack]
+    be90e90c  ad00f178  /system/lib/libdvm.so
+#10 be90e910  00000001  
+    be90e914  414cf69c  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90e918  0000bcf0  [heap]
+    be90e91c  445634a8  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90e920  ad00f300  /system/lib/libdvm.so
+    be90e924  0000bcf0  [heap]
+    be90e928  be90e930  [stack]
+    be90e92c  ad038aab  /system/lib/libdvm.so
+#11 be90e930  41253e9c  
+    be90e934  429b294c  /data/dalvik-cache/system@framework@services.jar@classes.dex
+    be90e938  ad903321  /system/lib/libandroid_servers.so
+    be90e93c  be90e9b0  [stack]
+    be90e940  00000c3b  
+    be90e944  be90e9b0  [stack]
+    be90e948  41253e9c  
+    be90e94c  0000aa90  [heap]
+    be90e950  4005ea78  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    be90e954  4297606a  /data/dalvik-cache/system@framework@services.jar@classes.dex
+    be90e958  41253eb4  
+    be90e95c  be90e9a8  [stack]
+    be90e960  445634a8  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90e964  ad013e8c  /system/lib/libdvm.so
+#12 be90e968  00010a40  [heap]
+    be90e96c  41251200  
+    be90e970  be90e9a8  [stack]
+    be90e974  ad019a5c  /system/lib/libdvm.so
+    be90e978  be90ea30  [stack]
+    be90e97c  0000034c  
+    be90e980  0000bcf0  [heap]
+    be90e984  41253ee4  
+    be90e988  00000000  
+    be90e98c  ad019abc  /system/lib/libdvm.so
+#13 be90e990  ad00f300  /system/lib/libdvm.so
+    be90e994  be90e9a8  [stack]
+    be90e998  0000bcf0  [heap]
+    be90e99c  ad018ef4  /system/lib/libdvm.so
+#14 be90e9a0  00000040  
+    be90e9a4  44562018  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90e9a8  42976010  /data/dalvik-cache/system@framework@services.jar@classes.dex
+    be90e9ac  41253eb4  
+    be90e9b0  00000001  
+    be90e9b4  00000040  
+    be90e9b8  414cf704  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90e9bc  00045160  [heap]
+    be90e9c0  0000bcf0  [heap]
+    be90e9c4  be90e968  [stack]
+    be90e9c8  41251200  
+    be90e9cc  0000bcf8  [heap]
+    be90e9d0  ad081fa6  /system/lib/libdvm.so
+    be90e9d4  ad082034  
+    be90e9d8  00000000  
+    be90e9dc  00000000  
+    be90e9e0  44563401  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90e9e4  ad04e28f  /system/lib/libdvm.so
+    be90e9e8  00000001  
+    be90e9ec  ad080f50  /system/lib/libdvm.so
+    be90e9f0  00000001  
+    be90e9f4  414cf704  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90e9f8  ad00f300  /system/lib/libdvm.so
+    be90e9fc  ad04e425  /system/lib/libdvm.so
+#15 be90ea00  0000034c  
+    be90ea04  ad04461d  /system/lib/libdvm.so
+    be90ea08  afe38e08  /system/lib/libc.so
+    be90ea0c  ad080f50  /system/lib/libdvm.so
+    be90ea10  445638a0  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90ea14  00000000  
+    be90ea18  445649c8  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90ea1c  445638b0  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90ea20  445634a8  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90ea24  0000bcf0  [heap]
+    be90ea28  00000001  
+    be90ea2c  00000001  
+    be90ea30  445649b8  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90ea34  ad017334  /system/lib/libdvm.so
+    be90ea38  00000004  
+    be90ea3c  445634a8  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90ea40  ad080f50  /system/lib/libdvm.so
+    be90ea44  00000000  
+    be90ea48  00000000  
+    be90ea4c  ad056127  /system/lib/libdvm.so
+#16 be90ea50  40012400  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    be90ea54  00000000  
+    be90ea58  0000034c  
+    be90ea5c  be90ead0  [stack]
+    be90ea60  445649b8  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90ea64  445638a0  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90ea68  40012400  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    be90ea6c  00000000  
+    be90ea70  00004423  
+    be90ea74  41a0c408  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    be90ea78  41253f2c  
+    be90ea7c  be90eac8  [stack]
+    be90ea80  4000aab8  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    be90ea84  ad013e8c  /system/lib/libdvm.so
+#17 be90ea88  be90eac0  [stack]
+    be90ea8c  41251200  
+    be90ea90  be90eac8  [stack]
+    be90ea94  ad019a5c  /system/lib/libdvm.so
+    be90ea98  be90eb60  [stack]
+    be90ea9c  0000034c  
+    be90eaa0  00000000  
+    be90eaa4  00000000  
+    be90eaa8  00000000  
+    be90eaac  ad019abc  /system/lib/libdvm.so
+#18 be90eab0  be90eac0  [stack]
+    be90eab4  be90eac8  [stack]
+    be90eab8  0000bcf0  [heap]
+    be90eabc  ad018ef4  /system/lib/libdvm.so
+#19 be90eac0  412bda34  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90eac4  424ee2e0  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    be90eac8  422dd41c  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    be90eacc  41253fa0  
+    be90ead0  44564948  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    be90ead4  00000007  
+    be90ead8  4125e108  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90eadc  00015e50  [heap]
+    be90eae0  0000bcf0  [heap]
+    be90eae4  be90ea88  [stack]
+    be90eae8  41251200  
+    be90eaec  0000bcf8  [heap]
+    be90eaf0  ad081fa6  /system/lib/libdvm.so
+    be90eaf4  ad082034  
+    be90eaf8  00000000  
+    be90eafc  00000000  
+    be90eb00  40026701  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    be90eb04  ad04e28f  /system/lib/libdvm.so
+    be90eb08  00000009  
+    be90eb0c  be90eb98  [stack]
+    be90eb10  412bda20  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90eb14  424fc295  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    be90eb18  00000000  
+    be90eb1c  ad04e735  /system/lib/libdvm.so
+#20 be90eb20  be90eb38  [stack]
+    be90eb24  ad080f50  /system/lib/libdvm.so
+    be90eb28  00000001  
+    be90eb2c  0000bcf0  [heap]
+    be90eb30  424fc293  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    be90eb34  424fc295  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    be90eb38  00000001  
+    be90eb3c  00000007  
+    be90eb40  400267a0  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    be90eb44  0000bcf0  [heap]
+    be90eb48  be90eb94  [stack]
+    be90eb4c  412bda20  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90eb50  400267a0  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    be90eb54  ad03b215  /system/lib/libdvm.so
+#21 be90eb58  be90eb60  [stack]
+    be90eb5c  be90eb94  [stack]
+    be90eb60  412bda20  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90eb64  412bda20  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90eb68  ad03b1f1  /system/lib/libdvm.so
+    be90eb6c  ad07fce0  /system/lib/libdvm.so
+    be90eb70  000878f0  [heap]
+    be90eb74  ad32adbf  /system/lib/libandroid_runtime.so
+#22 be90eb78  ad366e70  /system/lib/libandroid_runtime.so
+    be90eb7c  be90eb94  [stack]
+    be90eb80  000878f0  [heap]
+    be90eb84  ad03c48d  /system/lib/libdvm.so
+    be90eb88  ad384088  /system/lib/libandroid_runtime.so
+    be90eb8c  ad32c315  /system/lib/libandroid_runtime.so
+    be90eb90  412bda20  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    be90eb94  4002b0f8  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+#23 be90eb98  00000000  
+    be90eb9c  4002b0f8  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    be90eba0  00008dd7  /system/bin/app_process
+    be90eba4  00000001  
+    be90eba8  be90ebbc  [stack]
+    be90ebac  afb059a1  /system/lib/libcutils.so
+    be90ebb0  00000000  
+    be90ebb4  b000fad0  /system/bin/linker
+    be90ebb8  afe3bb74  
+    be90ebbc  afe0f300  /system/lib/libc.so
+    be90ebc0  00000001  
+    be90ebc4  a9d1bf5b  /system/lib/libutils.so
+    be90ebc8  00000003  
+    be90ebcc  00000000  
+    be90ebd0  0000a950  [heap]
+    be90ebd4  be90ec9c  [stack]
+    be90ebd8  be90ec4c  [stack]
+    be90ebdc  00000001  
+    be90ebe0  00000000  
+    be90ebe4  a9d1c02f  /system/lib/libutils.so
+    be90ebe8  00000000  
+    be90ebec  be90ec18  [stack]
+    be90ebf0  ac13dd30  /system/lib/libskia.so
+    be90ebf4  be90ec9c  [stack]
+    be90ebf8  00000001  
+    be90ebfc  be90ec18  [stack]
+    be90ec00  00000004  
+    be90ec04  a9d1c067  /system/lib/libutils.so
+    be90ec08  be90ec9c  [stack]
+    be90ec0c  ad32b9d1  /system/lib/libandroid_runtime.so
+    be90ec10  0001737c  [heap]
+    be90ec14  00000000  
+    be90ec18  be90eda7  [stack]
+    be90ec1c  0000aa90  [heap]
+    be90ec20  be90ec48  [stack]
+    be90ec24  00008dba  /system/bin/app_process
+    be90ec28  00009148  /system/bin/app_process
+    be90ec2c  00000001  
+    be90ec30  fffffc72  
+    be90ec34  00008cb1  /system/bin/app_process
+#24 be90ec38  00000000  
+    be90ec3c  00000003  
+    be90ec40  be90ed8f  [stack]
+    be90ec44  be90edbc  [stack]
+    be90ec48  00009028  /system/bin/app_process
+    be90ec4c  ad383520  /system/lib/libandroid_runtime.so
+    be90ec50  0000a960  [heap]
+    be90ec54  0000000a  
+    be90ec58  00000000  
+    be90ec5c  00000008  
+    be90ec60  be90edb0  [stack]
+    be90ec64  00000000  
+    be90ec68  00000000  
+    be90ec6c  00000000  
+    be90ec70  00000000  
+    be90ec74  00000000  
+    be90ec78  00000000  
+    be90ec7c  00000000  
+    be90ec80  00000000  
+    be90ec84  afe0c2c9  /system/lib/libc.so
+#25 be90ec88  00000000  
+    be90ec8c  b00018af  /system/bin/linker
+#26 be90ec90  00000005  
+    be90ec94  be90ed8f  [stack]
+    be90ec98  be90eda7  [stack]
+    be90ec9c  be90edb0  [stack]
+    be90eca0  be90edbc  [stack]
+    be90eca4  be90edc5  [stack]
+    be90eca8  00000000  
+    be90ecac  be90eddb  [stack]
+    be90ecb0  be90ee0c  [stack]
+    be90ecb4  be90ee28  [stack]
+    be90ecb8  be90ee3b  [stack]
+    be90ecbc  be90ee50  [stack]
+    be90ecc0  be90ee65  [stack]
+    be90ecc4  be90ee80  [stack]
+    be90ecc8  be90ee93  [stack]
+    be90eccc  be90eeb0  [stack]
+    be90ecd0  be90eeca  [stack]
+    be90ecd4  be90eee3  [stack]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1962, tid: 1963
+ r0 fffffdfc  r1 00000000  r2 ffffffaf  r3 100ffe60
+ r4 ad081f84  r5 ad081f88  r6 100ffe60  r7 000000f0
+ r8 00100000  r9 ad042881  10 10000000  fp 0011c148
+ ip 399d2e98  sp 100ffe40  lr afe0f690  pc afe0da04  cpsr 60000010
+         #00  pc 0000da04  /system/lib/libc.so
+         #01  pc 0000f68c  /system/lib/libc.so
+         #02  pc 0000f714  /system/lib/libc.so
+         #03  pc 0004522a  /system/lib/libdvm.so
+         #04  pc 000428d4  /system/lib/libdvm.so
+         #05  pc 00010000  /system/lib/libc.so
+         #06  pc 0000fad4  /system/lib/libc.so
+
+code around pc:
+afe0d9f4 e1a02001 e3a01000 e3a070f0 ef000000 
+afe0da04 e8bd0090 e12fff1e e92d0090 e1a02001 
+afe0da14 e3a01001 e3a070f0 ef000000 e8bd0090 
+
+code around lr:
+afe0f680 e1a01007 e1a02006 e1a00005 ebfff8d6 
+afe0f690 e1a05000 e1a00004 ebffff38 e375006e 
+afe0f6a0 03a0006e 13a00000 e8bd81f0 eaffffec 
+
+stack:
+    100ffe00  ad081fa6  /system/lib/libdvm.so
+    100ffe04  ad082034  
+    100ffe08  00000000  
+    100ffe0c  00000000  
+    100ffe10  40009301  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    100ffe14  ad04e28f  /system/lib/libdvm.so
+    100ffe18  00010000  [heap]
+    100ffe1c  100ffe90  
+    100ffe20  00010000  [heap]
+    100ffe24  100ffe90  
+    100ffe28  00000000  
+    100ffe2c  afe0f2c0  /system/lib/libc.so
+    100ffe30  ad081f84  /system/lib/libdvm.so
+    100ffe34  ad081f88  /system/lib/libdvm.so
+    100ffe38  100ffe60  
+    100ffe3c  ffffffaf  
+#00 100ffe40  ad081f84  /system/lib/libdvm.so
+    100ffe44  ffffffaf  
+#01 100ffe48  100ffea8  
+    100ffe4c  ad081f84  /system/lib/libdvm.so
+    100ffe50  ad081f88  /system/lib/libdvm.so
+    100ffe54  100ffe60  
+    100ffe58  00100000  [heap]
+    100ffe5c  afe0f718  /system/lib/libc.so
+#02 100ffe60  00000004  
+    100ffe64  399d3898  
+    100ffe68  ad080f50  /system/lib/libdvm.so
+    100ffe6c  00000390  
+    100ffe70  ad081bf8  /system/lib/libdvm.so
+    100ffe74  ad080f50  /system/lib/libdvm.so
+    100ffe78  100ffea8  
+    100ffe7c  ad04522d  /system/lib/libdvm.so
+#03 100ffe80  ad081f8c  /system/lib/libdvm.so
+    100ffe84  ad081bf8  /system/lib/libdvm.so
+    100ffe88  0000034c  
+    100ffe8c  0012da90  [heap]
+    100ffe90  ad081ee4  /system/lib/libdvm.so
+    100ffe94  afe0f3b0  /system/lib/libc.so
+    100ffe98  0012da90  [heap]
+    100ffe9c  00000001  
+    100ffea0  00000071  
+    100ffea4  24883052  
+    100ffea8  00000076  
+    100ffeac  228ac104  
+    100ffeb0  000002f0  
+    100ffeb4  be90e9c4  [stack]
+    100ffeb8  0011c148  [heap]
+    100ffebc  000002f0  
+    100ffec0  000000bc  
+    100ffec4  ad0428d7  /system/lib/libdvm.so
+#04 100ffec8  100fff00  
+    100ffecc  00010002  [heap]
+    100ffed0  00147310  [heap]
+    100ffed4  4001ae70  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    100ffed8  0011c148  [heap]
+    100ffedc  100fff00  
+    100ffee0  ad042881  /system/lib/libdvm.so
+    100ffee4  0011c148  [heap]
+    100ffee8  00000078  
+    100ffeec  afe10004  /system/lib/libc.so
+#05 100ffef0  afe38e08  /system/lib/libc.so
+    100ffef4  100fff00  
+    100ffef8  0011bc08  [heap]
+    100ffefc  afe0fad8  /system/lib/libc.so
+#06 100fff00  100fff00  
+    100fff04  0011bc08  [heap]
+    100fff08  00000000  
+    100fff0c  00000000  
+    100fff10  00000000  
+    100fff14  0012da90  [heap]
+    100fff18  00000000  
+    100fff1c  00000000  
+    100fff20  00000000  
+    100fff24  00000000  
+    100fff28  00000000  
+    100fff2c  00000000  
+    100fff30  00000000  
+    100fff34  00000000  
+    100fff38  00000000  
+    100fff3c  00000000  
+    100fff40  00000000  
+    100fff44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1962, tid: 1964
+ r0 fffffffc  r1 00000000  r2 00000000  r3 00000008
+ r4 45581ea8  r5 0014ab48  r6 45581ea8  r7 000000b1
+ r8 00100000  r9 ad042881  10 45482000  fp 0011c038
+ ip ad08116c  sp 45581e80  lr afe126b3  pc afe0d32c  cpsr 00000010
+         #00  pc 0000d32c  /system/lib/libc.so
+         #01  pc 000126b0  /system/lib/libc.so
+         #02  pc 0003fc92  /system/lib/libdvm.so
+         #03  pc 000428d4  /system/lib/libdvm.so
+         #04  pc 00010000  /system/lib/libc.so
+         #05  pc 0000fad4  /system/lib/libc.so
+
+code around pc:
+afe0d31c e1a00000 e92d0090 e3a070b1 ef000000 
+afe0d32c e8bd0090 e1b00000 512fff1e ea008ac8 
+afe0d33c e1a00000 e92d0090 e3a07049 ef000000 
+
+code around lr:
+afe126a0 91002300 46689301 22002100 f7fa2308 
+afe126b0 2800ee38 f00cda0d 6802fb4f d0f22a0b 
+afe126c0 fb4af00c 2b046803 f00cd0ed 6800fb45 
+
+stack:
+    45581e40  44562238  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    45581e44  00000001  
+    45581e48  00000001  
+    45581e4c  00100000  [heap]
+    45581e50  00000000  
+    45581e54  afe0f2c0  /system/lib/libc.so
+    45581e58  ad080f50  /system/lib/libdvm.so
+    45581e5c  44562238  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    45581e60  00000001  
+    45581e64  00000001  
+    45581e68  00100000  [heap]
+    45581e6c  ad016f04  /system/lib/libdvm.so
+    45581e70  ad081bf8  /system/lib/libdvm.so
+    45581e74  0014ab48  [heap]
+    45581e78  0000000c  
+    45581e7c  ad0427e3  /system/lib/libdvm.so
+#00 45581e80  45581ea8  
+    45581e84  45581eac  
+#01 45581e88  00000204  
+    45581e8c  00000000  
+    45581e90  ad080f50  /system/lib/libdvm.so
+    45581e94  ad080f50  /system/lib/libdvm.so
+    45581e98  0014ab48  [heap]
+    45581e9c  ad03fc95  /system/lib/libdvm.so
+#02 45581ea0  00000000  
+    45581ea4  000000bc  
+    45581ea8  be90e9dc  [stack]
+    45581eac  00000204  
+    45581eb0  000002f0  
+    45581eb4  be90e9dc  [stack]
+    45581eb8  0011c038  [heap]
+    45581ebc  000002f0  
+    45581ec0  000000bc  
+    45581ec4  ad0428d7  /system/lib/libdvm.so
+#03 45581ec8  45581f00  
+    45581ecc  00010002  [heap]
+    45581ed0  0011c168  [heap]
+    45581ed4  4001ae70  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    45581ed8  0011c038  [heap]
+    45581edc  45581f00  
+    45581ee0  ad042881  /system/lib/libdvm.so
+    45581ee4  0011c038  [heap]
+    45581ee8  00000078  
+    45581eec  afe10004  /system/lib/libc.so
+#04 45581ef0  afe38e08  /system/lib/libc.so
+    45581ef4  45581f00  
+    45581ef8  0012d398  [heap]
+    45581efc  afe0fad8  /system/lib/libc.so
+#05 45581f00  45581f00  
+    45581f04  0012d398  [heap]
+    45581f08  00000000  
+    45581f0c  00000000  
+    45581f10  00000000  
+    45581f14  0014ab48  [heap]
+    45581f18  00000000  
+    45581f1c  00000000  
+    45581f20  00000000  
+    45581f24  00000000  
+    45581f28  00000000  
+    45581f2c  00000000  
+    45581f30  00000000  
+    45581f34  00000000  
+    45581f38  00000000  
+    45581f3c  00000000  
+    45581f40  00000000  
+    45581f44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1962, tid: 1965
+ r0 fffffe00  r1 c0186201  r2 4577fe28  r3 4577fe1c
+ r4 0012d4b8  r5 4577fe28  r6 0012d4e4  r7 00000036
+ r8 00100000  r9 a9d1b8e5  10 45680000  fp 00128db0
+ ip a9da8298  sp 4577fe00  lr afe1f5b9  pc afe0ca7c  cpsr 00000010
+         #00  pc 0000ca7c  /system/lib/libc.so
+         #01  pc 0001f5b6  /system/lib/libc.so
+         #02  pc 000183a8  /system/lib/libbinder.so
+         #03  pc 00018d34  /system/lib/libbinder.so
+         #04  pc 0001f424  /system/lib/libbinder.so
+         #05  pc 0001b522  /system/lib/libutils.so
+         #06  pc 0002ad06  /system/lib/libandroid_runtime.so
+         #07  pc 0001b94a  /system/lib/libutils.so
+         #08  pc 00010000  /system/lib/libc.so
+         #09  pc 0000fad4  /system/lib/libc.so
+
+code around pc:
+afe0ca6c e1a00000 e92d0090 e3a07036 ef000000 
+afe0ca7c e8bd0090 e1b00000 512fff1e ea008cf4 
+afe0ca8c e1a00000 e92d0090 e3a07091 ef000000 
+
+code around lr:
+afe1f5a8 ab03b082 9a04cb02 93013304 ea5cf7ed 
+afe1f5b8 bc08b002 4718b003 1c0eb570 00721c14 
+afe1f5c8 1c050d52 2a001c33 0072d112 2d00d101 
+
+stack:
+    4577fdc0  00000000  
+    4577fdc4  afe0f2c0  /system/lib/libc.so
+    4577fdc8  00000003  
+    4577fdcc  afe3b9bc  
+    4577fdd0  0014a7f0  [heap]
+    4577fdd4  c0000000  
+    4577fdd8  00100000  [heap]
+    4577fddc  afe0bca5  /system/lib/libc.so
+    4577fde0  00000001  
+    4577fde4  00100000  [heap]
+    4577fde8  00000000  
+    4577fdec  afe0f2c0  /system/lib/libc.so
+    4577fdf0  ad080f50  /system/lib/libdvm.so
+    4577fdf4  44564008  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    4577fdf8  00000001  
+    4577fdfc  0012d4e4  [heap]
+#00 4577fe00  0012d4b8  [heap]
+    4577fe04  0012d514  [heap]
+#01 4577fe08  0012d514  [heap]
+    4577fe0c  4577fe1c  
+    4577fe10  a9d983ab  /system/lib/libbinder.so
+    4577fe14  c0186201  
+    4577fe18  4577fe28  
+    4577fe1c  4577fe28  
+#02 4577fe20  00000001  
+    4577fe24  00000001  
+    4577fe28  00000000  
+    4577fe2c  00000000  
+    4577fe30  0014a7f0  [heap]
+    4577fe34  00000100  
+    4577fe38  00000000  
+    4577fe3c  0014a6e8  [heap]
+    4577fe40  0012d4b8  [heap]
+    4577fe44  0012d4b8  [heap]
+    4577fe48  00000000  
+    4577fe4c  0012d4e4  [heap]
+    4577fe50  00000000  
+    4577fe54  a9d98d39  /system/lib/libbinder.so
+#03 4577fe58  0012d514  [heap]
+    4577fe5c  00000001  
+    4577fe60  0012d4bc  [heap]
+    4577fe64  0012d4d0  [heap]
+    4577fe68  4577fe90  
+    4577fe6c  00128d7d  [heap]
+    4577fe70  4577fe9c  
+    4577fe74  4577fe98  
+    4577fe78  4577fe90  
+    4577fe7c  a9d9f429  /system/lib/libbinder.so
+#04 4577fe80  00128d78  [heap]
+    4577fe84  a9d1b525  /system/lib/libutils.so
+#05 4577fe88  ad32ace5  /system/lib/libandroid_runtime.so
+    4577fe8c  ad0388a3  /system/lib/libdvm.so
+    4577fe90  00128d78  [heap]
+    4577fe94  0012d460  [heap]
+    4577fe98  00000002  
+    4577fe9c  00128d78  [heap]
+    4577fea0  0014ac60  [heap]
+    4577fea4  00128d78  [heap]
+    4577fea8  0014ac60  [heap]
+    4577feac  a9d1b49d  /system/lib/libutils.so
+    4577feb0  ad32ace5  /system/lib/libandroid_runtime.so
+    4577feb4  ad32ad09  /system/lib/libandroid_runtime.so
+#06 4577feb8  00000000  
+    4577febc  00128db0  [heap]
+    4577fec0  00123aa0  [heap]
+    4577fec4  00000000  
+    4577fec8  0014e328  [heap]
+    4577fecc  a9d1b94d  /system/lib/libutils.so
+#07 4577fed0  00000000  
+    4577fed4  a9d1b8e5  /system/lib/libutils.so
+    4577fed8  00128db0  [heap]
+    4577fedc  4577ff00  
+    4577fee0  a9d1b8e5  /system/lib/libutils.so
+    4577fee4  00128db0  [heap]
+    4577fee8  00000078  
+    4577feec  afe10004  /system/lib/libc.so
+#08 4577fef0  afe38e08  /system/lib/libc.so
+    4577fef4  4577ff00  
+    4577fef8  00123ab8  [heap]
+    4577fefc  afe0fad8  /system/lib/libc.so
+#09 4577ff00  4577ff00  
+    4577ff04  00123ab8  [heap]
+    4577ff08  00000002  
+    4577ff0c  00000000  
+    4577ff10  00000000  
+    4577ff14  0012d5c8  [heap]
+    4577ff18  0012d4b8  [heap]
+    4577ff1c  00000000  
+    4577ff20  00000000  
+    4577ff24  00000000  
+    4577ff28  00000000  
+    4577ff2c  00000000  
+    4577ff30  00000000  
+    4577ff34  00000000  
+    4577ff38  00000000  
+    4577ff3c  00000000  
+    4577ff40  00000000  
+    4577ff44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1962, tid: 1966
+ r0 fffffe00  r1 c0186201  r2 4587fe28  r3 4587fe1c
+ r4 0014aa30  r5 4587fe28  r6 0014aa5c  r7 00000036
+ r8 00100000  r9 a9d1b8e5  10 45780000  fp 0012d570
+ ip a9da8298  sp 4587fe00  lr afe1f5b9  pc afe0ca7c  cpsr 00000010
+         #00  pc 0000ca7c  /system/lib/libc.so
+         #01  pc 0001f5b6  /system/lib/libc.so
+         #02  pc 000183a8  /system/lib/libbinder.so
+         #03  pc 00018d34  /system/lib/libbinder.so
+         #04  pc 0001f424  /system/lib/libbinder.so
+         #05  pc 0001b522  /system/lib/libutils.so
+         #06  pc 0002ad06  /system/lib/libandroid_runtime.so
+         #07  pc 0001b94a  /system/lib/libutils.so
+         #08  pc 00010000  /system/lib/libc.so
+         #09  pc 0000fad4  /system/lib/libc.so
+
+code around pc:
+afe0ca6c e1a00000 e92d0090 e3a07036 ef000000 
+afe0ca7c e8bd0090 e1b00000 512fff1e ea008cf4 
+afe0ca8c e1a00000 e92d0090 e3a07091 ef000000 
+
+code around lr:
+afe1f5a8 ab03b082 9a04cb02 93013304 ea5cf7ed 
+afe1f5b8 bc08b002 4718b003 1c0eb570 00721c14 
+afe1f5c8 1c050d52 2a001c33 0072d112 2d00d101 
+
+stack:
+    4587fdc0  00000000  
+    4587fdc4  afe0f2c0  /system/lib/libc.so
+    4587fdc8  00000003  
+    4587fdcc  afe3b9bc  
+    4587fdd0  0014ae80  [heap]
+    4587fdd4  c0000000  
+    4587fdd8  00100000  [heap]
+    4587fddc  afe0bca5  /system/lib/libc.so
+    4587fde0  00000001  
+    4587fde4  00100000  [heap]
+    4587fde8  00000000  
+    4587fdec  afe0f2c0  /system/lib/libc.so
+    4587fdf0  ad080f50  /system/lib/libdvm.so
+    4587fdf4  44564ba0  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+    4587fdf8  00000001  
+    4587fdfc  0014aa5c  [heap]
+#00 4587fe00  0014aa30  [heap]
+    4587fe04  0014aa8c  [heap]
+#01 4587fe08  0014aa8c  [heap]
+    4587fe0c  4587fe1c  
+    4587fe10  a9d983ab  /system/lib/libbinder.so
+    4587fe14  c0186201  
+    4587fe18  4587fe28  
+    4587fe1c  4587fe28  
+#02 4587fe20  00000001  
+    4587fe24  00000001  
+    4587fe28  00000000  
+    4587fe2c  00000000  
+    4587fe30  0014ae80  [heap]
+    4587fe34  00000100  
+    4587fe38  00000000  
+    4587fe3c  0014ad78  [heap]
+    4587fe40  0014aa30  [heap]
+    4587fe44  0014aa30  [heap]
+    4587fe48  00000000  
+    4587fe4c  0014aa5c  [heap]
+    4587fe50  00000000  
+    4587fe54  a9d98d39  /system/lib/libbinder.so
+#03 4587fe58  0014aa8c  [heap]
+    4587fe5c  00000000  
+    4587fe60  0014aa34  [heap]
+    4587fe64  0014aa48  [heap]
+    4587fe68  4587fe90  
+    4587fe6c  001229b5  [heap]
+    4587fe70  4587fe9c  
+    4587fe74  4587fe98  
+    4587fe78  4587fe90  
+    4587fe7c  a9d9f429  /system/lib/libbinder.so
+#04 4587fe80  001229b0  [heap]
+    4587fe84  a9d1b525  /system/lib/libutils.so
+#05 4587fe88  ad32ace5  /system/lib/libandroid_runtime.so
+    4587fe8c  ad0388a3  /system/lib/libdvm.so
+    4587fe90  001229b0  [heap]
+    4587fe94  00123aa0  [heap]
+    4587fe98  00000002  
+    4587fe9c  001229b0  [heap]
+    4587fea0  0012d558  [heap]
+    4587fea4  001229b0  [heap]
+    4587fea8  0012d558  [heap]
+    4587feac  a9d1b49d  /system/lib/libutils.so
+    4587feb0  ad32ace5  /system/lib/libandroid_runtime.so
+    4587feb4  ad32ad09  /system/lib/libandroid_runtime.so
+#06 4587feb8  00000000  
+    4587febc  00134db8  [heap]
+    4587fec0  0012d588  [heap]
+    4587fec4  00000000  
+    4587fec8  0014e328  [heap]
+    4587fecc  a9d1b94d  /system/lib/libutils.so
+#07 4587fed0  00000000  
+    4587fed4  a9d1b8e5  /system/lib/libutils.so
+    4587fed8  0012d570  [heap]
+    4587fedc  4587ff00  
+    4587fee0  a9d1b8e5  /system/lib/libutils.so
+    4587fee4  0012d570  [heap]
+    4587fee8  00000078  
+    4587feec  afe10004  /system/lib/libc.so
+#08 4587fef0  afe38e08  /system/lib/libc.so
+    4587fef4  4587ff00  
+    4587fef8  00123b38  [heap]
+    4587fefc  afe0fad8  /system/lib/libc.so
+#09 4587ff00  4587ff00  
+    4587ff04  00123b38  [heap]
+    4587ff08  00000000  
+    4587ff0c  00000000  
+    4587ff10  00000000  
+    4587ff14  0014a918  [heap]
+    4587ff18  0014aa30  [heap]
+    4587ff1c  00000000  
+    4587ff20  00000000  
+    4587ff24  00000000  
+    4587ff28  00000000  
+    4587ff2c  00000000  
+    4587ff30  00000000  
+    4587ff34  00000000  
+    4587ff38  00000000  
+    4587ff3c  00000000  
+    4587ff40  00000000  
+    4587ff44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1962, tid: 1969
+cannot get registers: No such process
+         #00  pc 0000c7dc  /system/lib/libc.so
+         #01  pc 00016f9e  /system/lib/libsurfaceflinger.so
+         #02  pc 0001b522  /system/lib/libutils.so
+         #03  pc 0001b94a  /system/lib/libutils.so
+         #04  pc 00010000  /system/lib/libc.so
+         #05  pc 0000fad4  /system/lib/libc.so
+
+code around pc:
+afe0c7cc e1a00000 e92d0090 e3a07003 ef000000 
+afe0c7dc e8bd0090 e1b00000 512fff1e ea008d9c 
+afe0c7ec e1a00000 e92d0090 e3a07004 ef000000 
+
+code around lr:
+acd16f90 1c06330f 1c309301 22019901 ed54f7fd 
+acd16fa0 28001c07 e076db00 e94af7fe 2a046802 
+acd16fb0 e070d000 f7fee7ef 6800e944 e9d0f7fe 
+
+stack:
+    45a7fe30  00000000  
+    45a7fe34  00000000  
+    45a7fe38  00000000  
+    45a7fe3c  00000000  
+    45a7fe40  00000000  
+    45a7fe44  00000000  
+    45a7fe48  00000000  
+    45a7fe4c  00000000  
+    45a7fe50  00000000  
+    45a7fe54  00000000  
+    45a7fe58  acd29118  /system/lib/libsurfaceflinger.so
+    45a7fe5c  45a7fea8  
+    45a7fe60  00000000  
+    45a7fe64  00000000  
+    45a7fe68  acd16f8f  /system/lib/libsurfaceflinger.so
+    45a7fe6c  00000000  
+#00 45a7fe70  acd29118  /system/lib/libsurfaceflinger.so
+    45a7fe74  45a7fea8  
+#01 45a7fe78  00153e68  [heap]
+    45a7fe7c  45a7fe87  
+    45a7fe80  acd29118  /system/lib/libsurfaceflinger.so
+    45a7fe84  45a7fea8  
+    45a7fe88  00153e30  [heap]
+    45a7fe8c  00153e30  [heap]
+    45a7fe90  45a7feb4  
+    45a7fe94  45a7feb0  
+    45a7fe98  45a7fea8  
+    45a7fe9c  a9d1b525  /system/lib/libutils.so
+#02 45a7fea0  00000000  
+    45a7fea4  00000000  
+    45a7fea8  00153e30  [heap]
+    45a7feac  00153d90  [heap]
+    45a7feb0  00000002  
+    45a7feb4  00153e30  [heap]
+    45a7feb8  fffffff8  
+    45a7febc  0013d120  [heap]
+    45a7fec0  fffffff8  
+    45a7fec4  00153e30  [heap]
+    45a7fec8  a9d1b49d  /system/lib/libutils.so
+    45a7fecc  a9d1b94d  /system/lib/libutils.so
+#03 45a7fed0  00000000  
+    45a7fed4  a9d1b8e5  /system/lib/libutils.so
+    45a7fed8  0012df78  [heap]
+    45a7fedc  45a7ff00  
+    45a7fee0  a9d1b8e5  /system/lib/libutils.so
+    45a7fee4  0012df78  [heap]
+    45a7fee8  00000078  
+    45a7feec  afe10004  /system/lib/libc.so
+#04 45a7fef0  afe38e08  /system/lib/libc.so
+    45a7fef4  45a7ff00  
+    45a7fef8  0013d138  [heap]
+    45a7fefc  afe0fad8  /system/lib/libc.so
+#05 45a7ff00  45a7ff00  
+    45a7ff04  0013d138  [heap]
+    45a7ff08  00000000  
+    45a7ff0c  00000000  
+    45a7ff10  00000000  
+    45a7ff14  00000000  
+    45a7ff18  00000000  
+    45a7ff1c  00000000  
+    45a7ff20  00000000  
+    45a7ff24  00000000  
+    45a7ff28  00000000  
+    45a7ff2c  00000000  
+    45a7ff30  00000000  
+    45a7ff34  00000000  
+    45a7ff38  00000000  
+    45a7ff3c  00000000  
+    45a7ff40  00000000  
+    45a7ff44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1962, tid: 1976
+cannot get registers: No such process
+         #00  pc 0000d32c  /system/lib/libc.so
+         #01  pc 000126b0  /system/lib/libc.so
+         #02  pc 00016c80  /system/lib/libsurfaceflinger.so
+         #03  pc 0001b522  /system/lib/libutils.so
+         #04  pc 0001b94a  /system/lib/libutils.so
+         #05  pc 00010000  /system/lib/libc.so
+         #06  pc 0000fad4  /system/lib/libc.so
+
+code around pc:
+afe0d31c e1a00000 e92d0090 e3a070b1 ef000000 
+afe0d32c e8bd0090 e1b00000 512fff1e ea008ac8 
+afe0d33c e1a00000 e92d0090 e3a07049 ef000000 
+
+code around lr:
+afe126a0 91002300 46689301 22002100 f7fa2308 
+afe126b0 2800ee38 f00cda0d 6802fb4f d0f22a0b 
+afe126c0 fb4af00c 2b046803 f00cd0ed 6800fb45 
+
+stack:
+    45b7fe20  00000000  
+    45b7fe24  00000000  
+    45b7fe28  00000000  
+    45b7fe2c  00000000  
+    45b7fe30  00000000  
+    45b7fe34  00000000  
+    45b7fe38  00000000  
+    45b7fe3c  00000000  
+    45b7fe40  00000000  
+    45b7fe44  00000000  
+    45b7fe48  00000000  
+    45b7fe4c  00000000  
+    45b7fe50  00000000  
+    45b7fe54  00000000  
+    45b7fe58  00000000  
+    45b7fe5c  00000000  
+#00 45b7fe60  45b7fe88  
+    45b7fe64  45b7fea8  
+#01 45b7fe68  40000800  /dev/ashmem/system_properties (deleted)
+    45b7fe6c  00000000  
+    45b7fe70  acd16df5  /system/lib/libsurfaceflinger.so
+    45b7fe74  0013d178  [heap]
+    45b7fe78  45b7fe8c  
+    45b7fe7c  acd16c83  /system/lib/libsurfaceflinger.so
+#02 45b7fe80  00000003  
+    45b7fe84  a9d13fc5  /system/lib/libutils.so
+    45b7fe88  00000000  
+    45b7fe8c  40000800  /dev/ashmem/system_properties (deleted)
+    45b7fe90  0013d178  [heap]
+    45b7fe94  0013d178  [heap]
+    45b7fe98  45b7feb4  
+    45b7fe9c  a9d1b525  /system/lib/libutils.so
+#03 45b7fea0  00000000  
+    45b7fea4  00000000  
+    45b7fea8  0013d178  [heap]
+    45b7feac  0013d1c8  [heap]
+    45b7feb0  00000002  
+    45b7feb4  0013d178  [heap]
+    45b7feb8  fffffff8  
+    45b7febc  0012df78  [heap]
+    45b7fec0  fffffff8  
+    45b7fec4  0013d178  [heap]
+    45b7fec8  a9d1b49d  /system/lib/libutils.so
+    45b7fecc  a9d1b94d  /system/lib/libutils.so
+#04 45b7fed0  00000000  
+    45b7fed4  a9d1b8e5  /system/lib/libutils.so
+    45b7fed8  0013d120  [heap]
+    45b7fedc  45b7ff00  
+    45b7fee0  a9d1b8e5  /system/lib/libutils.so
+    45b7fee4  0013d120  [heap]
+    45b7fee8  00000078  
+    45b7feec  afe10004  /system/lib/libc.so
+#05 45b7fef0  afe38e08  /system/lib/libc.so
+    45b7fef4  45b7ff00  
+    45b7fef8  0013d1e0  [heap]
+    45b7fefc  afe0fad8  /system/lib/libc.so
+#06 45b7ff00  45b7ff00  
+    45b7ff04  0013d1e0  [heap]
+    45b7ff08  00000000  
+    45b7ff0c  00000000  
+    45b7ff10  00000000  
+    45b7ff14  00000000  
+    45b7ff18  00000000  
+    45b7ff1c  00000000  
+    45b7ff20  00000000  
+    45b7ff24  00000000  
+    45b7ff28  00000000  
+    45b7ff2c  00000000  
+    45b7ff30  00000000  
+    45b7ff34  00000000  
+    45b7ff38  00000000  
+    45b7ff3c  00000000  
+    45b7ff40  00000000  
+    45b7ff44  00000000  

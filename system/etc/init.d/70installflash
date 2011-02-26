@@ -1,0 +1,11 @@
+#!/system/bin/sh
+#install flushlite plugin
+if [ -e /system/lib/libflashliteplugin.so ];
+then
+    if [ ! -e /data/data/com.pineone.flashliteplugin/lib/libflashliteplugin.so ];
+    then
+	echo "--- Install flashlite lib";
+	mkdir -p /data/data/com.pineone.flashliteplugin/lib
+	cp /system/lib/libflashliteplugin.so /data/data/com.pineone.flashliteplugin/lib
+    fi;
+fi;

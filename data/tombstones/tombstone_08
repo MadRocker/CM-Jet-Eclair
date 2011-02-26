@@ -1,0 +1,174 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+pid: 1964, tid: 1964  >>> /system/bin/mediaserver <<<
+signal 11 (SIGSEGV), fault addr 00000010
+ r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+ r4 8069f1d4  r5 0000b030  r6 be99eb38  r7 0000b041
+ r8 00000000  r9 0000aec0  10 00000000  fp be99ebd4
+ ip 00000018  sp be99eb38  lr 806241a0  pc 8064905c  cpsr 00000010
+         #00  pc 0004905c  /system/lib/libaudio.so
+         #01  pc 0002419c  /system/lib/libaudio.so
+         #02  pc 00026fd4  /system/lib/libaudio.so
+         #03  pc 00027020  /system/lib/libaudio.so
+         #04  pc 0008ab16  /system/lib/libaudio.so
+         #05  pc 00022bc2  /system/lib/libaudioflinger.so
+         #06  pc 00022c46  /system/lib/libaudioflinger.so
+         #07  pc 0000879e  /system/bin/mediaserver
+         #08  pc 0000c2c6  /system/lib/libc.so
+         #09  pc b00018aa  /system/bin/linker
+
+code around pc:
+8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+8064905c e5b03010 e1530000 03a00000 12430004 
+8064906c e12fff1e e5902010 e2803010 e1520003 
+
+code around lr:
+80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+806241a0 e2504000 1a000004 ea00002d e1a00004 
+806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+
+stack:
+    be99eaf8  40000000  /dev/ashmem/system_properties (deleted)
+    be99eafc  afe2222b  /system/lib/libc.so
+    be99eb00  8068def0  /system/lib/libaudio.so
+    be99eb04  0000b041  [heap]
+    be99eb08  0000b041  [heap]
+    be99eb0c  00000000  
+    be99eb10  0000aec0  [heap]
+    be99eb14  00000000  
+    be99eb18  be99ebd4  [stack]
+    be99eb1c  0000b041  [heap]
+    be99eb20  00000003  
+    be99eb24  afb05a8b  /system/lib/libcutils.so
+    be99eb28  8069f1d4  /system/lib/libaudio.so
+    be99eb2c  0000b030  [heap]
+    be99eb30  df002777  
+    be99eb34  e3a070ad  
+#01 be99eb38  00000000  
+    be99eb3c  00000000  
+    be99eb40  00000000  
+    be99eb44  00000000  
+    be99eb48  00000000  
+    be99eb4c  00000000  
+    be99eb50  00000000  
+    be99eb54  00000000  
+    be99eb58  00000000  
+    be99eb5c  00000000  
+    be99eb60  00000000  
+    be99eb64  00000000  
+    be99eb68  00000000  
+    be99eb6c  00000000  
+    be99eb70  00000000  
+    be99eb74  00000000  
+    be99eb78  8069dec8  /system/lib/libaudio.so
+    be99eb7c  806240e4  /system/lib/libaudio.so
+    be99eb80  8069dd18  /system/lib/libaudio.so
+    be99eb84  afe0f2c0  /system/lib/libc.so
+    be99eb88  0000029c  
+    be99eb8c  0000036c  
+    be99eb90  0000aec0  [heap]
+    be99eb94  8069dd10  /system/lib/libaudio.so
+    be99eb98  8069f294  /system/lib/libaudio.so
+    be99eb9c  00000000  
+    be99eba0  8069ee68  /system/lib/libaudio.so
+    be99eba4  00000000  
+    be99eba8  00000000  
+    be99ebac  dd178784  
+    be99ebb0  40000000  /dev/ashmem/system_properties (deleted)
+    be99ebb4  0000ae88  [heap]
+    be99ebb8  00000000  
+    be99ebbc  0000aec0  [heap]
+    be99ebc0  00000000  
+    be99ebc4  00000000  
+    be99ebc8  00000000  
+    be99ebcc  00000000  
+    be99ebd0  00000000  
+    be99ebd4  80626fd8  /system/lib/libaudio.so
+#02 be99ebd8  0000ae88  [heap]
+    be99ebdc  8069ee68  /system/lib/libaudio.so
+    be99ebe0  ab02c508  /system/lib/libaudioflinger.so
+    be99ebe4  80627024  /system/lib/libaudio.so
+#03 be99ebe8  0000ae5c  [heap]
+    be99ebec  8068ab19  /system/lib/libaudio.so
+#04 be99ebf0  afe3bbb0  
+    be99ebf4  00000000  
+    be99ebf8  00000000  
+    be99ebfc  00002da8  
+    be99ec00  afe3bb74  
+    be99ec04  afe0f3b0  /system/lib/libc.so
+    be99ec08  00000000  
+    be99ec0c  afe0f2c0  /system/lib/libc.so
+    be99ec10  00000003  
+    be99ec14  afe3b9bc  
+    be99ec18  0000ae70  [heap]
+    be99ec1c  c0000000  
+    be99ec20  00000000  
+    be99ec24  afe0bca5  /system/lib/libc.so
+    be99ec28  0000ad40  [heap]
+    be99ec2c  c0000000  
+    be99ec30  00000000  
+    be99ec34  afe0bca5  /system/lib/libc.so
+    be99ec38  00000000  
+    be99ec3c  afe0bca5  /system/lib/libc.so
+    be99ec40  0000df20  [heap]
+    be99ec44  a9d1bbb3  /system/lib/libutils.so
+    be99ec48  0000ae30  [heap]
+    be99ec4c  00010a1a  [heap]
+    be99ec50  0000df20  [heap]
+    be99ec54  dd178784  
+    be99ec58  0000ae5c  [heap]
+    be99ec5c  0000ad80  [heap]
+    be99ec60  ab02c508  /system/lib/libaudioflinger.so
+    be99ec64  ab022bc5  /system/lib/libaudioflinger.so
+#05 be99ec68  00000000  
+    be99ec6c  00000000  
+    be99ec70  00000000  
+    be99ec74  00000000  
+    be99ec78  00000001  
+    be99ec7c  ab026697  /system/lib/libaudioflinger.so
+    be99ec80  00000000  
+    be99ec84  be99ecb0  [stack]
+    be99ec88  00000000  
+    be99ec8c  00000000  
+    be99ec90  0000ad08  [heap]
+    be99ec94  0000ad80  [heap]
+    be99ec98  0000ad08  [heap]
+    be99ec9c  00000000  
+    be99eca0  a9d99c7d  /system/lib/libbinder.so
+    be99eca4  ab022c4b  /system/lib/libaudioflinger.so
+#06 be99eca8  0000ad08  [heap]
+    be99ecac  dd178784  
+    be99ecb0  0000ad50  [heap]
+    be99ecb4  0000ad08  [heap]
+    be99ecb8  00000000  
+    be99ecbc  be99ecd4  [stack]
+    be99ecc0  00000000  
+    be99ecc4  00000000  
+    be99ecc8  00000000  
+    be99eccc  000087a1  /system/bin/mediaserver
+#07 be99ecd0  00000000  
+    be99ecd4  00000000  
+    be99ecd8  0000ad08  [heap]
+    be99ecdc  0000a950  [heap]
+    be99ece0  00000000  
+    be99ece4  afe0c2c9  /system/lib/libc.so
+#08 be99ece8  00000000  
+    be99ecec  b00018af  /system/bin/linker
+#09 be99ecf0  00000001  
+    be99ecf4  be99eddc  [stack]
+    be99ecf8  00000000  
+    be99ecfc  be99edf4  [stack]
+    be99ed00  be99ee25  [stack]
+    be99ed04  be99ee41  [stack]
+    be99ed08  be99ee54  [stack]
+    be99ed0c  be99ee69  [stack]
+    be99ed10  be99ee7e  [stack]
+    be99ed14  be99ee99  [stack]
+    be99ed18  be99eeac  [stack]
+    be99ed1c  be99eec9  [stack]
+    be99ed20  be99eee3  [stack]
+    be99ed24  be99eefc  [stack]
+    be99ed28  be99efa3  [stack]
+    be99ed2c  be99efc1  [stack]
+    be99ed30  00000000  
+    be99ed34  00000010  

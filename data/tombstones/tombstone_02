@@ -1,0 +1,174 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+pid: 1954, tid: 1954  >>> /system/bin/mediaserver <<<
+signal 11 (SIGSEGV), fault addr 00000010
+ r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+ r4 8069f1d4  r5 0000b030  r6 bed47b38  r7 0000b041
+ r8 00000000  r9 0000aec0  10 00000000  fp bed47bd4
+ ip 00000018  sp bed47b38  lr 806241a0  pc 8064905c  cpsr 00000010
+         #00  pc 0004905c  /system/lib/libaudio.so
+         #01  pc 0002419c  /system/lib/libaudio.so
+         #02  pc 00026fd4  /system/lib/libaudio.so
+         #03  pc 00027020  /system/lib/libaudio.so
+         #04  pc 0008ab16  /system/lib/libaudio.so
+         #05  pc 00022bc2  /system/lib/libaudioflinger.so
+         #06  pc 00022c46  /system/lib/libaudioflinger.so
+         #07  pc 0000879e  /system/bin/mediaserver
+         #08  pc 0000c2c6  /system/lib/libc.so
+         #09  pc b00018aa  /system/bin/linker
+
+code around pc:
+8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+8064905c e5b03010 e1530000 03a00000 12430004 
+8064906c e12fff1e e5902010 e2803010 e1520003 
+
+code around lr:
+80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+806241a0 e2504000 1a000004 ea00002d e1a00004 
+806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+
+stack:
+    bed47af8  40000000  /dev/ashmem/system_properties (deleted)
+    bed47afc  afe2222b  /system/lib/libc.so
+    bed47b00  8068def0  /system/lib/libaudio.so
+    bed47b04  0000b041  [heap]
+    bed47b08  0000b041  [heap]
+    bed47b0c  00000000  
+    bed47b10  0000aec0  [heap]
+    bed47b14  00000000  
+    bed47b18  bed47bd4  [stack]
+    bed47b1c  0000b041  [heap]
+    bed47b20  00000003  
+    bed47b24  afb05a8b  /system/lib/libcutils.so
+    bed47b28  8069f1d4  /system/lib/libaudio.so
+    bed47b2c  0000b030  [heap]
+    bed47b30  df002777  
+    bed47b34  e3a070ad  
+#01 bed47b38  00000000  
+    bed47b3c  00000000  
+    bed47b40  00000000  
+    bed47b44  00000000  
+    bed47b48  00000000  
+    bed47b4c  00000000  
+    bed47b50  00000000  
+    bed47b54  00000000  
+    bed47b58  00000000  
+    bed47b5c  00000000  
+    bed47b60  00000000  
+    bed47b64  00000000  
+    bed47b68  00000000  
+    bed47b6c  00000000  
+    bed47b70  00000000  
+    bed47b74  00000000  
+    bed47b78  8069dec8  /system/lib/libaudio.so
+    bed47b7c  806240e4  /system/lib/libaudio.so
+    bed47b80  8069dd18  /system/lib/libaudio.so
+    bed47b84  afe0f2c0  /system/lib/libc.so
+    bed47b88  0000029c  
+    bed47b8c  0000036c  
+    bed47b90  0000aec0  [heap]
+    bed47b94  8069dd10  /system/lib/libaudio.so
+    bed47b98  8069f294  /system/lib/libaudio.so
+    bed47b9c  00000000  
+    bed47ba0  8069ee68  /system/lib/libaudio.so
+    bed47ba4  00000000  
+    bed47ba8  00000000  
+    bed47bac  13eb9a5a  
+    bed47bb0  40000000  /dev/ashmem/system_properties (deleted)
+    bed47bb4  0000ae88  [heap]
+    bed47bb8  00000000  
+    bed47bbc  0000aec0  [heap]
+    bed47bc0  00000000  
+    bed47bc4  00000000  
+    bed47bc8  00000000  
+    bed47bcc  00000000  
+    bed47bd0  00000000  
+    bed47bd4  80626fd8  /system/lib/libaudio.so
+#02 bed47bd8  0000ae88  [heap]
+    bed47bdc  8069ee68  /system/lib/libaudio.so
+    bed47be0  ab02c508  /system/lib/libaudioflinger.so
+    bed47be4  80627024  /system/lib/libaudio.so
+#03 bed47be8  0000ae5c  [heap]
+    bed47bec  8068ab19  /system/lib/libaudio.so
+#04 bed47bf0  afe3bbb0  
+    bed47bf4  00000000  
+    bed47bf8  00000000  
+    bed47bfc  00002da8  
+    bed47c00  afe3bb74  
+    bed47c04  afe0f3b0  /system/lib/libc.so
+    bed47c08  00000000  
+    bed47c0c  afe0f2c0  /system/lib/libc.so
+    bed47c10  00000003  
+    bed47c14  afe3b9bc  
+    bed47c18  0000ae70  [heap]
+    bed47c1c  c0000000  
+    bed47c20  00000000  
+    bed47c24  afe0bca5  /system/lib/libc.so
+    bed47c28  0000ad40  [heap]
+    bed47c2c  c0000000  
+    bed47c30  00000000  
+    bed47c34  afe0bca5  /system/lib/libc.so
+    bed47c38  00000000  
+    bed47c3c  afe0bca5  /system/lib/libc.so
+    bed47c40  0000df20  [heap]
+    bed47c44  a9d1bbb3  /system/lib/libutils.so
+    bed47c48  0000ae30  [heap]
+    bed47c4c  00010a1a  [heap]
+    bed47c50  0000df20  [heap]
+    bed47c54  13eb9a5a  
+    bed47c58  0000ae5c  [heap]
+    bed47c5c  0000ad80  [heap]
+    bed47c60  ab02c508  /system/lib/libaudioflinger.so
+    bed47c64  ab022bc5  /system/lib/libaudioflinger.so
+#05 bed47c68  00000000  
+    bed47c6c  00000000  
+    bed47c70  00000000  
+    bed47c74  00000000  
+    bed47c78  00000001  
+    bed47c7c  ab026697  /system/lib/libaudioflinger.so
+    bed47c80  00000000  
+    bed47c84  bed47cb0  [stack]
+    bed47c88  00000000  
+    bed47c8c  00000000  
+    bed47c90  0000ad08  [heap]
+    bed47c94  0000ad80  [heap]
+    bed47c98  0000ad08  [heap]
+    bed47c9c  00000000  
+    bed47ca0  a9d99c7d  /system/lib/libbinder.so
+    bed47ca4  ab022c4b  /system/lib/libaudioflinger.so
+#06 bed47ca8  0000ad08  [heap]
+    bed47cac  13eb9a5a  
+    bed47cb0  0000ad50  [heap]
+    bed47cb4  0000ad08  [heap]
+    bed47cb8  00000000  
+    bed47cbc  bed47cd4  [stack]
+    bed47cc0  00000000  
+    bed47cc4  00000000  
+    bed47cc8  00000000  
+    bed47ccc  000087a1  /system/bin/mediaserver
+#07 bed47cd0  00000000  
+    bed47cd4  00000000  
+    bed47cd8  0000ad08  [heap]
+    bed47cdc  0000a950  [heap]
+    bed47ce0  00000000  
+    bed47ce4  afe0c2c9  /system/lib/libc.so
+#08 bed47ce8  00000000  
+    bed47cec  b00018af  /system/bin/linker
+#09 bed47cf0  00000001  
+    bed47cf4  bed47ddc  [stack]
+    bed47cf8  00000000  
+    bed47cfc  bed47df4  [stack]
+    bed47d00  bed47e25  [stack]
+    bed47d04  bed47e41  [stack]
+    bed47d08  bed47e54  [stack]
+    bed47d0c  bed47e69  [stack]
+    bed47d10  bed47e7e  [stack]
+    bed47d14  bed47e99  [stack]
+    bed47d18  bed47eac  [stack]
+    bed47d1c  bed47ec9  [stack]
+    bed47d20  bed47ee3  [stack]
+    bed47d24  bed47efc  [stack]
+    bed47d28  bed47fa3  [stack]
+    bed47d2c  bed47fc1  [stack]
+    bed47d30  00000000  
+    bed47d34  00000010  

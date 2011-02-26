@@ -1,0 +1,174 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+pid: 1959, tid: 1959  >>> /system/bin/mediaserver <<<
+signal 11 (SIGSEGV), fault addr 00000010
+ r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+ r4 8069f1d4  r5 0000b030  r6 bebc4b38  r7 0000b041
+ r8 00000000  r9 0000aec0  10 00000000  fp bebc4bd4
+ ip 00000018  sp bebc4b38  lr 806241a0  pc 8064905c  cpsr 00000010
+         #00  pc 0004905c  /system/lib/libaudio.so
+         #01  pc 0002419c  /system/lib/libaudio.so
+         #02  pc 00026fd4  /system/lib/libaudio.so
+         #03  pc 00027020  /system/lib/libaudio.so
+         #04  pc 0008ab16  /system/lib/libaudio.so
+         #05  pc 00022bc2  /system/lib/libaudioflinger.so
+         #06  pc 00022c46  /system/lib/libaudioflinger.so
+         #07  pc 0000879e  /system/bin/mediaserver
+         #08  pc 0000c2c6  /system/lib/libc.so
+         #09  pc b00018aa  /system/bin/linker
+
+code around pc:
+8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+8064905c e5b03010 e1530000 03a00000 12430004 
+8064906c e12fff1e e5902010 e2803010 e1520003 
+
+code around lr:
+80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+806241a0 e2504000 1a000004 ea00002d e1a00004 
+806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+
+stack:
+    bebc4af8  40000000  /dev/ashmem/system_properties (deleted)
+    bebc4afc  afe2222b  /system/lib/libc.so
+    bebc4b00  8068def0  /system/lib/libaudio.so
+    bebc4b04  0000b041  [heap]
+    bebc4b08  0000b041  [heap]
+    bebc4b0c  00000000  
+    bebc4b10  0000aec0  [heap]
+    bebc4b14  00000000  
+    bebc4b18  bebc4bd4  [stack]
+    bebc4b1c  0000b041  [heap]
+    bebc4b20  00000003  
+    bebc4b24  afb05a8b  /system/lib/libcutils.so
+    bebc4b28  8069f1d4  /system/lib/libaudio.so
+    bebc4b2c  0000b030  [heap]
+    bebc4b30  df002777  
+    bebc4b34  e3a070ad  
+#01 bebc4b38  00000000  
+    bebc4b3c  00000000  
+    bebc4b40  00000000  
+    bebc4b44  00000000  
+    bebc4b48  00000000  
+    bebc4b4c  00000000  
+    bebc4b50  00000000  
+    bebc4b54  00000000  
+    bebc4b58  00000000  
+    bebc4b5c  00000000  
+    bebc4b60  00000000  
+    bebc4b64  00000000  
+    bebc4b68  00000000  
+    bebc4b6c  00000000  
+    bebc4b70  00000000  
+    bebc4b74  00000000  
+    bebc4b78  8069dec8  /system/lib/libaudio.so
+    bebc4b7c  806240e4  /system/lib/libaudio.so
+    bebc4b80  8069dd18  /system/lib/libaudio.so
+    bebc4b84  afe0f2c0  /system/lib/libc.so
+    bebc4b88  0000029c  
+    bebc4b8c  0000036c  
+    bebc4b90  0000aec0  [heap]
+    bebc4b94  8069dd10  /system/lib/libaudio.so
+    bebc4b98  8069f294  /system/lib/libaudio.so
+    bebc4b9c  00000000  
+    bebc4ba0  8069ee68  /system/lib/libaudio.so
+    bebc4ba4  00000000  
+    bebc4ba8  00000000  
+    bebc4bac  a76d88eb  
+    bebc4bb0  40000000  /dev/ashmem/system_properties (deleted)
+    bebc4bb4  0000ae88  [heap]
+    bebc4bb8  00000000  
+    bebc4bbc  0000aec0  [heap]
+    bebc4bc0  00000000  
+    bebc4bc4  00000000  
+    bebc4bc8  00000000  
+    bebc4bcc  00000000  
+    bebc4bd0  00000000  
+    bebc4bd4  80626fd8  /system/lib/libaudio.so
+#02 bebc4bd8  0000ae88  [heap]
+    bebc4bdc  8069ee68  /system/lib/libaudio.so
+    bebc4be0  ab02c508  /system/lib/libaudioflinger.so
+    bebc4be4  80627024  /system/lib/libaudio.so
+#03 bebc4be8  0000ae5c  [heap]
+    bebc4bec  8068ab19  /system/lib/libaudio.so
+#04 bebc4bf0  afe3bbb0  
+    bebc4bf4  00000000  
+    bebc4bf8  00000000  
+    bebc4bfc  00002da8  
+    bebc4c00  afe3bb74  
+    bebc4c04  afe0f3b0  /system/lib/libc.so
+    bebc4c08  00000000  
+    bebc4c0c  afe0f2c0  /system/lib/libc.so
+    bebc4c10  00000003  
+    bebc4c14  afe3b9bc  
+    bebc4c18  0000ae70  [heap]
+    bebc4c1c  c0000000  
+    bebc4c20  00000000  
+    bebc4c24  afe0bca5  /system/lib/libc.so
+    bebc4c28  0000ad40  [heap]
+    bebc4c2c  c0000000  
+    bebc4c30  00000000  
+    bebc4c34  afe0bca5  /system/lib/libc.so
+    bebc4c38  00000000  
+    bebc4c3c  afe0bca5  /system/lib/libc.so
+    bebc4c40  0000df20  [heap]
+    bebc4c44  a9d1bbb3  /system/lib/libutils.so
+    bebc4c48  0000ae30  [heap]
+    bebc4c4c  00010a1a  [heap]
+    bebc4c50  0000df20  [heap]
+    bebc4c54  a76d88eb  
+    bebc4c58  0000ae5c  [heap]
+    bebc4c5c  0000ad80  [heap]
+    bebc4c60  ab02c508  /system/lib/libaudioflinger.so
+    bebc4c64  ab022bc5  /system/lib/libaudioflinger.so
+#05 bebc4c68  00000000  
+    bebc4c6c  00000000  
+    bebc4c70  00000000  
+    bebc4c74  00000000  
+    bebc4c78  00000001  
+    bebc4c7c  ab026697  /system/lib/libaudioflinger.so
+    bebc4c80  00000000  
+    bebc4c84  bebc4cb0  [stack]
+    bebc4c88  00000000  
+    bebc4c8c  00000000  
+    bebc4c90  0000ad08  [heap]
+    bebc4c94  0000ad80  [heap]
+    bebc4c98  0000ad08  [heap]
+    bebc4c9c  00000000  
+    bebc4ca0  a9d99c7d  /system/lib/libbinder.so
+    bebc4ca4  ab022c4b  /system/lib/libaudioflinger.so
+#06 bebc4ca8  0000ad08  [heap]
+    bebc4cac  a76d88eb  
+    bebc4cb0  0000ad50  [heap]
+    bebc4cb4  0000ad08  [heap]
+    bebc4cb8  00000000  
+    bebc4cbc  bebc4cd4  [stack]
+    bebc4cc0  00000000  
+    bebc4cc4  00000000  
+    bebc4cc8  00000000  
+    bebc4ccc  000087a1  /system/bin/mediaserver
+#07 bebc4cd0  00000000  
+    bebc4cd4  00000000  
+    bebc4cd8  0000ad08  [heap]
+    bebc4cdc  0000a950  [heap]
+    bebc4ce0  00000000  
+    bebc4ce4  afe0c2c9  /system/lib/libc.so
+#08 bebc4ce8  00000000  
+    bebc4cec  b00018af  /system/bin/linker
+#09 bebc4cf0  00000001  
+    bebc4cf4  bebc4ddc  [stack]
+    bebc4cf8  00000000  
+    bebc4cfc  bebc4df4  [stack]
+    bebc4d00  bebc4e25  [stack]
+    bebc4d04  bebc4e41  [stack]
+    bebc4d08  bebc4e54  [stack]
+    bebc4d0c  bebc4e69  [stack]
+    bebc4d10  bebc4e7e  [stack]
+    bebc4d14  bebc4e99  [stack]
+    bebc4d18  bebc4eac  [stack]
+    bebc4d1c  bebc4ec9  [stack]
+    bebc4d20  bebc4ee3  [stack]
+    bebc4d24  bebc4efc  [stack]
+    bebc4d28  bebc4fa3  [stack]
+    bebc4d2c  bebc4fc1  [stack]
+    bebc4d30  00000000  
+    bebc4d34  00000010  

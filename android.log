@@ -1,0 +1,2883 @@
+I/DEBUG   ( 1818): debuggerd: Aug  4 2010 09:02:37
+I/vold    ( 1817): Android Volume Daemon version 2.0
+I/vold    ( 1817): New MMC card 'SU04G' (serial 37874466) added @ /devices/platform/s3c-sdhci.0/mmc_host/mmc0/mmc0:9ca8
+D/vold    ( 1817): mmc_bootstrap_card:filename /sys/devices/platform/s3c-sdhci.0/mmc_host/mmc0/mmc0:9ca8/block:mmcblk1
+D/vold    ( 1817): mmc_bootstrap_card:filename /sys/devices/platform/s3c-sdhci.0/mmc_host/mmc0/mmc0:9ca8/block:mmcblk0
+D/vold    ( 1817): Bootstrapping complete
+D/AndroidRuntime( 1820): 
+D/AndroidRuntime( 1820): >>>>>>>>>>>>>> AndroidRuntime START <<<<<<<<<<<<<<
+I/AndroidRuntime( 1820): Heap size: -Xmx18m
+D/AndroidRuntime( 1820): CheckJNI is OFF
+E/AndroidRuntime( 1820): /system/csc/customer.xml can't open file
+E/AndroidRuntime( 1820): /system/csc/customer.xml ==> cannot open file
+D/AndroidRuntime( 1820): --- registering native functions ---
+I/        ( 1821): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1821): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1821): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1821): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1821): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1821, tid: 1821  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 be91ab38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp be91abd4
+I/DEBUG   ( 1818):  ip 00000018  sp be91ab38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     be91aaf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be91aafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     be91ab00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91ab04  0000b041  [heap]
+I/DEBUG   ( 1818):     be91ab08  0000b041  [heap]
+I/DEBUG   ( 1818):     be91ab0c  00000000  
+I/DEBUG   ( 1818):     be91ab10  0000aec0  [heap]
+I/DEBUG   ( 1818):     be91ab14  00000000  
+I/DEBUG   ( 1818):     be91ab18  be91abd4  [stack]
+I/DEBUG   ( 1818):     be91ab1c  0000b041  [heap]
+I/DEBUG   ( 1818):     be91ab20  00000003  
+I/DEBUG   ( 1818):     be91ab24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     be91ab28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91ab2c  0000b030  [heap]
+I/DEBUG   ( 1818):     be91ab30  df002777  
+I/DEBUG   ( 1818):     be91ab34  e3a070ad  
+I/DEBUG   ( 1818): #01 be91ab38  00000000  
+I/DEBUG   ( 1818):     be91ab3c  00000000  
+I/DEBUG   ( 1818):     be91ab40  00000000  
+I/DEBUG   ( 1818):     be91ab44  00000000  
+I/DEBUG   ( 1818):     be91ab48  00000000  
+I/DEBUG   ( 1818):     be91ab4c  00000000  
+I/DEBUG   ( 1818):     be91ab50  00000000  
+I/DEBUG   ( 1818):     be91ab54  00000000  
+I/DEBUG   ( 1818):     be91ab58  00000000  
+I/DEBUG   ( 1818):     be91ab5c  00000000  
+I/DEBUG   ( 1818):     be91ab60  00000000  
+I/DEBUG   ( 1818):     be91ab64  00000000  
+I/DEBUG   ( 1818):     be91ab68  00000000  
+I/DEBUG   ( 1818):     be91ab6c  00000000  
+I/DEBUG   ( 1818):     be91ab70  00000000  
+I/DEBUG   ( 1818):     be91ab74  00000000  
+I/DEBUG   ( 1818):     be91ab78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91ab7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91ab80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91ab84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     be91ab88  0000029c  
+I/DEBUG   ( 1818):     be91ab8c  0000036c  
+I/DEBUG   ( 1818):     be91ab90  0000aec0  [heap]
+I/DEBUG   ( 1818):     be91ab94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91ab98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91ab9c  00000000  
+I/DEBUG   ( 1818):     be91aba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91aba4  00000000  
+I/DEBUG   ( 1818):     be91aba8  00000000  
+I/DEBUG   ( 1818):     be91abac  21a81cc0  
+I/DEBUG   ( 1818):     be91abb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be91abb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     be91abb8  00000000  
+I/DEBUG   ( 1818):     be91abbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     be91abc0  00000000  
+I/DEBUG   ( 1818):     be91abc4  00000000  
+I/DEBUG   ( 1818):     be91abc8  00000000  
+I/DEBUG   ( 1818):     be91abcc  00000000  
+I/DEBUG   ( 1818):     be91abd0  00000000  
+I/DEBUG   ( 1818):     be91abd4  80626fd8  /system/lib/libaudio.so
+I/SamplingProfilerIntegration( 1820): Profiler is disabled.
+I/Zygote  ( 1820): Preloading classes...
+D/dalvikvm( 1820): GC freed 813 objects / 52072 bytes in 4ms
+D/dalvikvm( 1820): GC freed 236 objects / 15240 bytes in 4ms
+D/dalvikvm( 1820): GC freed 275 objects / 17424 bytes in 5ms
+D/dalvikvm( 1820): GC freed 242 objects / 15576 bytes in 6ms
+D/dalvikvm( 1820): GC freed 414 objects / 26600 bytes in 7ms
+D/skia    ( 1820): ------ build_power_table 1.4
+D/skia    ( 1820): ------ build_power_table 0.714286
+D/dalvikvm( 1820): GC freed 419 objects / 28360 bytes in 7ms
+D/dalvikvm( 1820): Trying to load lib /system/lib/libmedia_jni.so 0x0
+D/dalvikvm( 1820): Added shared lib /system/lib/libmedia_jni.so 0x0
+D/dalvikvm( 1820): Trying to load lib /system/lib/libexif.so 0x0
+D/dalvikvm( 1820): Added shared lib /system/lib/libexif.so 0x0
+D/dalvikvm( 1820): GC freed 2330 objects / 121944 bytes in 20ms
+D/dalvikvm( 1820): Trying to load lib /system/lib/libmedia_jni.so 0x0
+D/dalvikvm( 1820): Shared lib '/system/lib/libmedia_jni.so' already loaded in same CL 0x0
+D/dalvikvm( 1820): Trying to load lib /system/lib/libmedia_jni.so 0x0
+D/dalvikvm( 1820): Shared lib '/system/lib/libmedia_jni.so' already loaded in same CL 0x0
+D/dalvikvm( 1820): Trying to load lib /system/lib/libmedia_jni.so 0x0
+D/dalvikvm( 1820): Shared lib '/system/lib/libmedia_jni.so' already loaded in same CL 0x0
+D/dalvikvm( 1820): Trying to load lib /system/lib/libmedia_jni.so 0x0
+D/dalvikvm( 1820): Shared lib '/system/lib/libmedia_jni.so' already loaded in same CL 0x0
+I/        ( 1827): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1827): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1827): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1827): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1827): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1827, tid: 1827  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 be88fb38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp be88fbd4
+I/DEBUG   ( 1818):  ip 00000018  sp be88fb38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     be88faf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be88fafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     be88fb00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be88fb04  0000b041  [heap]
+I/DEBUG   ( 1818):     be88fb08  0000b041  [heap]
+I/DEBUG   ( 1818):     be88fb0c  00000000  
+I/DEBUG   ( 1818):     be88fb10  0000aec0  [heap]
+I/DEBUG   ( 1818):     be88fb14  00000000  
+I/DEBUG   ( 1818):     be88fb18  be88fbd4  [stack]
+I/DEBUG   ( 1818):     be88fb1c  0000b041  [heap]
+I/DEBUG   ( 1818):     be88fb20  00000003  
+I/DEBUG   ( 1818):     be88fb24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     be88fb28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be88fb2c  0000b030  [heap]
+I/DEBUG   ( 1818):     be88fb30  df002777  
+I/DEBUG   ( 1818):     be88fb34  e3a070ad  
+I/DEBUG   ( 1818): #01 be88fb38  00000000  
+I/DEBUG   ( 1818):     be88fb3c  00000000  
+I/DEBUG   ( 1818):     be88fb40  00000000  
+I/DEBUG   ( 1818):     be88fb44  00000000  
+I/DEBUG   ( 1818):     be88fb48  00000000  
+I/DEBUG   ( 1818):     be88fb4c  00000000  
+I/DEBUG   ( 1818):     be88fb50  00000000  
+I/DEBUG   ( 1818):     be88fb54  00000000  
+I/DEBUG   ( 1818):     be88fb58  00000000  
+I/DEBUG   ( 1818):     be88fb5c  00000000  
+I/DEBUG   ( 1818):     be88fb60  00000000  
+I/DEBUG   ( 1818):     be88fb64  00000000  
+I/DEBUG   ( 1818):     be88fb68  00000000  
+I/DEBUG   ( 1818):     be88fb6c  00000000  
+I/DEBUG   ( 1818):     be88fb70  00000000  
+I/DEBUG   ( 1818):     be88fb74  00000000  
+I/DEBUG   ( 1818):     be88fb78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be88fb7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be88fb80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be88fb84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     be88fb88  0000029c  
+I/DEBUG   ( 1818):     be88fb8c  0000036c  
+I/DEBUG   ( 1818):     be88fb90  0000aec0  [heap]
+I/DEBUG   ( 1818):     be88fb94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be88fb98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be88fb9c  00000000  
+I/DEBUG   ( 1818):     be88fba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be88fba4  00000000  
+I/DEBUG   ( 1818):     be88fba8  00000000  
+I/DEBUG   ( 1818):     be88fbac  c667578e  
+I/DEBUG   ( 1818):     be88fbb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be88fbb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     be88fbb8  00000000  
+I/DEBUG   ( 1818):     be88fbbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     be88fbc0  00000000  
+I/DEBUG   ( 1818):     be88fbc4  00000000  
+I/DEBUG   ( 1818):     be88fbc8  00000000  
+I/DEBUG   ( 1818):     be88fbcc  00000000  
+I/DEBUG   ( 1818):     be88fbd0  00000000  
+I/DEBUG   ( 1818):     be88fbd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1820): GC freed 3794 objects / 197312 bytes in 17ms
+D/dalvikvm( 1820): GC freed 474 objects / 27976 bytes in 16ms
+D/dalvikvm( 1820): GC freed 308 objects / 18144 bytes in 17ms
+D/dalvikvm( 1820): GC freed 214 objects / 11440 bytes in 18ms
+D/dalvikvm( 1820): GC freed 200 objects / 11240 bytes in 19ms
+D/dalvikvm( 1820): Trying to load lib /system/lib/libsrec_jni.so 0x0
+D/dalvikvm( 1820): Added shared lib /system/lib/libsrec_jni.so 0x0
+D/dalvikvm( 1820): Trying to load lib /system/lib/libsrec_jni.so 0x0
+D/dalvikvm( 1820): Shared lib '/system/lib/libsrec_jni.so' already loaded in same CL 0x0
+D/dalvikvm( 1820): GC freed 431 objects / 39448 bytes in 21ms
+D/dalvikvm( 1820): GC freed 786 objects / 47792 bytes in 29ms
+D/dalvikvm( 1820): GC freed 338 objects / 38512 bytes in 30ms
+D/dalvikvm( 1820): GC freed 419 objects / 25968 bytes in 30ms
+D/dalvikvm( 1820): Trying to load lib /system/lib/libwebcore.so 0x0
+D/dalvikvm( 1820): Added shared lib /system/lib/libwebcore.so 0x0
+D/dalvikvm( 1820): GC freed 436 objects / 25520 bytes in 31ms
+D/dalvikvm( 1820): GC freed 484 objects / 30256 bytes in 31ms
+D/dalvikvm( 1820): GC freed 347 objects / 28584 bytes in 32ms
+D/dalvikvm( 1820): GC freed 303 objects / 21336 bytes in 32ms
+D/dalvikvm( 1820): GC freed 917 objects / 80176 bytes in 36ms
+D/dalvikvm( 1820): GC freed 664 objects / 35976 bytes in 37ms
+D/dalvikvm( 1820): GC freed 708 objects / 41120 bytes in 37ms
+D/dalvikvm( 1820): GC freed 733 objects / 40464 bytes in 37ms
+I/        ( 1830): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1830): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1830): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1830): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1830): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1830, tid: 1830  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 beb72b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp beb72bd4
+I/DEBUG   ( 1818):  ip 00000018  sp beb72b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     beb72af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     beb72afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     beb72b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb72b04  0000b041  [heap]
+I/DEBUG   ( 1818):     beb72b08  0000b041  [heap]
+I/DEBUG   ( 1818):     beb72b0c  00000000  
+I/DEBUG   ( 1818):     beb72b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     beb72b14  00000000  
+I/DEBUG   ( 1818):     beb72b18  beb72bd4  [stack]
+I/DEBUG   ( 1818):     beb72b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     beb72b20  00000003  
+I/DEBUG   ( 1818):     beb72b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     beb72b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb72b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     beb72b30  df002777  
+I/DEBUG   ( 1818):     beb72b34  e3a070ad  
+I/DEBUG   ( 1818): #01 beb72b38  00000000  
+I/DEBUG   ( 1818):     beb72b3c  00000000  
+I/DEBUG   ( 1818):     beb72b40  00000000  
+I/DEBUG   ( 1818):     beb72b44  00000000  
+I/DEBUG   ( 1818):     beb72b48  00000000  
+I/DEBUG   ( 1818):     beb72b4c  00000000  
+I/DEBUG   ( 1818):     beb72b50  00000000  
+I/DEBUG   ( 1818):     beb72b54  00000000  
+I/DEBUG   ( 1818):     beb72b58  00000000  
+I/DEBUG   ( 1818):     beb72b5c  00000000  
+I/DEBUG   ( 1818):     beb72b60  00000000  
+I/DEBUG   ( 1818):     beb72b64  00000000  
+I/DEBUG   ( 1818):     beb72b68  00000000  
+I/DEBUG   ( 1818):     beb72b6c  00000000  
+I/DEBUG   ( 1818):     beb72b70  00000000  
+I/DEBUG   ( 1818):     beb72b74  00000000  
+I/DEBUG   ( 1818):     beb72b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb72b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb72b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb72b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     beb72b88  0000029c  
+I/DEBUG   ( 1818):     beb72b8c  0000036c  
+I/DEBUG   ( 1818):     beb72b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     beb72b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb72b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb72b9c  00000000  
+I/DEBUG   ( 1818):     beb72ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb72ba4  00000000  
+I/DEBUG   ( 1818):     beb72ba8  00000000  
+I/DEBUG   ( 1818):     beb72bac  72d5e212  
+I/DEBUG   ( 1818):     beb72bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     beb72bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     beb72bb8  00000000  
+I/DEBUG   ( 1818):     beb72bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     beb72bc0  00000000  
+I/DEBUG   ( 1818):     beb72bc4  00000000  
+I/DEBUG   ( 1818):     beb72bc8  00000000  
+I/DEBUG   ( 1818):     beb72bcc  00000000  
+I/DEBUG   ( 1818):     beb72bd0  00000000  
+I/DEBUG   ( 1818):     beb72bd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1820): GC freed 14826 objects / 511680 bytes in 46ms
+D/dalvikvm( 1820): GC freed 11320 objects / 477352 bytes in 48ms
+D/dalvikvm( 1820): GC freed 9747 objects / 434000 bytes in 51ms
+D/dalvikvm( 1820): GC freed 8416 objects / 496760 bytes in 52ms
+D/dalvikvm( 1820): GC freed 8326 objects / 491576 bytes in 52ms
+D/dalvikvm( 1820): GC freed 8191 objects / 488400 bytes in 53ms
+D/dalvikvm( 1820): GC freed 5769 objects / 325848 bytes in 52ms
+D/dalvikvm( 1820): GC freed 849 objects / 51824 bytes in 50ms
+D/dalvikvm( 1820): GC freed 538 objects / 39048 bytes in 51ms
+D/dalvikvm( 1820): GC freed 465 objects / 31872 bytes in 51ms
+D/dalvikvm( 1820): GC freed 424 objects / 29752 bytes in 52ms
+I/Zygote  ( 1820): ...preloaded 1941 classes in 11563ms.
+D/dalvikvm( 1820): GC freed 123 objects / 15320 bytes in 51ms
+I/Zygote  ( 1820): Preloading resources...
+D/dalvikvm( 1820): GC freed 5 objects / 224 bytes in 51ms
+W/Zygote  ( 1820): Preloaded drawable resource #0x10800b4 (res/drawable/btn_check.xml) that varies with configuration!!
+W/Zygote  ( 1820): Preloaded drawable resource #0x10800b7 (res/drawable-mdpi/btn_check_label_background.9.png) that varies with configuration!!
+W/Zygote  ( 1820): Preloaded drawable resource #0x10800b8 (res/drawable-mdpi/btn_check_off.png) that varies with configuration!!
+W/Zygote  ( 1820): Preloaded drawable resource #0x10800bd (res/drawable-mdpi/btn_check_on.png) that varies with configuration!!
+D/dalvikvm( 1820): GC freed 287 objects / 14048 bytes in 159ms
+D/dalvikvm( 1820): GC freed 184 objects / 7584 bytes in 112ms
+D/dalvikvm( 1820): GC freed 388 objects / 17976 bytes in 103ms
+I/        ( 1833): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1833): Unable to attach mixer to device AndroidPlayback: No such file or directory
+I/Zygote  ( 1820): ...preloaded 48 resources in 1381ms.
+E/AudioHardwareALSA( 1833): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1833): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1833): Unable to attach mixer to device default: No such file or directory
+D/dalvikvm( 1820): GC freed 211 objects / 11208 bytes in 55ms
+I/Zygote  ( 1820): ...preloaded 15 resources in 82ms.
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1833, tid: 1833  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bea2eb38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bea2ebd4
+I/DEBUG   ( 1818):  ip 00000018  sp bea2eb38  lr 806241a0  pc 8064905c  cpsr 00000010
+D/dalvikvm( 1820): GC freed 362 objects / 17584 bytes in 89ms
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bea2eaf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bea2eafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bea2eb00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea2eb04  0000b041  [heap]
+I/DEBUG   ( 1818):     bea2eb08  0000b041  [heap]
+I/DEBUG   ( 1818):     bea2eb0c  00000000  
+I/DEBUG   ( 1818):     bea2eb10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bea2eb14  00000000  
+I/DEBUG   ( 1818):     bea2eb18  bea2ebd4  [stack]
+I/DEBUG   ( 1818):     bea2eb1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bea2eb20  00000003  
+I/DEBUG   ( 1818):     bea2eb24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bea2eb28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea2eb2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bea2eb30  df002777  
+I/DEBUG   ( 1818):     bea2eb34  e3a070ad  
+I/DEBUG   ( 1818): #01 bea2eb38  00000000  
+I/DEBUG   ( 1818):     bea2eb3c  00000000  
+I/DEBUG   ( 1818):     bea2eb40  00000000  
+I/DEBUG   ( 1818):     bea2eb44  00000000  
+I/DEBUG   ( 1818):     bea2eb48  00000000  
+I/DEBUG   ( 1818):     bea2eb4c  00000000  
+I/DEBUG   ( 1818):     bea2eb50  00000000  
+I/DEBUG   ( 1818):     bea2eb54  00000000  
+I/DEBUG   ( 1818):     bea2eb58  00000000  
+I/DEBUG   ( 1818):     bea2eb5c  00000000  
+I/DEBUG   ( 1818):     bea2eb60  00000000  
+I/DEBUG   ( 1818):     bea2eb64  00000000  
+I/DEBUG   ( 1818):     bea2eb68  00000000  
+I/DEBUG   ( 1818):     bea2eb6c  00000000  
+I/DEBUG   ( 1818):     bea2eb70  00000000  
+I/DEBUG   ( 1818):     bea2eb74  00000000  
+I/DEBUG   ( 1818):     bea2eb78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea2eb7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea2eb80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea2eb84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bea2eb88  0000029c  
+I/DEBUG   ( 1818):     bea2eb8c  0000036c  
+I/DEBUG   ( 1818):     bea2eb90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bea2eb94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea2eb98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea2eb9c  00000000  
+I/DEBUG   ( 1818):     bea2eba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea2eba4  00000000  
+I/DEBUG   ( 1818):     bea2eba8  00000000  
+I/DEBUG   ( 1818):     bea2ebac  849c133f  
+I/DEBUG   ( 1818):     bea2ebb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bea2ebb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bea2ebb8  00000000  
+I/DEBUG   ( 1818):     bea2ebbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bea2ebc0  00000000  
+I/DEBUG   ( 1818):     bea2ebc4  00000000  
+I/DEBUG   ( 1818):     bea2ebc8  00000000  
+I/DEBUG   ( 1818):     bea2ebcc  00000000  
+I/DEBUG   ( 1818):     bea2ebd0  00000000  
+I/DEBUG   ( 1818):     bea2ebd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1820): GC freed 132 objects / 5152 bytes in 138ms
+D/dalvikvm( 1820): GC freed 2 objects / 48 bytes in 73ms
+I/dalvikvm( 1820): Splitting out new zygote heap
+I/dalvikvm( 1820): System server process 1835 has been created
+I/Zygote  ( 1820): Accepting command socket connections
+D/dalvikvm( 1835): Trying to load lib /system/lib/libandroid_servers.so 0x0
+D/dalvikvm( 1835): Added shared lib /system/lib/libandroid_servers.so 0x0
+I/sysproc ( 1835): Entered system_init()
+I/sysproc ( 1835): ServiceManager: 0x138bf0
+I/SurfaceFlinger( 1835): SurfaceFlinger is starting
+I/SurfaceFlinger( 1835): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+I/gralloc ( 1835): using (fd=20)
+I/gralloc ( 1835): id           = s3cfb
+I/gralloc ( 1835): xres         = 480 px
+I/gralloc ( 1835): yres         = 800 px
+I/gralloc ( 1835): xres_virtual = 480 px
+I/gralloc ( 1835): yres_virtual = 1600 px
+I/gralloc ( 1835): bpp          = 16
+I/gralloc ( 1835): r            = 11:5
+I/gralloc ( 1835): g            =  5:6
+I/gralloc ( 1835): b            =  0:5
+I/gralloc ( 1835): upper_margin = 8
+I/gralloc ( 1835): lower_margin = 6
+I/gralloc ( 1835): left_margin  = 64
+I/gralloc ( 1835): right_margin = 62
+I/gralloc ( 1835): pixclock     = 29767680
+I/gralloc ( 1835): width        = 40 mm (304.799988 dpi)
+I/gralloc ( 1835): height       = 67 mm (303.283569 dpi)
+I/gralloc ( 1835): refresh rate = 60.00 Hz
+D/libEGL  ( 1835): loaded /system/lib/egl/libEGL_fimg.so
+D/libEGL  ( 1835): loaded /system/lib/egl/libGLESv1_CM_fimg.so
+D/libEGL  ( 1835): loaded /system/lib/egl/libGLESv2_fimg.so
+I/SurfaceFlinger( 1835): EGL informations:
+I/SurfaceFlinger( 1835): # of configs : 15
+I/SurfaceFlinger( 1835): vendor    : Android
+I/SurfaceFlinger( 1835): version   : 1.4 Android META-EGL
+I/SurfaceFlinger( 1835): extensions: EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_ANDROID_image_native_buffer EGL_ANDROID_swap_rectangle EGL_ANDROID_get_render_buffer 
+I/SurfaceFlinger( 1835): Client API: OpenGL ES
+I/SurfaceFlinger( 1835): EGLSurface: 5-6-5-0, config=0x0
+I/SurfaceFlinger( 1835): flags     : 00190000
+I/        ( 1835): libGLESv1_CM_fimg.so was loaded and GLES 1.1 API was successfully mapped
+I/SurfaceFlinger( 1835): OpenGL informations:
+I/SurfaceFlinger( 1835): vendor    : Samsung Electronics
+I/SurfaceFlinger( 1835): renderer  : FIMG
+I/SurfaceFlinger( 1835): version   : OpenGL ES-CM 1.1
+I/SurfaceFlinger( 1835): extensions: GL_OES_matrix_palette GL_OES_draw_texture GL_OES_framebuffer_object GL_OES_matrix_get GL_ARB_texture_non_power_of_two
+I/sysproc ( 1835): System server: starting Android runtime.
+I/sysproc ( 1835): System server: starting Android services.
+I/SystemServer( 1835): Entered the Android system server!
+I/sysproc ( 1835): System server: entering thread pool.
+I/SystemServer( 1835): Entropy Service
+W/EntropyService( 1835): unable to load initial entropy (first boot?)
+W/EntropyService( 1835): java.io.FileNotFoundException: /data/system/entropy.dat
+W/EntropyService( 1835): 	at org.apache.harmony.luni.platform.OSFileSystem.open(OSFileSystem.java:244)
+W/EntropyService( 1835): 	at java.io.FileInputStream.<init>(FileInputStream.java:77)
+W/EntropyService( 1835): 	at java.io.FileInputStream.<init>(FileInputStream.java:130)
+W/EntropyService( 1835): 	at com.android.server.RandomBlock.fromFile(RandomBlock.java:45)
+W/EntropyService( 1835): 	at com.android.server.EntropyService.loadInitialEntropy(EntropyService.java:88)
+W/EntropyService( 1835): 	at com.android.server.EntropyService.<init>(EntropyService.java:75)
+W/EntropyService( 1835): 	at com.android.server.ServerThread.run(SystemServer.java:109)
+I/SystemServer( 1835): Power Manager
+I/SystemServer( 1835): Activity Manager
+I/ActivityManager( 1835): Memory class: 18
+D/        ( 1835): unable to unlink '/data/system/batterystats.bin.bak': No such file or directory (errno=2)
+I/dalvikvm( 1835): Debugger thread not active, ignoring DDM send (t=0x41504e4d l=32)
+I/SystemServer( 1835): Telephony Registry
+I/SystemServer( 1835): Package Manager
+I/Installer( 1835): connecting...
+I/installd( 1823): new connection
+D/libEGL  ( 1845): loaded /system/lib/egl/libEGL_fimg.so
+D/libEGL  ( 1845): loaded /system/lib/egl/libGLESv1_CM_fimg.so
+D/libEGL  ( 1845): loaded /system/lib/egl/libGLESv2_fimg.so
+I/        ( 1845): libGLESv1_CM_fimg.so was loaded and GLES 1.1 API was successfully mapped
+W/zipro   ( 1845): Unable to open zip '/data/local/bootanimation.zip': No such file or directory
+I/PackageManager( 1835): Libs: android.test.runner:/system/framework/android.test.runner.jar javax.obex:/system/framework/javax.obex.jar com.google.android.gtalkservice:/system/framework/com.google.android.gtalkservice.jar com.google.android.datamessaging:/system/framework/com.google.android.datamessaging.jar com.google.android.maps:/system/framework/com.google.android.maps.jar com.samsung.device:/system/framework/com.samsung.device.jar
+I/PackageManager( 1835): Features: android.hardware.wifi android.hardware.location.network android.hardware.camera android.hardware.bluetooth android.hardware.telephony android.hardware.location android.hardware.location.gps android.hardware.telephony.gsm android.hardware.camera.autofocus android.hardware.touchscreen.multitouch android.hardware.touchscreen android.hardware.sensor.accelerometer android.hardware.sensor.compass
+I/PackageManager( 1835): No current settings file!
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/android.test.runner.jar' ---
+D/dalvikvm( 1852): DexOpt: load 98ms, verify 579ms, opt 15ms
+D/installd( 1823): DexInv: --- END '/system/framework/android.test.runner.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/javax.obex.jar' ---
+D/dalvikvm( 1853): DexOpt: load 8ms, verify 145ms, opt 35ms
+D/installd( 1823): DexInv: --- END '/system/framework/javax.obex.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/com.google.android.gtalkservice.jar' ---
+D/dalvikvm( 1857): DexOpt: load 59ms, verify 358ms, opt 27ms
+D/installd( 1823): DexInv: --- END '/system/framework/com.google.android.gtalkservice.jar' (success) ---
+W/PackageManager( 1835): Library not found: /system/framework/com.google.android.datamessaging.jar
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/com.google.android.maps.jar' ---
+I/        ( 1855): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1855): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1855): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1855): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1855): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1855, tid: 1855  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 be932b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp be932bd4
+I/DEBUG   ( 1818):  ip 00000018  sp be932b38  lr 806241a0  pc 8064905c  cpsr 00000010
+D/dalvikvm( 1858): DexOpt: 'Lcom/google/debug/DebugUtil;' has an earlier definition; blocking out
+D/dalvikvm( 1858): DexOpt: 'Lcom/google/i18n/LineBreakingProperties;' has an earlier definition; blocking out
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     be932af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be932afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     be932b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be932b04  0000b041  [heap]
+I/DEBUG   ( 1818):     be932b08  0000b041  [heap]
+I/DEBUG   ( 1818):     be932b0c  00000000  
+I/DEBUG   ( 1818):     be932b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     be932b14  00000000  
+I/DEBUG   ( 1818):     be932b18  be932bd4  [stack]
+I/DEBUG   ( 1818):     be932b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     be932b20  00000003  
+I/DEBUG   ( 1818):     be932b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     be932b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be932b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     be932b30  df002777  
+I/DEBUG   ( 1818):     be932b34  e3a070ad  
+I/DEBUG   ( 1818): #01 be932b38  00000000  
+I/DEBUG   ( 1818):     be932b3c  00000000  
+I/DEBUG   ( 1818):     be932b40  00000000  
+I/DEBUG   ( 1818):     be932b44  00000000  
+I/DEBUG   ( 1818):     be932b48  00000000  
+I/DEBUG   ( 1818):     be932b4c  00000000  
+I/DEBUG   ( 1818):     be932b50  00000000  
+I/DEBUG   ( 1818):     be932b54  00000000  
+I/DEBUG   ( 1818):     be932b58  00000000  
+I/DEBUG   ( 1818):     be932b5c  00000000  
+I/DEBUG   ( 1818):     be932b60  00000000  
+I/DEBUG   ( 1818):     be932b64  00000000  
+I/DEBUG   ( 1818):     be932b68  00000000  
+I/DEBUG   ( 1818):     be932b6c  00000000  
+I/DEBUG   ( 1818):     be932b70  00000000  
+I/DEBUG   ( 1818):     be932b74  00000000  
+I/DEBUG   ( 1818):     be932b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be932b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be932b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be932b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     be932b88  0000029c  
+I/DEBUG   ( 1818):     be932b8c  0000036c  
+I/DEBUG   ( 1818):     be932b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     be932b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be932b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be932b9c  00000000  
+I/DEBUG   ( 1818):     be932ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be932ba4  00000000  
+I/DEBUG   ( 1818):     be932ba8  00000000  
+I/DEBUG   ( 1818):     be932bac  89427362  
+I/DEBUG   ( 1818):     be932bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be932bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     be932bb8  00000000  
+I/DEBUG   ( 1818):     be932bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     be932bc0  00000000  
+I/DEBUG   ( 1818):     be932bc4  00000000  
+I/DEBUG   ( 1818):     be932bc8  00000000  
+I/DEBUG   ( 1818):     be932bcc  00000000  
+I/DEBUG   ( 1818):     be932bd0  00000000  
+I/DEBUG   ( 1818):     be932bd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1858): DexOpt: not verifying 'Lcom/google/debug/DebugUtil;': multiple definitions
+D/dalvikvm( 1858): DexOpt: not verifying 'Lcom/google/i18n/LineBreakingProperties;': multiple definitions
+D/dalvikvm( 1858): DexOpt: load 248ms, verify 1080ms, opt 28ms
+D/installd( 1823): DexInv: --- END '/system/framework/com.google.android.maps.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/com.samsung.device.jar' ---
+D/dalvikvm( 1859): DexOpt: load 10ms, verify 2ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/framework/com.samsung.device.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/am.jar' ---
+D/dalvikvm( 1863): DexOpt: load 27ms, verify 98ms, opt 4ms
+D/installd( 1823): DexInv: --- END '/system/framework/am.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/bmgr.jar' ---
+I/        ( 1861): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1861): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1861): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1861): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1861): Unable to attach mixer to device default: No such file or directory
+D/dalvikvm( 1864): DexOpt: load 9ms, verify 29ms, opt 1ms
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1861, tid: 1861  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bed81b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bed81bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bed81b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bed81af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed81afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed81b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed81b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bed81b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bed81b0c  00000000  
+I/DEBUG   ( 1818):     bed81b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed81b14  00000000  
+I/DEBUG   ( 1818):     bed81b18  bed81bd4  [stack]
+I/DEBUG   ( 1818):     bed81b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bed81b20  00000003  
+I/DEBUG   ( 1818):     bed81b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bed81b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed81b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bed81b30  df002777  
+I/DEBUG   ( 1818):     bed81b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bed81b38  00000000  
+I/DEBUG   ( 1818):     bed81b3c  00000000  
+I/DEBUG   ( 1818):     bed81b40  00000000  
+I/DEBUG   ( 1818):     bed81b44  00000000  
+I/DEBUG   ( 1818):     bed81b48  00000000  
+I/DEBUG   ( 1818):     bed81b4c  00000000  
+I/DEBUG   ( 1818):     bed81b50  00000000  
+I/DEBUG   ( 1818):     bed81b54  00000000  
+I/DEBUG   ( 1818):     bed81b58  00000000  
+I/DEBUG   ( 1818):     bed81b5c  00000000  
+I/DEBUG   ( 1818):     bed81b60  00000000  
+I/DEBUG   ( 1818):     bed81b64  00000000  
+I/DEBUG   ( 1818):     bed81b68  00000000  
+I/DEBUG   ( 1818):     bed81b6c  00000000  
+I/DEBUG   ( 1818):     bed81b70  00000000  
+I/DEBUG   ( 1818):     bed81b74  00000000  
+I/DEBUG   ( 1818):     bed81b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed81b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed81b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed81b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed81b88  0000029c  
+I/DEBUG   ( 1818):     bed81b8c  0000036c  
+I/DEBUG   ( 1818):     bed81b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed81b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed81b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed81b9c  00000000  
+I/DEBUG   ( 1818):     bed81ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed81ba4  00000000  
+I/DEBUG   ( 1818):     bed81ba8  00000000  
+I/DEBUG   ( 1818):     bed81bac  70ba3d70  
+I/DEBUG   ( 1818):     bed81bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed81bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bed81bb8  00000000  
+I/DEBUG   ( 1818):     bed81bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed81bc0  00000000  
+I/DEBUG   ( 1818):     bed81bc4  00000000  
+I/DEBUG   ( 1818):     bed81bc8  00000000  
+I/DEBUG   ( 1818):     bed81bcc  00000000  
+I/DEBUG   ( 1818):     bed81bd0  00000000  
+I/DEBUG   ( 1818):     bed81bd4  80626fd8  /system/lib/libaudio.so
+D/installd( 1823): DexInv: --- END '/system/framework/bmgr.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/framework-tests.jar' ---
+I/dalvikvm( 1865): DexOpt: illegal method access (call Lcom/android/internal/http/multipart/MultipartEntity;.getMultipartBoundary ()[B from Lcom/android/internal/http/multipart/MultipartTest;)
+W/dalvikvm( 1865): DexOpt: resolve class illegal access: Lcom/android/internal/os/LoggingPrintStreamTest$TestPrintStream; -> Lcom/android/internal/os/LoggingPrintStream;
+I/dalvikvm( 1865): DexOpt: illegal method access (call Lcom/android/internal/policy/impl/KeyguardViewBase;.setCallback (Lcom/android/internal/policy/impl/KeyguardViewCallback;)V from Lcom/android/internal/policy/impl/LockPatternKeyguardViewTest;)
+W/dalvikvm( 1865): DexOpt: resolve class illegal access: Landroid/text/PackedIntVectorTest; -> Landroid/text/PackedIntVector;
+D/dalvikvm( 1865): DexOpt: load 53ms, verify 63ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/framework/framework-tests.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/ime.jar' ---
+D/dalvikvm( 1866): DexOpt: load 2ms, verify 29ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/framework/ime.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/input.jar' ---
+D/dalvikvm( 1867): DexOpt: load 3ms, verify 18ms, opt 0ms
+D/installd( 1823): DexInv: --- END '/system/framework/input.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/monkey.jar' ---
+D/dalvikvm( 1868): DexOpt: load 25ms, verify 162ms, opt 4ms
+D/installd( 1823): DexInv: --- END '/system/framework/monkey.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/pm.jar' ---
+D/dalvikvm( 1869): DexOpt: load 18ms, verify 67ms, opt 8ms
+D/installd( 1823): DexInv: --- END '/system/framework/pm.jar' (success) ---
+D/installd( 1823): DexInv: --- BEGIN '/system/framework/svc.jar' ---
+D/dalvikvm( 1870): DexOpt: load 14ms, verify 20ms, opt 0ms
+I/        ( 1872): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1872): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1872): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1872): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1872): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1872, tid: 1872  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bef37b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bef37bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bef37b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bef37af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef37afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef37b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef37b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bef37b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bef37b0c  00000000  
+I/DEBUG   ( 1818):     bef37b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef37b14  00000000  
+I/DEBUG   ( 1818):     bef37b18  bef37bd4  [stack]
+I/DEBUG   ( 1818):     bef37b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bef37b20  00000003  
+I/DEBUG   ( 1818):     bef37b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bef37b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef37b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bef37b30  df002777  
+I/DEBUG   ( 1818):     bef37b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bef37b38  00000000  
+I/DEBUG   ( 1818):     bef37b3c  00000000  
+I/DEBUG   ( 1818):     bef37b40  00000000  
+I/DEBUG   ( 1818):     bef37b44  00000000  
+I/DEBUG   ( 1818):     bef37b48  00000000  
+I/DEBUG   ( 1818):     bef37b4c  00000000  
+I/DEBUG   ( 1818):     bef37b50  00000000  
+I/DEBUG   ( 1818):     bef37b54  00000000  
+I/DEBUG   ( 1818):     bef37b58  00000000  
+I/DEBUG   ( 1818):     bef37b5c  00000000  
+I/DEBUG   ( 1818):     bef37b60  00000000  
+I/DEBUG   ( 1818):     bef37b64  00000000  
+I/DEBUG   ( 1818):     bef37b68  00000000  
+I/DEBUG   ( 1818):     bef37b6c  00000000  
+I/DEBUG   ( 1818):     bef37b70  00000000  
+I/DEBUG   ( 1818):     bef37b74  00000000  
+I/DEBUG   ( 1818):     bef37b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef37b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef37b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef37b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef37b88  0000029c  
+I/DEBUG   ( 1818):     bef37b8c  0000036c  
+I/DEBUG   ( 1818):     bef37b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef37b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef37b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef37b9c  00000000  
+I/DEBUG   ( 1818):     bef37ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef37ba4  00000000  
+I/DEBUG   ( 1818):     bef37ba8  00000000  
+I/DEBUG   ( 1818):     bef37bac  478ef914  
+I/DEBUG   ( 1818):     bef37bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef37bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bef37bb8  00000000  
+I/DEBUG   ( 1818):     bef37bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef37bc0  00000000  
+I/DEBUG   ( 1818):     bef37bc4  00000000  
+I/DEBUG   ( 1818):     bef37bc8  00000000  
+I/DEBUG   ( 1818):     bef37bcc  00000000  
+I/DEBUG   ( 1818):     bef37bd0  00000000  
+I/DEBUG   ( 1818):     bef37bd4  80626fd8  /system/lib/libaudio.so
+D/installd( 1823): DexInv: --- END '/system/framework/svc.jar' (success) ---
+D/PackageManager( 1835): Scanning app dir /system/framework
+D/dalvikvm( 1835): GC freed 4258 objects / 207976 bytes in 101ms
+I/PackageManager( 1835): /system/framework/framework-res.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 2052 objects / 297488 bytes in 96ms
+D/dalvikvm( 1835): GC freed 1902 objects / 281448 bytes in 94ms
+D/dalvikvm( 1835): GC freed 3 objects / 59592 bytes in 93ms
+I/dalvikvm-heap( 1835): Grow heap (frag case) to 5.209MB for 240922-byte allocation
+D/dalvikvm( 1835): GC freed 51 objects / 2008 bytes in 112ms
+D/dalvikvm( 1835): GC freed 3 objects / 120408 bytes in 105ms
+D/dalvikvm( 1835): GC freed 29 objects / 301968 bytes in 105ms
+D/dalvikvm( 1835): GC freed 5 objects / 58928 bytes in 105ms
+D/dalvikvm( 1835): GC freed 3 objects / 118400 bytes in 103ms
+D/dalvikvm( 1835): GC freed 15 objects / 275368 bytes in 97ms
+D/dalvikvm( 1835): GC freed 5 objects / 140448 bytes in 105ms
+D/dalvikvm( 1835): GC freed 2718 objects / 302720 bytes in 119ms
+D/dalvikvm( 1835): GC freed 3897 objects / 164880 bytes in 212ms
+I/        ( 1876): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1876): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1876): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1876): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1876): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1876, tid: 1876  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bef78b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bef78bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bef78b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bef78af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef78afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef78b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef78b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bef78b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bef78b0c  00000000  
+I/DEBUG   ( 1818):     bef78b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef78b14  00000000  
+I/DEBUG   ( 1818):     bef78b18  bef78bd4  [stack]
+I/DEBUG   ( 1818):     bef78b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bef78b20  00000003  
+I/DEBUG   ( 1818):     bef78b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bef78b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef78b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bef78b30  df002777  
+I/DEBUG   ( 1818):     bef78b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bef78b38  00000000  
+I/DEBUG   ( 1818):     bef78b3c  00000000  
+I/DEBUG   ( 1818):     bef78b40  00000000  
+I/DEBUG   ( 1818):     bef78b44  00000000  
+I/DEBUG   ( 1818):     bef78b48  00000000  
+I/DEBUG   ( 1818):     bef78b4c  00000000  
+I/DEBUG   ( 1818):     bef78b50  00000000  
+I/DEBUG   ( 1818):     bef78b54  00000000  
+I/DEBUG   ( 1818):     bef78b58  00000000  
+I/DEBUG   ( 1818):     bef78b5c  00000000  
+I/DEBUG   ( 1818):     bef78b60  00000000  
+I/DEBUG   ( 1818):     bef78b64  00000000  
+I/DEBUG   ( 1818):     bef78b68  00000000  
+I/DEBUG   ( 1818):     bef78b6c  00000000  
+I/DEBUG   ( 1818):     bef78b70  00000000  
+I/DEBUG   ( 1818):     bef78b74  00000000  
+I/DEBUG   ( 1818):     bef78b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef78b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef78b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef78b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef78b88  0000029c  
+I/DEBUG   ( 1818):     bef78b8c  0000036c  
+I/DEBUG   ( 1818):     bef78b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef78b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef78b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef78b9c  00000000  
+I/DEBUG   ( 1818):     bef78ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef78ba4  00000000  
+I/DEBUG   ( 1818):     bef78ba8  00000000  
+I/DEBUG   ( 1818):     bef78bac  20341185  
+I/DEBUG   ( 1818):     bef78bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef78bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bef78bb8  00000000  
+I/DEBUG   ( 1818):     bef78bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef78bc0  00000000  
+I/DEBUG   ( 1818):     bef78bc4  00000000  
+I/DEBUG   ( 1818):     bef78bc8  00000000  
+I/DEBUG   ( 1818):     bef78bcc  00000000  
+I/DEBUG   ( 1818):     bef78bd0  00000000  
+I/DEBUG   ( 1818):     bef78bd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1835): GC freed 5165 objects / 533104 bytes in 150ms
+D/PackageManager( 1835): Scanning app dir /system/app
+I/PackageManager( 1835): /system/app/AccountAndSyncSettings.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/AccountAndSyncSettings.apk' ---
+D/dalvikvm( 1878): DexOpt: load 40ms, verify 248ms, opt 5ms
+D/installd( 1823): DexInv: --- END '/system/app/AccountAndSyncSettings.apk' (success) ---
+I/PackageManager( 1835): /system/app/ApplicationsProvider.apk changed; collecting certs
+I/PackageManager( 1835): New shared user android.uid.shared: id=10000
+D/installd( 1823): DexInv: --- BEGIN '/system/app/ApplicationsProvider.apk' ---
+D/dalvikvm( 1879): DexOpt: load 28ms, verify 48ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/app/ApplicationsProvider.apk' (success) ---
+W/PackageParser( 1835): Problem in package /system/app/AudioTestApp.apk:
+W/PackageParser( 1835): Unknown element under <activity>: action at /system/app/AudioTestApp.apk Binary XML file line #13
+W/PackageParser( 1835): Problem in package /system/app/AudioTestApp.apk:
+W/PackageParser( 1835): Unknown element under <activity>: category at /system/app/AudioTestApp.apk Binary XML file line #14
+I/PackageManager( 1835): /system/app/AudioTestApp.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 11288 objects / 937112 bytes in 331ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/AudioTestApp.apk' ---
+D/dalvikvm( 1883): DexOpt: load 75ms, verify 370ms, opt 8ms
+D/installd( 1823): DexInv: --- END '/system/app/AudioTestApp.apk' (success) ---
+I/PackageManager( 1835): /system/app/BluetoothTest.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/BluetoothTest.apk' ---
+I/        ( 1881): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1881): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1881): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1881): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1881): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1881, tid: 1881  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 be8e5b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp be8e5bd4
+I/DEBUG   ( 1818):  ip 00000018  sp be8e5b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+D/dalvikvm( 1884): DexOpt: load 32ms, verify 157ms, opt 1ms
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     be8e5af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be8e5afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     be8e5b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be8e5b04  0000b041  [heap]
+I/DEBUG   ( 1818):     be8e5b08  0000b041  [heap]
+I/DEBUG   ( 1818):     be8e5b0c  00000000  
+I/DEBUG   ( 1818):     be8e5b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     be8e5b14  00000000  
+I/DEBUG   ( 1818):     be8e5b18  be8e5bd4  [stack]
+I/DEBUG   ( 1818):     be8e5b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     be8e5b20  00000003  
+I/DEBUG   ( 1818):     be8e5b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     be8e5b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be8e5b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     be8e5b30  df002777  
+I/DEBUG   ( 1818):     be8e5b34  e3a070ad  
+I/DEBUG   ( 1818): #01 be8e5b38  00000000  
+I/DEBUG   ( 1818):     be8e5b3c  00000000  
+I/DEBUG   ( 1818):     be8e5b40  00000000  
+I/DEBUG   ( 1818):     be8e5b44  00000000  
+I/DEBUG   ( 1818):     be8e5b48  00000000  
+I/DEBUG   ( 1818):     be8e5b4c  00000000  
+I/DEBUG   ( 1818):     be8e5b50  00000000  
+I/DEBUG   ( 1818):     be8e5b54  00000000  
+I/DEBUG   ( 1818):     be8e5b58  00000000  
+I/DEBUG   ( 1818):     be8e5b5c  00000000  
+I/DEBUG   ( 1818):     be8e5b60  00000000  
+I/DEBUG   ( 1818):     be8e5b64  00000000  
+I/DEBUG   ( 1818):     be8e5b68  00000000  
+I/DEBUG   ( 1818):     be8e5b6c  00000000  
+I/DEBUG   ( 1818):     be8e5b70  00000000  
+I/DEBUG   ( 1818):     be8e5b74  00000000  
+I/DEBUG   ( 1818):     be8e5b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be8e5b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be8e5b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be8e5b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     be8e5b88  0000029c  
+I/DEBUG   ( 1818):     be8e5b8c  0000036c  
+I/DEBUG   ( 1818):     be8e5b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     be8e5b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be8e5b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be8e5b9c  00000000  
+I/DEBUG   ( 1818):     be8e5ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be8e5ba4  00000000  
+I/DEBUG   ( 1818):     be8e5ba8  00000000  
+I/DEBUG   ( 1818):     be8e5bac  54ebd9d0  
+I/DEBUG   ( 1818):     be8e5bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be8e5bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     be8e5bb8  00000000  
+I/DEBUG   ( 1818):     be8e5bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     be8e5bc0  00000000  
+I/DEBUG   ( 1818):     be8e5bc4  00000000  
+I/DEBUG   ( 1818):     be8e5bc8  00000000  
+I/DEBUG   ( 1818):     be8e5bcc  00000000  
+I/DEBUG   ( 1818):     be8e5bd0  00000000  
+I/DEBUG   ( 1818):     be8e5bd4  80626fd8  /system/lib/libaudio.so
+D/installd( 1823): DexInv: --- END '/system/app/BluetoothTest.apk' (success) ---
+I/PackageManager( 1835): /system/app/BrcmBluetoothServices.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/BrcmBluetoothServices.apk' ---
+D/dalvikvm( 1885): DexOpt: load 20ms, verify 15ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/app/BrcmBluetoothServices.apk' (success) ---
+I/PackageManager( 1835): /system/app/Browser.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Browser.apk' ---
+D/dalvikvm( 1886): DexOpt: load 248ms, verify 915ms, opt 23ms
+I/        ( 1888): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1888): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1888): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1888): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1888): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1888, tid: 1888  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bef6eb38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bef6ebd4
+I/DEBUG   ( 1818):  ip 00000018  sp bef6eb38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bef6eaf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef6eafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef6eb00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef6eb04  0000b041  [heap]
+I/DEBUG   ( 1818):     bef6eb08  0000b041  [heap]
+I/DEBUG   ( 1818):     bef6eb0c  00000000  
+I/DEBUG   ( 1818):     bef6eb10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef6eb14  00000000  
+I/DEBUG   ( 1818):     bef6eb18  bef6ebd4  [stack]
+I/DEBUG   ( 1818):     bef6eb1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bef6eb20  00000003  
+I/DEBUG   ( 1818):     bef6eb24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bef6eb28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef6eb2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bef6eb30  df002777  
+I/DEBUG   ( 1818):     bef6eb34  e3a070ad  
+I/DEBUG   ( 1818): #01 bef6eb38  00000000  
+I/DEBUG   ( 1818):     bef6eb3c  00000000  
+I/DEBUG   ( 1818):     bef6eb40  00000000  
+I/DEBUG   ( 1818):     bef6eb44  00000000  
+I/DEBUG   ( 1818):     bef6eb48  00000000  
+I/DEBUG   ( 1818):     bef6eb4c  00000000  
+I/DEBUG   ( 1818):     bef6eb50  00000000  
+I/DEBUG   ( 1818):     bef6eb54  00000000  
+I/DEBUG   ( 1818):     bef6eb58  00000000  
+I/DEBUG   ( 1818):     bef6eb5c  00000000  
+I/DEBUG   ( 1818):     bef6eb60  00000000  
+I/DEBUG   ( 1818):     bef6eb64  00000000  
+I/DEBUG   ( 1818):     bef6eb68  00000000  
+I/DEBUG   ( 1818):     bef6eb6c  00000000  
+I/DEBUG   ( 1818):     bef6eb70  00000000  
+I/DEBUG   ( 1818):     bef6eb74  00000000  
+I/DEBUG   ( 1818):     bef6eb78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef6eb7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef6eb80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef6eb84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef6eb88  0000029c  
+I/DEBUG   ( 1818):     bef6eb8c  0000036c  
+I/DEBUG   ( 1818):     bef6eb90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef6eb94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef6eb98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef6eb9c  00000000  
+I/DEBUG   ( 1818):     bef6eba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef6eba4  00000000  
+I/DEBUG   ( 1818):     bef6eba8  00000000  
+I/DEBUG   ( 1818):     bef6ebac  b9773a66  
+I/DEBUG   ( 1818):     bef6ebb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef6ebb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bef6ebb8  00000000  
+I/DEBUG   ( 1818):     bef6ebbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef6ebc0  00000000  
+I/DEBUG   ( 1818):     bef6ebc4  00000000  
+I/DEBUG   ( 1818):     bef6ebc8  00000000  
+I/DEBUG   ( 1818):     bef6ebcc  00000000  
+I/DEBUG   ( 1818):     bef6ebd0  00000000  
+I/DEBUG   ( 1818):     bef6ebd4  80626fd8  /system/lib/libaudio.so
+D/installd( 1823): DexInv: --- END '/system/app/Browser.apk' (success) ---
+I/PackageManager( 1835): /system/app/Calendar.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 51697 objects / 3039936 bytes in 143ms
+I/PackageManager( 1835): New shared user android.uid.calendar: id=10003
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Calendar.apk' ---
+D/dalvikvm( 1890): DexOpt: load 172ms, verify 850ms, opt 29ms
+D/installd( 1823): DexInv: --- END '/system/app/Calendar.apk' (success) ---
+I/PackageManager( 1835): /system/app/CalendarProvider.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/CalendarProvider.apk' ---
+D/dalvikvm( 1891): DexOpt: load 61ms, verify 729ms, opt 11ms
+I/        ( 1893): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1893): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1893): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1893): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1893): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1893, tid: 1893  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 be838b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp be838bd4
+I/DEBUG   ( 1818):  ip 00000018  sp be838b38  lr 806241a0  pc 8064905c  cpsr 00000010
+D/installd( 1823): DexInv: --- END '/system/app/CalendarProvider.apk' (success) ---
+I/PackageManager( 1835): /system/app/CertInstaller.apk changed; collecting certs
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+D/installd( 1823): DexInv: --- BEGIN '/system/app/CertInstaller.apk' ---
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     be838af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be838afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     be838b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be838b04  0000b041  [heap]
+I/DEBUG   ( 1818):     be838b08  0000b041  [heap]
+I/DEBUG   ( 1818):     be838b0c  00000000  
+I/DEBUG   ( 1818):     be838b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     be838b14  00000000  
+I/DEBUG   ( 1818):     be838b18  be838bd4  [stack]
+I/DEBUG   ( 1818):     be838b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     be838b20  00000003  
+I/DEBUG   ( 1818):     be838b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     be838b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be838b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     be838b30  df002777  
+I/DEBUG   ( 1818):     be838b34  e3a070ad  
+I/DEBUG   ( 1818): #01 be838b38  00000000  
+I/DEBUG   ( 1818):     be838b3c  00000000  
+I/DEBUG   ( 1818):     be838b40  00000000  
+I/DEBUG   ( 1818):     be838b44  00000000  
+I/DEBUG   ( 1818):     be838b48  00000000  
+I/DEBUG   ( 1818):     be838b4c  00000000  
+I/DEBUG   ( 1818):     be838b50  00000000  
+I/DEBUG   ( 1818):     be838b54  00000000  
+I/DEBUG   ( 1818):     be838b58  00000000  
+I/DEBUG   ( 1818):     be838b5c  00000000  
+I/DEBUG   ( 1818):     be838b60  00000000  
+I/DEBUG   ( 1818):     be838b64  00000000  
+I/DEBUG   ( 1818):     be838b68  00000000  
+I/DEBUG   ( 1818):     be838b6c  00000000  
+I/DEBUG   ( 1818):     be838b70  00000000  
+I/DEBUG   ( 1818):     be838b74  00000000  
+I/DEBUG   ( 1818):     be838b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be838b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be838b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be838b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     be838b88  0000029c  
+I/DEBUG   ( 1818):     be838b8c  0000036c  
+I/DEBUG   ( 1818):     be838b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     be838b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be838b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be838b9c  00000000  
+I/DEBUG   ( 1818):     be838ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be838ba4  00000000  
+I/DEBUG   ( 1818):     be838ba8  00000000  
+I/DEBUG   ( 1818):     be838bac  7ece51d4  
+I/DEBUG   ( 1818):     be838bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be838bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     be838bb8  00000000  
+I/DEBUG   ( 1818):     be838bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     be838bc0  00000000  
+I/DEBUG   ( 1818):     be838bc4  00000000  
+I/DEBUG   ( 1818):     be838bc8  00000000  
+I/DEBUG   ( 1818):     be838bcc  00000000  
+I/DEBUG   ( 1818):     be838bd0  00000000  
+I/DEBUG   ( 1818):     be838bd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1895): DexOpt: load 35ms, verify 146ms, opt 3ms
+D/installd( 1823): DexInv: --- END '/system/app/CertInstaller.apk' (success) ---
+I/PackageManager( 1835): /system/app/Contacts.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 10802 objects / 662664 bytes in 121ms
+D/dalvikvm( 1835): GC freed 4709 objects / 532000 bytes in 111ms
+D/dalvikvm( 1835): GC freed 2690 objects / 286312 bytes in 106ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Contacts.apk' ---
+D/dalvikvm( 1896): DexOpt: load 240ms, verify 1133ms, opt 39ms
+I/        ( 1898): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1898): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1898): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1898): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1898): Unable to attach mixer to device default: No such file or directory
+D/installd( 1823): DexInv: --- END '/system/app/Contacts.apk' (success) ---
+I/PackageManager( 1835): /system/app/ContactsProvider.apk changed; collecting certs
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1898, tid: 1898  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bef07b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bef07bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bef07b38  lr 806241a0  pc 8064905c  cpsr 00000010
+D/installd( 1823): DexInv: --- BEGIN '/system/app/ContactsProvider.apk' ---
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bef07af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef07afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef07b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef07b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bef07b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bef07b0c  00000000  
+I/DEBUG   ( 1818):     bef07b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef07b14  00000000  
+I/DEBUG   ( 1818):     bef07b18  bef07bd4  [stack]
+I/DEBUG   ( 1818):     bef07b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bef07b20  00000003  
+I/DEBUG   ( 1818):     bef07b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bef07b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef07b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bef07b30  df002777  
+I/DEBUG   ( 1818):     bef07b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bef07b38  00000000  
+I/DEBUG   ( 1818):     bef07b3c  00000000  
+I/DEBUG   ( 1818):     bef07b40  00000000  
+I/DEBUG   ( 1818):     bef07b44  00000000  
+I/DEBUG   ( 1818):     bef07b48  00000000  
+I/DEBUG   ( 1818):     bef07b4c  00000000  
+I/DEBUG   ( 1818):     bef07b50  00000000  
+I/DEBUG   ( 1818):     bef07b54  00000000  
+I/DEBUG   ( 1818):     bef07b58  00000000  
+I/DEBUG   ( 1818):     bef07b5c  00000000  
+I/DEBUG   ( 1818):     bef07b60  00000000  
+I/DEBUG   ( 1818):     bef07b64  00000000  
+I/DEBUG   ( 1818):     bef07b68  00000000  
+I/DEBUG   ( 1818):     bef07b6c  00000000  
+I/DEBUG   ( 1818):     bef07b70  00000000  
+I/DEBUG   ( 1818):     bef07b74  00000000  
+I/DEBUG   ( 1818):     bef07b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef07b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef07b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef07b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef07b88  0000029c  
+I/DEBUG   ( 1818):     bef07b8c  0000036c  
+I/DEBUG   ( 1818):     bef07b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef07b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef07b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef07b9c  00000000  
+I/DEBUG   ( 1818):     bef07ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef07ba4  00000000  
+I/DEBUG   ( 1818):     bef07ba8  00000000  
+I/DEBUG   ( 1818):     bef07bac  008bc8de  
+I/DEBUG   ( 1818):     bef07bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef07bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bef07bb8  00000000  
+I/DEBUG   ( 1818):     bef07bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef07bc0  00000000  
+I/DEBUG   ( 1818):     bef07bc4  00000000  
+I/DEBUG   ( 1818):     bef07bc8  00000000  
+I/DEBUG   ( 1818):     bef07bcc  00000000  
+I/DEBUG   ( 1818):     bef07bd0  00000000  
+I/DEBUG   ( 1818):     bef07bd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1900): DexOpt: load 43ms, verify 782ms, opt 30ms
+D/installd( 1823): DexInv: --- END '/system/app/ContactsProvider.apk' (success) ---
+I/PackageManager( 1835): /system/app/DataCreate.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/DataCreate.apk' ---
+D/dalvikvm( 1901): DexOpt: load 36ms, verify 533ms, opt 22ms
+I/        ( 1903): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1903): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1903): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1903): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1903): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1903, tid: 1903  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bed9cb38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bed9cbd4
+I/DEBUG   ( 1818):  ip 00000018  sp bed9cb38  lr 806241a0  pc 8064905c  cpsr 00000010
+D/installd( 1823): DexInv: --- END '/system/app/DataCreate.apk' (success) ---
+I/PackageManager( 1835): /system/app/DownloadProvider.apk changed; collecting certs
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bed9caf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed9cafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed9cb00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed9cb04  0000b041  [heap]
+I/DEBUG   ( 1818):     bed9cb08  0000b041  [heap]
+I/DEBUG   ( 1818):     bed9cb0c  00000000  
+I/DEBUG   ( 1818):     bed9cb10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed9cb14  00000000  
+I/DEBUG   ( 1818):     bed9cb18  bed9cbd4  [stack]
+I/DEBUG   ( 1818):     bed9cb1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bed9cb20  00000003  
+I/DEBUG   ( 1818):     bed9cb24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bed9cb28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed9cb2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bed9cb30  df002777  
+I/DEBUG   ( 1818):     bed9cb34  e3a070ad  
+I/DEBUG   ( 1818): #01 bed9cb38  00000000  
+I/DEBUG   ( 1818):     bed9cb3c  00000000  
+I/DEBUG   ( 1818):     bed9cb40  00000000  
+I/DEBUG   ( 1818):     bed9cb44  00000000  
+I/DEBUG   ( 1818):     bed9cb48  00000000  
+I/DEBUG   ( 1818):     bed9cb4c  00000000  
+I/DEBUG   ( 1818):     bed9cb50  00000000  
+I/DEBUG   ( 1818):     bed9cb54  00000000  
+I/DEBUG   ( 1818):     bed9cb58  00000000  
+I/DEBUG   ( 1818):     bed9cb5c  00000000  
+I/DEBUG   ( 1818):     bed9cb60  00000000  
+I/DEBUG   ( 1818):     bed9cb64  00000000  
+I/DEBUG   ( 1818):     bed9cb68  00000000  
+I/DEBUG   ( 1818):     bed9cb6c  00000000  
+I/DEBUG   ( 1818):     bed9cb70  00000000  
+I/DEBUG   ( 1818):     bed9cb74  00000000  
+I/DEBUG   ( 1818):     bed9cb78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed9cb7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed9cb80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed9cb84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed9cb88  0000029c  
+I/DEBUG   ( 1818):     bed9cb8c  0000036c  
+I/DEBUG   ( 1818):     bed9cb90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed9cb94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed9cb98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed9cb9c  00000000  
+I/DEBUG   ( 1818):     bed9cba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed9cba4  00000000  
+I/DEBUG   ( 1818):     bed9cba8  00000000  
+I/DEBUG   ( 1818):     bed9cbac  bbc6f48d  
+I/DEBUG   ( 1818):     bed9cbb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed9cbb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bed9cbb8  00000000  
+I/DEBUG   ( 1818):     bed9cbbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed9cbc0  00000000  
+I/DEBUG   ( 1818):     bed9cbc4  00000000  
+I/DEBUG   ( 1818):     bed9cbc8  00000000  
+I/DEBUG   ( 1818):     bed9cbcc  00000000  
+I/DEBUG   ( 1818):     bed9cbd0  00000000  
+I/DEBUG   ( 1818):     bed9cbd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1835): GC freed 5140 objects / 382392 bytes in 204ms
+I/PackageManager( 1835): New shared user android.media: id=10006
+D/installd( 1823): DexInv: --- BEGIN '/system/app/DownloadProvider.apk' ---
+D/dalvikvm( 1905): VFY: dead code 0x00b7-00b8 in Lcom/android/providers/downloads/DownloadThread;.run ()V
+D/dalvikvm( 1905): VFY: dead code 0x02a1-02a2 in Lcom/android/providers/downloads/DownloadThread;.run ()V
+D/dalvikvm( 1905): DexOpt: load 29ms, verify 370ms, opt 5ms
+D/installd( 1823): DexInv: --- END '/system/app/DownloadProvider.apk' (success) ---
+I/PackageManager( 1835): /system/app/DrmProvider.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/DrmProvider.apk' ---
+D/dalvikvm( 1906): DexOpt: load 7ms, verify 39ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/app/DrmProvider.apk' (success) ---
+I/PackageManager( 1835): /system/app/FactoryTest.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 15400 objects / 959704 bytes in 121ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/FactoryTest.apk' ---
+D/dalvikvm( 1907): VFY: dead code 0x004c-004c in Lcom/android/samsungtest/SimpleFunctionTest/IntensityTest;.getLightSensorValue ()Ljava/lang/String;
+D/dalvikvm( 1907): DexOpt: load 99ms, verify 537ms, opt 11ms
+D/installd( 1823): DexInv: --- END '/system/app/FactoryTest.apk' (success) ---
+I/PackageManager( 1835): /system/app/GlobalSearch.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/GlobalSearch.apk' ---
+D/dalvikvm( 1908): DexOpt: load 50ms, verify 282ms, opt 7ms
+I/        ( 1910): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1910): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1910): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1910): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1910): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1910, tid: 1910  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 beb30b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp beb30bd4
+I/DEBUG   ( 1818):  ip 00000018  sp beb30b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     beb30af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     beb30afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     beb30b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb30b04  0000b041  [heap]
+I/DEBUG   ( 1818):     beb30b08  0000b041  [heap]
+I/DEBUG   ( 1818):     beb30b0c  00000000  
+I/DEBUG   ( 1818):     beb30b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     beb30b14  00000000  
+I/DEBUG   ( 1818):     beb30b18  beb30bd4  [stack]
+I/DEBUG   ( 1818):     beb30b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     beb30b20  00000003  
+I/DEBUG   ( 1818):     beb30b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     beb30b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb30b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     beb30b30  df002777  
+I/DEBUG   ( 1818):     beb30b34  e3a070ad  
+I/DEBUG   ( 1818): #01 beb30b38  00000000  
+I/DEBUG   ( 1818):     beb30b3c  00000000  
+I/DEBUG   ( 1818):     beb30b40  00000000  
+I/DEBUG   ( 1818):     beb30b44  00000000  
+I/DEBUG   ( 1818):     beb30b48  00000000  
+I/DEBUG   ( 1818):     beb30b4c  00000000  
+I/DEBUG   ( 1818):     beb30b50  00000000  
+I/DEBUG   ( 1818):     beb30b54  00000000  
+I/DEBUG   ( 1818):     beb30b58  00000000  
+I/DEBUG   ( 1818):     beb30b5c  00000000  
+I/DEBUG   ( 1818):     beb30b60  00000000  
+I/DEBUG   ( 1818):     beb30b64  00000000  
+I/DEBUG   ( 1818):     beb30b68  00000000  
+I/DEBUG   ( 1818):     beb30b6c  00000000  
+I/DEBUG   ( 1818):     beb30b70  00000000  
+I/DEBUG   ( 1818):     beb30b74  00000000  
+I/DEBUG   ( 1818):     beb30b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb30b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb30b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb30b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     beb30b88  0000029c  
+I/DEBUG   ( 1818):     beb30b8c  0000036c  
+I/DEBUG   ( 1818):     beb30b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     beb30b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb30b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb30b9c  00000000  
+I/DEBUG   ( 1818):     beb30ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beb30ba4  00000000  
+I/DEBUG   ( 1818):     beb30ba8  00000000  
+I/DEBUG   ( 1818):     beb30bac  0fe773f5  
+I/DEBUG   ( 1818):     beb30bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     beb30bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     beb30bb8  00000000  
+I/DEBUG   ( 1818):     beb30bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     beb30bc0  00000000  
+I/DEBUG   ( 1818):     beb30bc4  00000000  
+I/DEBUG   ( 1818):     beb30bc8  00000000  
+I/DEBUG   ( 1818):     beb30bcc  00000000  
+I/DEBUG   ( 1818):     beb30bd0  00000000  
+I/DEBUG   ( 1818):     beb30bd4  80626fd8  /system/lib/libaudio.so
+D/installd( 1823): DexInv: --- END '/system/app/GlobalSearch.apk' (success) ---
+I/PackageManager( 1835): /system/app/HTMLViewer.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/HTMLViewer.apk' ---
+D/dalvikvm( 1912): DexOpt: load 18ms, verify 99ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/app/HTMLViewer.apk' (success) ---
+W/PackageParser( 1835): No actions in intent filter at /system/app/ImageEditor.apk Binary XML file line #94
+I/PackageManager( 1835): /system/app/ImageEditor.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 4889 objects / 383064 bytes in 106ms
+D/dalvikvm( 1835): GC freed 5625 objects / 467752 bytes in 117ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/ImageEditor.apk' ---
+D/dalvikvm( 1913): DexOpt: load 59ms, verify 483ms, opt 25ms
+I/        ( 1915): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1915): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1915): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1915): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1915): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1915, tid: 1915  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bede1b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bede1bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bede1b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+D/installd( 1823): DexInv: --- END '/system/app/ImageEditor.apk' (success) ---
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bede1af8  40000000  /dev/ashmem/system_properties (deleted)
+I/PackageManager( 1835): /system/app/InputEventApp.apk changed; collecting certs
+I/DEBUG   ( 1818):     bede1afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bede1b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bede1b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bede1b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bede1b0c  00000000  
+I/DEBUG   ( 1818):     bede1b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bede1b14  00000000  
+I/DEBUG   ( 1818):     bede1b18  bede1bd4  [stack]
+I/DEBUG   ( 1818):     bede1b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bede1b20  00000003  
+I/DEBUG   ( 1818):     bede1b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bede1b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bede1b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bede1b30  df002777  
+I/DEBUG   ( 1818):     bede1b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bede1b38  00000000  
+I/DEBUG   ( 1818):     bede1b3c  00000000  
+I/DEBUG   ( 1818):     bede1b40  00000000  
+I/DEBUG   ( 1818):     bede1b44  00000000  
+I/DEBUG   ( 1818):     bede1b48  00000000  
+I/DEBUG   ( 1818):     bede1b4c  00000000  
+I/DEBUG   ( 1818):     bede1b50  00000000  
+I/DEBUG   ( 1818):     bede1b54  00000000  
+I/DEBUG   ( 1818):     bede1b58  00000000  
+I/DEBUG   ( 1818):     bede1b5c  00000000  
+I/DEBUG   ( 1818):     bede1b60  00000000  
+I/DEBUG   ( 1818):     bede1b64  00000000  
+I/DEBUG   ( 1818):     bede1b68  00000000  
+I/DEBUG   ( 1818):     bede1b6c  00000000  
+I/DEBUG   ( 1818):     bede1b70  00000000  
+I/DEBUG   ( 1818):     bede1b74  00000000  
+I/DEBUG   ( 1818):     bede1b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bede1b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bede1b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bede1b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bede1b88  0000029c  
+I/DEBUG   ( 1818):     bede1b8c  0000036c  
+I/DEBUG   ( 1818):     bede1b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bede1b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bede1b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bede1b9c  00000000  
+I/DEBUG   ( 1818):     bede1ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bede1ba4  00000000  
+I/DEBUG   ( 1818):     bede1ba8  00000000  
+I/DEBUG   ( 1818):     bede1bac  69efedb6  
+I/DEBUG   ( 1818):     bede1bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bede1bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bede1bb8  00000000  
+I/DEBUG   ( 1818):     bede1bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bede1bc0  00000000  
+I/DEBUG   ( 1818):     bede1bc4  00000000  
+I/DEBUG   ( 1818):     bede1bc8  00000000  
+I/DEBUG   ( 1818):     bede1bcc  00000000  
+I/DEBUG   ( 1818):     bede1bd0  00000000  
+I/DEBUG   ( 1818):     bede1bd4  80626fd8  /system/lib/libaudio.so
+D/installd( 1823): DexInv: --- BEGIN '/system/app/InputEventApp.apk' ---
+D/dalvikvm( 1917): DexOpt: load 6ms, verify 35ms, opt 0ms
+D/installd( 1823): DexInv: --- END '/system/app/InputEventApp.apk' (success) ---
+I/PackageManager( 1835): /system/app/MediaProvider.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/MediaProvider.apk' ---
+D/dalvikvm( 1918): VFY: dead code 0x009a-009c in Lcom/android/providers/media/MediaThumbRequest;.execute ()V
+D/dalvikvm( 1918): DexOpt: load 30ms, verify 187ms, opt 4ms
+D/installd( 1823): DexInv: --- END '/system/app/MediaProvider.apk' (success) ---
+I/PackageManager( 1835): /system/app/Mms.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 4663 objects / 359800 bytes in 121ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Mms.apk' ---
+D/dalvikvm( 1919): DexOpt: load 391ms, verify 1794ms, opt 129ms
+D/installd( 1823): DexInv: --- END '/system/app/Mms.apk' (success) ---
+I/        ( 1921): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1921): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1921): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1921): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1921): Unable to attach mixer to device default: No such file or directory
+I/PackageManager( 1835): /system/app/MusicPlayer.apk changed; collecting certs
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1921, tid: 1921  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 beac3b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp beac3bd4
+I/DEBUG   ( 1818):  ip 00000018  sp beac3b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+D/dalvikvm( 1835): GC freed 11199 objects / 734032 bytes in 202ms
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     beac3af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     beac3afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     beac3b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beac3b04  0000b041  [heap]
+I/DEBUG   ( 1818):     beac3b08  0000b041  [heap]
+I/DEBUG   ( 1818):     beac3b0c  00000000  
+I/DEBUG   ( 1818):     beac3b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     beac3b14  00000000  
+I/DEBUG   ( 1818):     beac3b18  beac3bd4  [stack]
+I/DEBUG   ( 1818):     beac3b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     beac3b20  00000003  
+I/DEBUG   ( 1818):     beac3b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     beac3b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beac3b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     beac3b30  df002777  
+I/DEBUG   ( 1818):     beac3b34  e3a070ad  
+I/DEBUG   ( 1818): #01 beac3b38  00000000  
+I/DEBUG   ( 1818):     beac3b3c  00000000  
+I/DEBUG   ( 1818):     beac3b40  00000000  
+I/DEBUG   ( 1818):     beac3b44  00000000  
+I/DEBUG   ( 1818):     beac3b48  00000000  
+I/DEBUG   ( 1818):     beac3b4c  00000000  
+I/DEBUG   ( 1818):     beac3b50  00000000  
+I/DEBUG   ( 1818):     beac3b54  00000000  
+I/DEBUG   ( 1818):     beac3b58  00000000  
+I/DEBUG   ( 1818):     beac3b5c  00000000  
+I/DEBUG   ( 1818):     beac3b60  00000000  
+I/DEBUG   ( 1818):     beac3b64  00000000  
+I/DEBUG   ( 1818):     beac3b68  00000000  
+I/DEBUG   ( 1818):     beac3b6c  00000000  
+I/DEBUG   ( 1818):     beac3b70  00000000  
+I/DEBUG   ( 1818):     beac3b74  00000000  
+I/DEBUG   ( 1818):     beac3b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beac3b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beac3b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beac3b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     beac3b88  0000029c  
+I/DEBUG   ( 1818):     beac3b8c  0000036c  
+I/DEBUG   ( 1818):     beac3b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     beac3b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beac3b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beac3b9c  00000000  
+I/DEBUG   ( 1818):     beac3ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     beac3ba4  00000000  
+I/DEBUG   ( 1818):     beac3ba8  00000000  
+I/DEBUG   ( 1818):     beac3bac  cb654d2e  
+I/DEBUG   ( 1818):     beac3bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     beac3bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     beac3bb8  00000000  
+I/DEBUG   ( 1818):     beac3bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     beac3bc0  00000000  
+I/DEBUG   ( 1818):     beac3bc4  00000000  
+I/DEBUG   ( 1818):     beac3bc8  00000000  
+I/DEBUG   ( 1818):     beac3bcc  00000000  
+I/DEBUG   ( 1818):     beac3bd0  00000000  
+I/DEBUG   ( 1818):     beac3bd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1835): GC freed 5238 objects / 501904 bytes in 118ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/MusicPlayer.apk' ---
+D/dalvikvm( 1923): DexOpt: load 281ms, verify 1091ms, opt 40ms
+D/installd( 1823): DexInv: --- END '/system/app/MusicPlayer.apk' (success) ---
+I/PackageManager( 1835): /system/app/NetworkLocation.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/NetworkLocation.apk' ---
+D/dalvikvm( 1927): DexOpt: load 81ms, verify 430ms, opt 11ms
+I/        ( 1925): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1925): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1925): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1925): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1925): Unable to attach mixer to device default: No such file or directory
+D/installd( 1823): DexInv: --- END '/system/app/NetworkLocation.apk' (success) ---
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1925, tid: 1925  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bed75b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bed75bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bed75b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bed75af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed75afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed75b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed75b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bed75b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bed75b0c  00000000  
+I/DEBUG   ( 1818):     bed75b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed75b14  00000000  
+I/DEBUG   ( 1818):     bed75b18  bed75bd4  [stack]
+I/DEBUG   ( 1818):     bed75b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bed75b20  00000003  
+I/DEBUG   ( 1818):     bed75b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bed75b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed75b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bed75b30  df002777  
+I/DEBUG   ( 1818):     bed75b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bed75b38  00000000  
+I/DEBUG   ( 1818):     bed75b3c  00000000  
+I/DEBUG   ( 1818):     bed75b40  00000000  
+I/DEBUG   ( 1818):     bed75b44  00000000  
+I/DEBUG   ( 1818):     bed75b48  00000000  
+I/DEBUG   ( 1818):     bed75b4c  00000000  
+I/DEBUG   ( 1818):     bed75b50  00000000  
+I/DEBUG   ( 1818):     bed75b54  00000000  
+I/DEBUG   ( 1818):     bed75b58  00000000  
+I/DEBUG   ( 1818):     bed75b5c  00000000  
+I/DEBUG   ( 1818):     bed75b60  00000000  
+I/DEBUG   ( 1818):     bed75b64  00000000  
+I/DEBUG   ( 1818):     bed75b68  00000000  
+I/DEBUG   ( 1818):     bed75b6c  00000000  
+I/DEBUG   ( 1818):     bed75b70  00000000  
+I/DEBUG   ( 1818):     bed75b74  00000000  
+I/DEBUG   ( 1818):     bed75b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed75b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed75b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed75b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed75b88  0000029c  
+I/DEBUG   ( 1818):     bed75b8c  0000036c  
+I/DEBUG   ( 1818):     bed75b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed75b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed75b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed75b9c  00000000  
+I/DEBUG   ( 1818):     bed75ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed75ba4  00000000  
+I/DEBUG   ( 1818):     bed75ba8  00000000  
+I/DEBUG   ( 1818):     bed75bac  f415fed2  
+I/DEBUG   ( 1818):     bed75bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed75bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bed75bb8  00000000  
+I/DEBUG   ( 1818):     bed75bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed75bc0  00000000  
+D/dalvikvm( 1835): GC freed 5085 objects / 401312 bytes in 215ms
+I/DEBUG   ( 1818):     bed75bc4  00000000  
+I/DEBUG   ( 1818):     bed75bc8  00000000  
+I/DEBUG   ( 1818):     bed75bcc  00000000  
+I/DEBUG   ( 1818):     bed75bd0  00000000  
+I/DEBUG   ( 1818):     bed75bd4  80626fd8  /system/lib/libaudio.so
+I/PackageManager( 1835): /system/app/OPP.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/OPP.apk' ---
+D/dalvikvm( 1928): DexOpt: load 52ms, verify 463ms, opt 12ms
+D/installd( 1823): DexInv: --- END '/system/app/OPP.apk' (success) ---
+I/PackageManager( 1835): /system/app/PackageInstaller.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/PackageInstaller.apk' ---
+D/dalvikvm( 1929): DexOpt: load 25ms, verify 158ms, opt 2ms
+D/installd( 1823): DexInv: --- END '/system/app/PackageInstaller.apk' (success) ---
+I/PackageManager( 1835): /system/app/Personalization.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Personalization.apk' ---
+D/dalvikvm( 1930): DexOpt: load 21ms, verify 124ms, opt 2ms
+D/installd( 1823): DexInv: --- END '/system/app/Personalization.apk' (success) ---
+I/PackageManager( 1835): /system/app/PhoneCrashNotifier.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 14733 objects / 908800 bytes in 125ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/PhoneCrashNotifier.apk' ---
+D/dalvikvm( 1931): DexOpt: load 22ms, verify 75ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/app/PhoneCrashNotifier.apk' (success) ---
+I/PackageManager( 1835): /system/app/Phone_Util.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Phone_Util.apk' ---
+D/dalvikvm( 1932): DexOpt: load 80ms, verify 163ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/app/Phone_Util.apk' (success) ---
+I/PackageManager( 1835): /system/app/PicoTts.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/PicoTts.apk' ---
+D/dalvikvm( 1936): DexOpt: load 53ms, verify 30ms, opt 0ms
+I/        ( 1934): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1934): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1934): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1934): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1934): Unable to attach mixer to device default: No such file or directory
+D/installd( 1823): DexInv: --- END '/system/app/PicoTts.apk' (success) ---
+I/PackageManager( 1835): /system/app/PowerOnOffTest.apk changed; collecting certs
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1934, tid: 1934  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 be91db38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp be91dbd4
+I/DEBUG   ( 1818):  ip 00000018  sp be91db38  lr 806241a0  pc 8064905c  cpsr 00000010
+D/installd( 1823): DexInv: --- BEGIN '/system/app/PowerOnOffTest.apk' ---
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     be91daf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be91dafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     be91db00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91db04  0000b041  [heap]
+I/DEBUG   ( 1818):     be91db08  0000b041  [heap]
+I/DEBUG   ( 1818):     be91db0c  00000000  
+I/DEBUG   ( 1818):     be91db10  0000aec0  [heap]
+I/DEBUG   ( 1818):     be91db14  00000000  
+I/DEBUG   ( 1818):     be91db18  be91dbd4  [stack]
+I/DEBUG   ( 1818):     be91db1c  0000b041  [heap]
+I/DEBUG   ( 1818):     be91db20  00000003  
+I/DEBUG   ( 1818):     be91db24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     be91db28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91db2c  0000b030  [heap]
+I/DEBUG   ( 1818):     be91db30  df002777  
+I/DEBUG   ( 1818):     be91db34  e3a070ad  
+I/DEBUG   ( 1818): #01 be91db38  00000000  
+I/DEBUG   ( 1818):     be91db3c  00000000  
+I/DEBUG   ( 1818):     be91db40  00000000  
+I/DEBUG   ( 1818):     be91db44  00000000  
+I/DEBUG   ( 1818):     be91db48  00000000  
+I/DEBUG   ( 1818):     be91db4c  00000000  
+I/DEBUG   ( 1818):     be91db50  00000000  
+I/DEBUG   ( 1818):     be91db54  00000000  
+I/DEBUG   ( 1818):     be91db58  00000000  
+I/DEBUG   ( 1818):     be91db5c  00000000  
+I/DEBUG   ( 1818):     be91db60  00000000  
+I/DEBUG   ( 1818):     be91db64  00000000  
+I/DEBUG   ( 1818):     be91db68  00000000  
+I/DEBUG   ( 1818):     be91db6c  00000000  
+I/DEBUG   ( 1818):     be91db70  00000000  
+I/DEBUG   ( 1818):     be91db74  00000000  
+I/DEBUG   ( 1818):     be91db78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91db7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91db80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91db84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     be91db88  0000029c  
+I/DEBUG   ( 1818):     be91db8c  0000036c  
+I/DEBUG   ( 1818):     be91db90  0000aec0  [heap]
+I/DEBUG   ( 1818):     be91db94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91db98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91db9c  00000000  
+I/DEBUG   ( 1818):     be91dba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be91dba4  00000000  
+I/DEBUG   ( 1818):     be91dba8  00000000  
+I/DEBUG   ( 1818):     be91dbac  a5d1be6e  
+I/DEBUG   ( 1818):     be91dbb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be91dbb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     be91dbb8  00000000  
+I/DEBUG   ( 1818):     be91dbbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     be91dbc0  00000000  
+I/DEBUG   ( 1818):     be91dbc4  00000000  
+I/DEBUG   ( 1818):     be91dbc8  00000000  
+I/DEBUG   ( 1818):     be91dbcc  00000000  
+I/DEBUG   ( 1818):     be91dbd0  00000000  
+I/DEBUG   ( 1818):     be91dbd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1937): DexOpt: load 31ms, verify 14ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/app/PowerOnOffTest.apk' (success) ---
+I/PackageManager( 1835): /system/app/Preconfig.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 7941 objects / 555544 bytes in 121ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Preconfig.apk' ---
+D/dalvikvm( 1938): DexOpt: load 30ms, verify 148ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/app/Preconfig.apk' (success) ---
+I/PackageManager( 1835): /system/app/RilFactoryApp.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/RilFactoryApp.apk' ---
+D/dalvikvm( 1939): DexOpt: load 18ms, verify 16ms, opt 1ms
+D/installd( 1823): DexInv: --- END '/system/app/RilFactoryApp.apk' (success) ---
+I/PackageManager( 1835): /system/app/SamsungCamera.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 5923 objects / 369704 bytes in 121ms
+D/dalvikvm( 1835): GC freed 3015 objects / 318848 bytes in 120ms
+D/dalvikvm( 1835): GC freed 42 objects / 427312 bytes in 116ms
+D/dalvikvm( 1835): GC freed 1085 objects / 406888 bytes in 206ms
+I/        ( 1941): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1941): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1941): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1941): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1941): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1941, tid: 1941  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bee69b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bee69bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bee69b38  lr 806241a0  pc 8064905c  cpsr 00000010
+D/dalvikvm( 1835): GC freed 3936 objects / 154032 bytes in 219ms
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bee69af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bee69afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bee69b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bee69b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bee69b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bee69b0c  00000000  
+I/DEBUG   ( 1818):     bee69b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bee69b14  00000000  
+I/DEBUG   ( 1818):     bee69b18  bee69bd4  [stack]
+I/DEBUG   ( 1818):     bee69b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bee69b20  00000003  
+I/DEBUG   ( 1818):     bee69b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bee69b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bee69b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bee69b30  df002777  
+I/DEBUG   ( 1818):     bee69b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bee69b38  00000000  
+I/DEBUG   ( 1818):     bee69b3c  00000000  
+I/DEBUG   ( 1818):     bee69b40  00000000  
+I/DEBUG   ( 1818):     bee69b44  00000000  
+I/DEBUG   ( 1818):     bee69b48  00000000  
+I/DEBUG   ( 1818):     bee69b4c  00000000  
+I/DEBUG   ( 1818):     bee69b50  00000000  
+I/DEBUG   ( 1818):     bee69b54  00000000  
+I/DEBUG   ( 1818):     bee69b58  00000000  
+I/DEBUG   ( 1818):     bee69b5c  00000000  
+I/DEBUG   ( 1818):     bee69b60  00000000  
+I/DEBUG   ( 1818):     bee69b64  00000000  
+I/DEBUG   ( 1818):     bee69b68  00000000  
+I/DEBUG   ( 1818):     bee69b6c  00000000  
+I/DEBUG   ( 1818):     bee69b70  00000000  
+I/DEBUG   ( 1818):     bee69b74  00000000  
+I/DEBUG   ( 1818):     bee69b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bee69b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bee69b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bee69b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bee69b88  0000029c  
+I/DEBUG   ( 1818):     bee69b8c  0000036c  
+I/DEBUG   ( 1818):     bee69b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bee69b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bee69b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bee69b9c  00000000  
+I/DEBUG   ( 1818):     bee69ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bee69ba4  00000000  
+I/DEBUG   ( 1818):     bee69ba8  00000000  
+I/DEBUG   ( 1818):     bee69bac  7ad7879d  
+I/DEBUG   ( 1818):     bee69bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bee69bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bee69bb8  00000000  
+I/DEBUG   ( 1818):     bee69bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bee69bc0  00000000  
+I/DEBUG   ( 1818):     bee69bc4  00000000  
+I/DEBUG   ( 1818):     bee69bc8  00000000  
+I/DEBUG   ( 1818):     bee69bcc  00000000  
+I/DEBUG   ( 1818):     bee69bd0  00000000  
+I/DEBUG   ( 1818):     bee69bd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1835): GC freed 5016 objects / 446984 bytes in 144ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/SamsungCamera.apk' ---
+I/        ( 1945): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1945): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1945): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1945): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1945): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1945, tid: 1945  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bed87b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bed87bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bed87b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bed87af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed87afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed87b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed87b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bed87b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bed87b0c  00000000  
+I/DEBUG   ( 1818):     bed87b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed87b14  00000000  
+I/DEBUG   ( 1818):     bed87b18  bed87bd4  [stack]
+I/DEBUG   ( 1818):     bed87b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bed87b20  00000003  
+I/DEBUG   ( 1818):     bed87b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bed87b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed87b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bed87b30  df002777  
+I/DEBUG   ( 1818):     bed87b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bed87b38  00000000  
+I/DEBUG   ( 1818):     bed87b3c  00000000  
+I/DEBUG   ( 1818):     bed87b40  00000000  
+I/DEBUG   ( 1818):     bed87b44  00000000  
+I/DEBUG   ( 1818):     bed87b48  00000000  
+I/DEBUG   ( 1818):     bed87b4c  00000000  
+I/DEBUG   ( 1818):     bed87b50  00000000  
+I/DEBUG   ( 1818):     bed87b54  00000000  
+I/DEBUG   ( 1818):     bed87b58  00000000  
+I/DEBUG   ( 1818):     bed87b5c  00000000  
+I/DEBUG   ( 1818):     bed87b60  00000000  
+I/DEBUG   ( 1818):     bed87b64  00000000  
+I/DEBUG   ( 1818):     bed87b68  00000000  
+I/DEBUG   ( 1818):     bed87b6c  00000000  
+I/DEBUG   ( 1818):     bed87b70  00000000  
+I/DEBUG   ( 1818):     bed87b74  00000000  
+I/DEBUG   ( 1818):     bed87b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed87b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed87b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed87b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed87b88  0000029c  
+I/DEBUG   ( 1818):     bed87b8c  0000036c  
+I/DEBUG   ( 1818):     bed87b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed87b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed87b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed87b9c  00000000  
+I/DEBUG   ( 1818):     bed87ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed87ba4  00000000  
+I/DEBUG   ( 1818):     bed87ba8  00000000  
+I/DEBUG   ( 1818):     bed87bac  e7afa222  
+I/DEBUG   ( 1818):     bed87bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed87bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bed87bb8  00000000  
+I/DEBUG   ( 1818):     bed87bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed87bc0  00000000  
+I/DEBUG   ( 1818):     bed87bc4  00000000  
+I/DEBUG   ( 1818):     bed87bc8  00000000  
+I/DEBUG   ( 1818):     bed87bcc  00000000  
+I/DEBUG   ( 1818):     bed87bd0  00000000  
+I/DEBUG   ( 1818):     bed87bd4  80626fd8  /system/lib/libaudio.so
+I/        ( 1948): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1948): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1948): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1948): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1948): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1948, tid: 1948  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 be96db38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp be96dbd4
+I/DEBUG   ( 1818):  ip 00000018  sp be96db38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     be96daf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be96dafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     be96db00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be96db04  0000b041  [heap]
+I/DEBUG   ( 1818):     be96db08  0000b041  [heap]
+I/DEBUG   ( 1818):     be96db0c  00000000  
+I/DEBUG   ( 1818):     be96db10  0000aec0  [heap]
+I/DEBUG   ( 1818):     be96db14  00000000  
+I/DEBUG   ( 1818):     be96db18  be96dbd4  [stack]
+I/DEBUG   ( 1818):     be96db1c  0000b041  [heap]
+I/DEBUG   ( 1818):     be96db20  00000003  
+I/DEBUG   ( 1818):     be96db24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     be96db28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be96db2c  0000b030  [heap]
+I/DEBUG   ( 1818):     be96db30  df002777  
+I/DEBUG   ( 1818):     be96db34  e3a070ad  
+I/DEBUG   ( 1818): #01 be96db38  00000000  
+I/DEBUG   ( 1818):     be96db3c  00000000  
+I/DEBUG   ( 1818):     be96db40  00000000  
+I/DEBUG   ( 1818):     be96db44  00000000  
+I/DEBUG   ( 1818):     be96db48  00000000  
+I/DEBUG   ( 1818):     be96db4c  00000000  
+I/DEBUG   ( 1818):     be96db50  00000000  
+I/DEBUG   ( 1818):     be96db54  00000000  
+I/DEBUG   ( 1818):     be96db58  00000000  
+I/DEBUG   ( 1818):     be96db5c  00000000  
+I/DEBUG   ( 1818):     be96db60  00000000  
+I/DEBUG   ( 1818):     be96db64  00000000  
+I/DEBUG   ( 1818):     be96db68  00000000  
+I/DEBUG   ( 1818):     be96db6c  00000000  
+I/DEBUG   ( 1818):     be96db70  00000000  
+I/DEBUG   ( 1818):     be96db74  00000000  
+I/DEBUG   ( 1818):     be96db78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be96db7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be96db80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be96db84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     be96db88  0000029c  
+I/DEBUG   ( 1818):     be96db8c  0000036c  
+I/DEBUG   ( 1818):     be96db90  0000aec0  [heap]
+I/DEBUG   ( 1818):     be96db94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be96db98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be96db9c  00000000  
+I/DEBUG   ( 1818):     be96dba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be96dba4  00000000  
+I/DEBUG   ( 1818):     be96dba8  00000000  
+I/DEBUG   ( 1818):     be96dbac  6b25fd85  
+I/DEBUG   ( 1818):     be96dbb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be96dbb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     be96dbb8  00000000  
+I/DEBUG   ( 1818):     be96dbbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     be96dbc0  00000000  
+I/DEBUG   ( 1818):     be96dbc4  00000000  
+I/DEBUG   ( 1818):     be96dbc8  00000000  
+I/DEBUG   ( 1818):     be96dbcc  00000000  
+I/DEBUG   ( 1818):     be96dbd0  00000000  
+I/DEBUG   ( 1818):     be96dbd4  80626fd8  /system/lib/libaudio.so
+I/        ( 1951): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1951): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1951): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1951): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1951): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1951, tid: 1951  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bef95b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bef95bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bef95b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bef95af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef95afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef95b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef95b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bef95b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bef95b0c  00000000  
+I/DEBUG   ( 1818):     bef95b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef95b14  00000000  
+I/DEBUG   ( 1818):     bef95b18  bef95bd4  [stack]
+I/DEBUG   ( 1818):     bef95b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bef95b20  00000003  
+I/DEBUG   ( 1818):     bef95b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bef95b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef95b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bef95b30  df002777  
+I/DEBUG   ( 1818):     bef95b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bef95b38  00000000  
+I/DEBUG   ( 1818):     bef95b3c  00000000  
+I/DEBUG   ( 1818):     bef95b40  00000000  
+I/DEBUG   ( 1818):     bef95b44  00000000  
+I/DEBUG   ( 1818):     bef95b48  00000000  
+I/DEBUG   ( 1818):     bef95b4c  00000000  
+I/DEBUG   ( 1818):     bef95b50  00000000  
+I/DEBUG   ( 1818):     bef95b54  00000000  
+I/DEBUG   ( 1818):     bef95b58  00000000  
+I/DEBUG   ( 1818):     bef95b5c  00000000  
+I/DEBUG   ( 1818):     bef95b60  00000000  
+I/DEBUG   ( 1818):     bef95b64  00000000  
+I/DEBUG   ( 1818):     bef95b68  00000000  
+I/DEBUG   ( 1818):     bef95b6c  00000000  
+I/DEBUG   ( 1818):     bef95b70  00000000  
+I/DEBUG   ( 1818):     bef95b74  00000000  
+I/DEBUG   ( 1818):     bef95b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef95b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef95b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef95b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bef95b88  0000029c  
+D/dalvikvm( 1943): DexOpt: load 2032ms, verify 9665ms, opt 491ms
+I/DEBUG   ( 1818):     bef95b8c  0000036c  
+I/DEBUG   ( 1818):     bef95b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef95b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef95b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef95b9c  00000000  
+I/DEBUG   ( 1818):     bef95ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bef95ba4  00000000  
+I/DEBUG   ( 1818):     bef95ba8  00000000  
+I/DEBUG   ( 1818):     bef95bac  ff524130  
+I/DEBUG   ( 1818):     bef95bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bef95bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bef95bb8  00000000  
+I/DEBUG   ( 1818):     bef95bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bef95bc0  00000000  
+I/DEBUG   ( 1818):     bef95bc4  00000000  
+I/DEBUG   ( 1818):     bef95bc8  00000000  
+I/DEBUG   ( 1818):     bef95bcc  00000000  
+I/DEBUG   ( 1818):     bef95bd0  00000000  
+I/DEBUG   ( 1818):     bef95bd4  80626fd8  /system/lib/libaudio.so
+D/installd( 1823): DexInv: --- END '/system/app/SamsungCamera.apk' (success) ---
+I/PackageManager( 1835): /system/app/Settings.apk changed; collecting certs
+D/dalvikvm( 1835): GC freed 7183 objects / 760240 bytes in 648ms
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Settings.apk' ---
+I/        ( 1954): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1954): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1954): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1954): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1954): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1954, tid: 1954  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bed47b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bed47bd4
+I/DEBUG   ( 1818):  ip 00000018  sp bed47b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bed47af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed47afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed47b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed47b04  0000b041  [heap]
+I/DEBUG   ( 1818):     bed47b08  0000b041  [heap]
+I/DEBUG   ( 1818):     bed47b0c  00000000  
+I/DEBUG   ( 1818):     bed47b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed47b14  00000000  
+I/DEBUG   ( 1818):     bed47b18  bed47bd4  [stack]
+I/DEBUG   ( 1818):     bed47b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bed47b20  00000003  
+I/DEBUG   ( 1818):     bed47b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bed47b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed47b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bed47b30  df002777  
+I/DEBUG   ( 1818):     bed47b34  e3a070ad  
+I/DEBUG   ( 1818): #01 bed47b38  00000000  
+I/DEBUG   ( 1818):     bed47b3c  00000000  
+I/DEBUG   ( 1818):     bed47b40  00000000  
+I/DEBUG   ( 1818):     bed47b44  00000000  
+I/DEBUG   ( 1818):     bed47b48  00000000  
+I/DEBUG   ( 1818):     bed47b4c  00000000  
+I/DEBUG   ( 1818):     bed47b50  00000000  
+I/DEBUG   ( 1818):     bed47b54  00000000  
+I/DEBUG   ( 1818):     bed47b58  00000000  
+I/DEBUG   ( 1818):     bed47b5c  00000000  
+I/DEBUG   ( 1818):     bed47b60  00000000  
+I/DEBUG   ( 1818):     bed47b64  00000000  
+I/DEBUG   ( 1818):     bed47b68  00000000  
+I/DEBUG   ( 1818):     bed47b6c  00000000  
+I/DEBUG   ( 1818):     bed47b70  00000000  
+I/DEBUG   ( 1818):     bed47b74  00000000  
+I/DEBUG   ( 1818):     bed47b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed47b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed47b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed47b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bed47b88  0000029c  
+I/DEBUG   ( 1818):     bed47b8c  0000036c  
+I/DEBUG   ( 1818):     bed47b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed47b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed47b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed47b9c  00000000  
+I/DEBUG   ( 1818):     bed47ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bed47ba4  00000000  
+I/DEBUG   ( 1818):     bed47ba8  00000000  
+I/DEBUG   ( 1818):     bed47bac  13eb9a5a  
+I/DEBUG   ( 1818):     bed47bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bed47bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bed47bb8  00000000  
+I/DEBUG   ( 1818):     bed47bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bed47bc0  00000000  
+I/DEBUG   ( 1818):     bed47bc4  00000000  
+I/DEBUG   ( 1818):     bed47bc8  00000000  
+I/DEBUG   ( 1818):     bed47bcc  00000000  
+I/DEBUG   ( 1818):     bed47bd0  00000000  
+I/DEBUG   ( 1818):     bed47bd4  80626fd8  /system/lib/libaudio.so
+I/        ( 1958): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1958): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1958): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1958): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1958): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1958, tid: 1958  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bea0bb38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bea0bbd4
+I/DEBUG   ( 1818):  ip 00000018  sp bea0bb38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bea0baf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bea0bafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bea0bb00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea0bb04  0000b041  [heap]
+I/DEBUG   ( 1818):     bea0bb08  0000b041  [heap]
+I/DEBUG   ( 1818):     bea0bb0c  00000000  
+I/DEBUG   ( 1818):     bea0bb10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bea0bb14  00000000  
+I/DEBUG   ( 1818):     bea0bb18  bea0bbd4  [stack]
+I/DEBUG   ( 1818):     bea0bb1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bea0bb20  00000003  
+I/DEBUG   ( 1818):     bea0bb24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     bea0bb28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea0bb2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bea0bb30  df002777  
+I/DEBUG   ( 1818):     bea0bb34  e3a070ad  
+I/DEBUG   ( 1818): #01 bea0bb38  00000000  
+I/DEBUG   ( 1818):     bea0bb3c  00000000  
+I/DEBUG   ( 1818):     bea0bb40  00000000  
+I/DEBUG   ( 1818):     bea0bb44  00000000  
+I/DEBUG   ( 1818):     bea0bb48  00000000  
+I/DEBUG   ( 1818):     bea0bb4c  00000000  
+I/DEBUG   ( 1818):     bea0bb50  00000000  
+I/DEBUG   ( 1818):     bea0bb54  00000000  
+I/DEBUG   ( 1818):     bea0bb58  00000000  
+I/DEBUG   ( 1818):     bea0bb5c  00000000  
+I/DEBUG   ( 1818):     bea0bb60  00000000  
+I/DEBUG   ( 1818):     bea0bb64  00000000  
+I/DEBUG   ( 1818):     bea0bb68  00000000  
+I/DEBUG   ( 1818):     bea0bb6c  00000000  
+I/DEBUG   ( 1818):     bea0bb70  00000000  
+I/DEBUG   ( 1818):     bea0bb74  00000000  
+I/DEBUG   ( 1818):     bea0bb78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea0bb7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea0bb80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea0bb84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bea0bb88  0000029c  
+I/DEBUG   ( 1818):     bea0bb8c  0000036c  
+I/DEBUG   ( 1818):     bea0bb90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bea0bb94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea0bb98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea0bb9c  00000000  
+I/DEBUG   ( 1818):     bea0bba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea0bba4  00000000  
+I/DEBUG   ( 1818):     bea0bba8  00000000  
+I/DEBUG   ( 1818):     bea0bbac  7419df9f  
+I/DEBUG   ( 1818):     bea0bbb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bea0bbb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bea0bbb8  00000000  
+I/DEBUG   ( 1818):     bea0bbbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bea0bbc0  00000000  
+I/DEBUG   ( 1818):     bea0bbc4  00000000  
+I/DEBUG   ( 1818):     bea0bbc8  00000000  
+I/DEBUG   ( 1818):     bea0bbcc  00000000  
+I/DEBUG   ( 1818):     bea0bbd0  00000000  
+I/DEBUG   ( 1818):     bea0bbd4  80626fd8  /system/lib/libaudio.so
+I/        ( 1961): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1961): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1961): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1961): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1961): Unable to attach mixer to device default: No such file or directory
+D/dalvikvm( 1956): DexOpt: load 995ms, verify 6477ms, opt 203ms
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1961, tid: 1961  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 be974b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp be974bd4
+I/DEBUG   ( 1818):  ip 00000018  sp be974b38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     be974af8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be974afc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     be974b00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be974b04  0000b041  [heap]
+I/DEBUG   ( 1818):     be974b08  0000b041  [heap]
+I/DEBUG   ( 1818):     be974b0c  00000000  
+I/DEBUG   ( 1818):     be974b10  0000aec0  [heap]
+I/DEBUG   ( 1818):     be974b14  00000000  
+I/DEBUG   ( 1818):     be974b18  be974bd4  [stack]
+I/DEBUG   ( 1818):     be974b1c  0000b041  [heap]
+I/DEBUG   ( 1818):     be974b20  00000003  
+I/DEBUG   ( 1818):     be974b24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     be974b28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be974b2c  0000b030  [heap]
+I/DEBUG   ( 1818):     be974b30  df002777  
+I/DEBUG   ( 1818):     be974b34  e3a070ad  
+I/DEBUG   ( 1818): #01 be974b38  00000000  
+I/DEBUG   ( 1818):     be974b3c  00000000  
+I/DEBUG   ( 1818):     be974b40  00000000  
+I/DEBUG   ( 1818):     be974b44  00000000  
+I/DEBUG   ( 1818):     be974b48  00000000  
+I/DEBUG   ( 1818):     be974b4c  00000000  
+I/DEBUG   ( 1818):     be974b50  00000000  
+I/DEBUG   ( 1818):     be974b54  00000000  
+I/DEBUG   ( 1818):     be974b58  00000000  
+I/DEBUG   ( 1818):     be974b5c  00000000  
+I/DEBUG   ( 1818):     be974b60  00000000  
+I/DEBUG   ( 1818):     be974b64  00000000  
+I/DEBUG   ( 1818):     be974b68  00000000  
+I/DEBUG   ( 1818):     be974b6c  00000000  
+I/DEBUG   ( 1818):     be974b70  00000000  
+I/DEBUG   ( 1818):     be974b74  00000000  
+I/DEBUG   ( 1818):     be974b78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be974b7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be974b80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be974b84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     be974b88  0000029c  
+I/DEBUG   ( 1818):     be974b8c  0000036c  
+I/DEBUG   ( 1818):     be974b90  0000aec0  [heap]
+I/DEBUG   ( 1818):     be974b94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be974b98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be974b9c  00000000  
+I/DEBUG   ( 1818):     be974ba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be974ba4  00000000  
+I/DEBUG   ( 1818):     be974ba8  00000000  
+I/DEBUG   ( 1818):     be974bac  523de5a8  
+I/DEBUG   ( 1818):     be974bb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be974bb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     be974bb8  00000000  
+I/DEBUG   ( 1818):     be974bbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     be974bc0  00000000  
+I/DEBUG   ( 1818):     be974bc4  00000000  
+I/DEBUG   ( 1818):     be974bc8  00000000  
+I/DEBUG   ( 1818):     be974bcc  00000000  
+I/DEBUG   ( 1818):     be974bd0  00000000  
+I/DEBUG   ( 1818):     be974bd4  80626fd8  /system/lib/libaudio.so
+D/installd( 1823): DexInv: --- END '/system/app/Settings.apk' (success) ---
+I/PackageManager( 1835): /system/app/SettingsProvider.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/SettingsProvider.apk' ---
+D/dalvikvm( 1966): DexOpt: load 63ms, verify 530ms, opt 4ms
+D/installd( 1823): DexInv: --- END '/system/app/SettingsProvider.apk' (success) ---
+I/PackageManager( 1835): /system/app/Stk.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Stk.apk' ---
+I/        ( 1964): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1964): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1964): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1964): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1964): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1964, tid: 1964  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 be99eb38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp be99ebd4
+I/DEBUG   ( 1818):  ip 00000018  sp be99eb38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     be99eaf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be99eafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     be99eb00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be99eb04  0000b041  [heap]
+I/DEBUG   ( 1818):     be99eb08  0000b041  [heap]
+I/DEBUG   ( 1818):     be99eb0c  00000000  
+I/DEBUG   ( 1818):     be99eb10  0000aec0  [heap]
+I/DEBUG   ( 1818):     be99eb14  00000000  
+I/DEBUG   ( 1818):     be99eb18  be99ebd4  [stack]
+I/DEBUG   ( 1818):     be99eb1c  0000b041  [heap]
+I/DEBUG   ( 1818):     be99eb20  00000003  
+I/DEBUG   ( 1818):     be99eb24  afb05a8b  /system/lib/libcutils.so
+I/DEBUG   ( 1818):     be99eb28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be99eb2c  0000b030  [heap]
+I/DEBUG   ( 1818):     be99eb30  df002777  
+I/DEBUG   ( 1818):     be99eb34  e3a070ad  
+I/DEBUG   ( 1818): #01 be99eb38  00000000  
+I/DEBUG   ( 1818):     be99eb3c  00000000  
+I/DEBUG   ( 1818):     be99eb40  00000000  
+I/DEBUG   ( 1818):     be99eb44  00000000  
+I/DEBUG   ( 1818):     be99eb48  00000000  
+I/DEBUG   ( 1818):     be99eb4c  00000000  
+I/DEBUG   ( 1818):     be99eb50  00000000  
+I/DEBUG   ( 1818):     be99eb54  00000000  
+I/DEBUG   ( 1818):     be99eb58  00000000  
+I/DEBUG   ( 1818):     be99eb5c  00000000  
+I/DEBUG   ( 1818):     be99eb60  00000000  
+I/DEBUG   ( 1818):     be99eb64  00000000  
+I/DEBUG   ( 1818):     be99eb68  00000000  
+I/DEBUG   ( 1818):     be99eb6c  00000000  
+I/DEBUG   ( 1818):     be99eb70  00000000  
+I/DEBUG   ( 1818):     be99eb74  00000000  
+I/DEBUG   ( 1818):     be99eb78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be99eb7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be99eb80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be99eb84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     be99eb88  0000029c  
+I/DEBUG   ( 1818):     be99eb8c  0000036c  
+I/DEBUG   ( 1818):     be99eb90  0000aec0  [heap]
+I/DEBUG   ( 1818):     be99eb94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be99eb98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be99eb9c  00000000  
+I/DEBUG   ( 1818):     be99eba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     be99eba4  00000000  
+I/DEBUG   ( 1818):     be99eba8  00000000  
+I/DEBUG   ( 1818):     be99ebac  dd178784  
+I/DEBUG   ( 1818):     be99ebb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     be99ebb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     be99ebb8  00000000  
+I/DEBUG   ( 1818):     be99ebbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     be99ebc0  00000000  
+I/DEBUG   ( 1818):     be99ebc4  00000000  
+I/DEBUG   ( 1818):     be99ebc8  00000000  
+I/DEBUG   ( 1818):     be99ebcc  00000000  
+I/DEBUG   ( 1818):     be99ebd0  00000000  
+I/DEBUG   ( 1818):     be99ebd4  80626fd8  /system/lib/libaudio.so
+D/dalvikvm( 1967): DexOpt: load 170ms, verify 973ms, opt 6ms
+I/        ( 1969): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1969): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1969): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1969): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1969): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1969, tid: 1969  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 bea9ab38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp bea9abd4
+I/DEBUG   ( 1818):  ip 00000018  sp bea9ab38  lr 806241a0  pc 8064905c  cpsr 00000010
+I/DEBUG   ( 1818):          #00  pc 0004905c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #01  pc 0002419c  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #02  pc 00026fd4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #03  pc 00027020  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #04  pc 0008ab16  /system/lib/libaudio.so
+I/DEBUG   ( 1818):          #05  pc 00022bc2  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #06  pc 00022c46  /system/lib/libaudioflinger.so
+I/DEBUG   ( 1818):          #07  pc 0000879e  /system/bin/mediaserver
+I/DEBUG   ( 1818):          #08  pc 0000c2c6  /system/lib/libc.so
+I/DEBUG   ( 1818):          #09  pc b00018aa  /system/bin/linker
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around pc:
+I/DEBUG   ( 1818): 8064904c 8afffffb e1c300b0 e3a00000 e12fff1e 
+I/DEBUG   ( 1818): 8064905c e5b03010 e1530000 03a00000 12430004 
+I/DEBUG   ( 1818): 8064906c e12fff1e e5902010 e2803010 e1520003 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): code around lr:
+I/DEBUG   ( 1818): 80624190 e08c9003 ebfff5c2 e5990004 eb0093ae 
+I/DEBUG   ( 1818): 806241a0 e2504000 1a000004 ea00002d e1a00004 
+I/DEBUG   ( 1818): 806241b0 eb0093b5 e2504000 0a000029 e1a00004 
+I/DEBUG   ( 1818): 
+I/DEBUG   ( 1818): stack:
+I/DEBUG   ( 1818):     bea9aaf8  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bea9aafc  afe2222b  /system/lib/libc.so
+I/DEBUG   ( 1818):     bea9ab00  8068def0  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea9ab04  0000b041  [heap]
+I/DEBUG   ( 1818):     bea9ab08  0000b041  [heap]
+I/DEBUG   ( 1818):     bea9ab0c  00000000  
+I/DEBUG   ( 1818):     bea9ab10  0000aec0  [heap]
+I/DEBUG   ( 1818):     bea9ab14  00000000  
+I/DEBUG   ( 1818):     bea9ab18  bea9abd4  [stack]
+I/DEBUG   ( 1818):     bea9ab1c  0000b041  [heap]
+I/DEBUG   ( 1818):     bea9ab20  00000003  
+I/DEBUG   ( 1818):     bea9ab24  afb05a8b  /system/lib/libcutils.so
+D/installd( 1823): DexInv: --- END '/system/app/Stk.apk' (success) ---
+I/DEBUG   ( 1818):     bea9ab28  8069f1d4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea9ab2c  0000b030  [heap]
+I/DEBUG   ( 1818):     bea9ab30  df002777  
+I/DEBUG   ( 1818):     bea9ab34  e3a070ad  
+I/DEBUG   ( 1818): #01 bea9ab38  00000000  
+I/DEBUG   ( 1818):     bea9ab3c  00000000  
+I/DEBUG   ( 1818):     bea9ab40  00000000  
+I/DEBUG   ( 1818):     bea9ab44  00000000  
+I/DEBUG   ( 1818):     bea9ab48  00000000  
+I/DEBUG   ( 1818):     bea9ab4c  00000000  
+I/DEBUG   ( 1818):     bea9ab50  00000000  
+I/DEBUG   ( 1818):     bea9ab54  00000000  
+I/DEBUG   ( 1818):     bea9ab58  00000000  
+I/DEBUG   ( 1818):     bea9ab5c  00000000  
+I/DEBUG   ( 1818):     bea9ab60  00000000  
+I/DEBUG   ( 1818):     bea9ab64  00000000  
+I/DEBUG   ( 1818):     bea9ab68  00000000  
+I/DEBUG   ( 1818):     bea9ab6c  00000000  
+I/DEBUG   ( 1818):     bea9ab70  00000000  
+I/DEBUG   ( 1818):     bea9ab74  00000000  
+I/DEBUG   ( 1818):     bea9ab78  8069dec8  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea9ab7c  806240e4  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea9ab80  8069dd18  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea9ab84  afe0f2c0  /system/lib/libc.so
+I/DEBUG   ( 1818):     bea9ab88  0000029c  
+I/DEBUG   ( 1818):     bea9ab8c  0000036c  
+I/DEBUG   ( 1818):     bea9ab90  0000aec0  [heap]
+I/DEBUG   ( 1818):     bea9ab94  8069dd10  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea9ab98  8069f294  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea9ab9c  00000000  
+I/DEBUG   ( 1818):     bea9aba0  8069ee68  /system/lib/libaudio.so
+I/DEBUG   ( 1818):     bea9aba4  00000000  
+I/DEBUG   ( 1818):     bea9aba8  00000000  
+I/DEBUG   ( 1818):     bea9abac  3a4c91a5  
+I/DEBUG   ( 1818):     bea9abb0  40000000  /dev/ashmem/system_properties (deleted)
+I/DEBUG   ( 1818):     bea9abb4  0000ae88  [heap]
+I/DEBUG   ( 1818):     bea9abb8  00000000  
+I/DEBUG   ( 1818):     bea9abbc  0000aec0  [heap]
+I/DEBUG   ( 1818):     bea9abc0  00000000  
+I/DEBUG   ( 1818):     bea9abc4  00000000  
+I/DEBUG   ( 1818):     bea9abc8  00000000  
+I/DEBUG   ( 1818):     bea9abcc  00000000  
+I/DEBUG   ( 1818):     bea9abd0  00000000  
+I/DEBUG   ( 1818):     bea9abd4  80626fd8  /system/lib/libaudio.so
+I/PackageManager( 1835): /system/app/Superuser.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/Superuser.apk' ---
+D/dalvikvm( 1971): DexOpt: load 290ms, verify 457ms, opt 8ms
+D/installd( 1823): DexInv: --- END '/system/app/Superuser.apk' (success) ---
+I/PackageManager( 1835): /system/app/TelephonyProvider.apk changed; collecting certs
+D/installd( 1823): DexInv: --- BEGIN '/system/app/TelephonyProvider.apk' ---
+D/dalvikvm( 1975): DexOpt: load 70ms, verify 1081ms, opt 41ms
+I/        ( 1973): ServiceManager: 0xad08
+E/AudioHardwareALSA( 1973): Unable to attach mixer to device AndroidPlayback: No such file or directory
+E/AudioHardwareALSA( 1973): Unable to attach mixer to device default: No such file or directory
+E/AudioHardwareALSA( 1973): Unable to attach mixer to device AndroidRecord: No such file or directory
+E/AudioHardwareALSA( 1973): Unable to attach mixer to device default: No such file or directory
+I/DEBUG   ( 1818): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1818): Build fingerprint: 'Samsung/GT-I5700/GT-I5700/GT-I5700:2.1-update1/ECLAIR/XXJH1:user/ota-rel-keys,release-keys'
+I/DEBUG   ( 1818): pid: 1973, tid: 1973  >>> /system/bin/mediaserver <<<
+I/DEBUG   ( 1818): signal 11 (SIGSEGV), fault addr 00000010
+I/DEBUG   ( 1818):  r0 00000000  r1 8068def4  r2 00000000  r3 00000000
+I/DEBUG   ( 1818):  r4 8069f1d4  r5 0000b030  r6 becf4b38  r7 0000b041
+I/DEBUG   ( 1818):  r8 00000000  r9 0000aec0  10 00000000  fp becf4bd4
+I/DEBUG   ( 1818):  ip 00000018  sp becf4b38  lr 806241a0  pc 8064905c  cpsr 00000010

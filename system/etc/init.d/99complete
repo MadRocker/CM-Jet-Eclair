@@ -1,0 +1,6 @@
+#!/system/bin/sh
+
+sync;
+setprop ro.build.display.id "SamdroidTestMod";
+setprop lk.filesystem.ready 1;
+
